@@ -4,7 +4,7 @@
 
 
 
-- Day1: [💩カウンター](https://github.com/tomoki69386/Daily_App/tree/master/01)
+- Day1: [💩カウンター](https://github.com/tomoki69386/Daily_App/blob/master/01/README.md)
 
 
 
