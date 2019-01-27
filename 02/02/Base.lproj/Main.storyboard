@@ -27,17 +27,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggs-ne-Iv5">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button1TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XcK-Fj-9RD"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7W7-YU-zte">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7W7-YU-zte">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button1TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6c-ii-Ipa"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-sN-Ttw">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-sN-Ttw">
                                                 <rect key="frame" x="250" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button1TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="216-Pi-PkZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -47,17 +53,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVL-J7-bcI">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button2TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8n-LN-NwZ"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia7-CF-gZC">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia7-CF-gZC">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button2TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29M-A2-uy6"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8W-zy-9x5">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8W-zy-9x5">
                                                 <rect key="frame" x="250" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button2TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9O-Ne-NSC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -67,17 +79,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIR-5d-Pmq">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button3TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYQ-eF-egF"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5E-bN-3vT">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5E-bN-3vT">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button3TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pO3-4z-odI"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ff-Vb-E6f">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ff-Vb-E6f">
                                                 <rect key="frame" x="250" y="0.0" width="125" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                                <state key="normal" title="⭕"/>
+                                                <connections>
+                                                    <action selector="button3TappendWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGB-Bq-bhw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
