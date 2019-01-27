@@ -5,6 +5,7 @@
 
 
 - Day1: [💩カウンター](https://github.com/tomoki69386/Daily_App/blob/master/01/README.md)
+- Day2: [⭕❌ゲーム](https://github.com/tomoki69386/Daily_App/blob/master/02/README.md)
 
 
 
