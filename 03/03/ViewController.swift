@@ -9,12 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet private weak var label: UILabel!
+
+    private var count: Int = 0 {
+        didSet {
+            label.text = String(count)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        label.text = String(count)
     }
-
-
+    
+    @IBAction private func countUp() {
+        count += 1
+    }
 }
 
