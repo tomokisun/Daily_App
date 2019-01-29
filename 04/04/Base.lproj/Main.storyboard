@@ -187,13 +187,25 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdK-9E-jRX">
+                                <rect key="frame" x="8" y="242" width="359" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Py-RH-Om5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kBc-cD-VGz" secondAttribute="trailing" constant="8" id="5ii-bN-QUm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kBc-cD-VGz" secondAttribute="bottom" constant="8" id="HaN-sx-S6g"/>
+                            <constraint firstItem="kBc-cD-VGz" firstAttribute="top" secondItem="zdK-9E-jRX" secondAttribute="bottom" constant="8" id="Nmn-fm-HJC"/>
                             <constraint firstItem="kBc-cD-VGz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vdx-0c-Qqr"/>
                             <constraint firstItem="kBc-cD-VGz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hox-mU-jGS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zdK-9E-jRX" secondAttribute="trailing" constant="8" id="pOE-XD-ipO"/>
+                            <constraint firstItem="zdK-9E-jRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="rRw-w7-kg4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
