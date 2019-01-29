@@ -18,3 +18,12 @@ class ViewController: UIViewController {
 
 }
 
+extension UIButton {
+    open override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        self.layer.cornerRadius = rect.height / 2
+        self.clipsToBounds = true
+    }
+}
+
