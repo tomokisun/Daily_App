@@ -12,6 +12,8 @@
 		B73897E52201CE9E00741A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73897E32201CE9E00741A9F /* Main.storyboard */; };
 		B73897E72201CE9F00741A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73897E62201CE9F00741A9F /* Assets.xcassets */; };
 		B73897EA2201CE9F00741A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73897E82201CE9F00741A9F /* LaunchScreen.storyboard */; };
+		B73897F22201D37900741A9F /* TaskAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73897F12201D37900741A9F /* TaskAddView.swift */; };
+		B73897F42201D38100741A9F /* TaskAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73897F32201D38100741A9F /* TaskAddView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B73897E62201CE9F00741A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B73897E92201CE9F00741A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B73897EB2201CE9F00741A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73897F12201D37900741A9F /* TaskAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAddView.swift; sourceTree = "<group>"; };
+		B73897F32201D38100741A9F /* TaskAddView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskAddView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				B73897DF2201CE9E00741A9F /* AppDelegate.swift */,
 				B73897E12201CE9E00741A9F /* ViewController.swift */,
 				B73897E32201CE9E00741A9F /* Main.storyboard */,
+				B73897F12201D37900741A9F /* TaskAddView.swift */,
+				B73897F32201D38100741A9F /* TaskAddView.xib */,
 				B73897E62201CE9F00741A9F /* Assets.xcassets */,
 				B73897E82201CE9F00741A9F /* LaunchScreen.storyboard */,
 				B73897EB2201CE9F00741A9F /* Info.plist */,
@@ -125,6 +131,7 @@
 				B73897EA2201CE9F00741A9F /* LaunchScreen.storyboard in Resources */,
 				B73897E72201CE9F00741A9F /* Assets.xcassets in Resources */,
 				B73897E52201CE9E00741A9F /* Main.storyboard in Resources */,
+				B73897F42201D38100741A9F /* TaskAddView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73897E22201CE9E00741A9F /* ViewController.swift in Sources */,
+				B73897F22201D37900741A9F /* TaskAddView.swift in Sources */,
 				B73897E02201CE9E00741A9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
