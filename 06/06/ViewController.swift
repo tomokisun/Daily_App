@@ -40,6 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        locationManager.stopUpdatingLocation()
         let location = locations.first
         guard let latitude = location?.coordinate.latitude else { return }
         guard let longitude = location?.coordinate.longitude else { return }
@@ -52,7 +53,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     private func showRequest(location: String) {
-        let url = ""
+        let url = "<SLACK_WEBHOOK_URL>"
         let text = """
         呼び出されました。
         住所: \(location)
