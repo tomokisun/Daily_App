@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
