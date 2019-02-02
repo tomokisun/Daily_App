@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.8.1)
+  - SnapKit (4.2.0)
+  - SwiftyUserDefaults (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - SnapKit
+  - SwiftyUserDefaults
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - SnapKit
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+
+PODFILE CHECKSUM: 0ba33547dfd87a5d24c5b7296fbee304bf27cde1
+
+COCOAPODS: 1.5.3
