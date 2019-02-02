@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Gf-7Y-sFk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--新規登録-->
+        <scene sceneID="8xs-qZ-LnL">
+            <objects>
+                <viewController id="LZE-qx-f9p" customClass="MainViewController" customModule="FarmerEC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hkl-Mi-VuH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生産者アカウントの作成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74s-18-iH9">
+                                <rect key="frame" x="24" y="94" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8kx-ga-Mh4">
+                                <rect key="frame" x="24" y="139" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="生産地" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XCn-WI-Fed">
+                                <rect key="frame" x="24" y="193" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmf-ag-4ct">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y0a-Iz-3aw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="register" destination="LZE-qx-f9p" eventType="touchUpInside" id="XZG-c8-0Ib"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U6H-0l-46f" firstAttribute="trailing" secondItem="8kx-ga-Mh4" secondAttribute="trailing" constant="24" id="6xO-E1-Fzy"/>
+                            <constraint firstItem="XCn-WI-Fed" firstAttribute="leading" secondItem="U6H-0l-46f" secondAttribute="leading" constant="24" id="EG7-HE-Ja4"/>
+                            <constraint firstItem="8kx-ga-Mh4" firstAttribute="top" secondItem="74s-18-iH9" secondAttribute="bottom" constant="24" id="G0w-Bp-VGF"/>
+                            <constraint firstItem="Hmf-ag-4ct" firstAttribute="leading" secondItem="U6H-0l-46f" secondAttribute="leading" id="K53-bf-cBT"/>
+                            <constraint firstItem="XCn-WI-Fed" firstAttribute="top" secondItem="8kx-ga-Mh4" secondAttribute="bottom" constant="24" id="M50-BD-Ygr"/>
+                            <constraint firstItem="8kx-ga-Mh4" firstAttribute="leading" secondItem="U6H-0l-46f" secondAttribute="leading" constant="24" id="MA8-eD-l7x"/>
+                            <constraint firstItem="U6H-0l-46f" firstAttribute="trailing" secondItem="XCn-WI-Fed" secondAttribute="trailing" constant="24" id="XLO-l4-oSL"/>
+                            <constraint firstItem="U6H-0l-46f" firstAttribute="bottom" secondItem="Hmf-ag-4ct" secondAttribute="bottom" id="aMY-fc-Gbi"/>
+                            <constraint firstItem="U6H-0l-46f" firstAttribute="trailing" secondItem="Hmf-ag-4ct" secondAttribute="trailing" id="ikz-tj-rfP"/>
+                            <constraint firstItem="74s-18-iH9" firstAttribute="leading" secondItem="U6H-0l-46f" secondAttribute="leading" constant="24" id="ktW-fP-KSR"/>
+                            <constraint firstItem="U6H-0l-46f" firstAttribute="trailing" secondItem="74s-18-iH9" secondAttribute="trailing" constant="24" id="oIn-LZ-vDN"/>
+                            <constraint firstItem="74s-18-iH9" firstAttribute="top" secondItem="U6H-0l-46f" secondAttribute="top" constant="30" id="x1O-2F-HkO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U6H-0l-46f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="新規登録" id="T0l-KE-OBd"/>
+                    <connections>
+                        <outlet property="localInput" destination="XCn-WI-Fed" id="Qop-RH-ZwT"/>
+                        <outlet property="nameInput" destination="8kx-ga-Mh4" id="hg4-Ve-ol6"/>
+                        <segue destination="xeE-Eo-3FW" kind="modal" identifier="toTabBar" id="OZF-v9-ekb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJ6-oD-m4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="-172.26386806596702"/>
+        </scene>
+        <!--TabBar-->
+        <scene sceneID="IEJ-hQ-q7p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBar" id="xeE-Eo-3FW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWa-bW-QA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725" y="-168"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dCh-4V-MFB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Gf-7Y-sFk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lYe-WC-Ibj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LZE-qx-f9p" kind="relationship" relationship="rootViewController" id="jc9-Mp-pkg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSp-Qh-5AP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="-172.26386806596702"/>
+        </scene>
+    </scenes>
+</document>
