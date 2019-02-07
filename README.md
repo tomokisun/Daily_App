@@ -16,6 +16,7 @@
 - Day10: [お友達メーカー](https://github.com/tomoki69386/Daily_App/blob/master/10/README.md)
 - Day11: [メモ帳](https://github.com/tomoki69386/Daily_App/blob/master/11/README.md)
 - Day12: [休みの理由言い訳ルーレット](https://github.com/tomoki69386/Daily_App/blob/master/12/README.md)
+- Day13: [じゃんけんアプリ](https://github.com/tomoki69386/Daily_App/blob/master/13/README.md)
 
 
 # 経緯
