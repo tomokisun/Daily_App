@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,33 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys3-0E-byj">
+                                <rect key="frame" x="88" y="318.5" width="199" height="30"/>
+                                <state key="normal" title="鼻毛出てるよと教えてあげる"/>
+                                <connections>
+                                    <action selector="tappend" destination="BYZ-38-t0r" eventType="touchUpInside" id="Djf-fd-Rca"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hanage" translatesAutoresizingMaskIntoConstraints="NO" id="QFS-OI-iD9">
+                                <rect key="frame" x="25" y="70" width="325" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QFS-OI-iD9" secondAttribute="height" multiplier="16:9" id="vgr-m0-URU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ys3-0E-byj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H4C-WS-4eh"/>
+                            <constraint firstItem="QFS-OI-iD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="L7f-yH-LAb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QFS-OI-iD9" secondAttribute="trailing" constant="25" id="Xjy-Mc-Flm"/>
+                            <constraint firstItem="ys3-0E-byj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ztg-Hf-2Ff"/>
+                            <constraint firstItem="QFS-OI-iD9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fXJ-c2-SCD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +47,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="hanage" width="1000" height="665"/>
+    </resources>
 </document>
