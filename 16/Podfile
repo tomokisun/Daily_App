@@ -8,6 +8,7 @@ target '16' do
   # Pods for 16
 
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
   pod 'MessageKit'
 
 end

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 import MessageKit
 import MessageInputBar
 
@@ -23,9 +25,9 @@ class ChatViewController: MessagesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpFirebase()
+        
         DispatchQueue.main.async {
-            // messageListにメッセージの配列をいれて
-            self.messageList = self.getMessages()
             // messagesCollectionViewをリロードして
             self.messagesCollectionView.reloadData()
             // 一番下までスクロールする
@@ -43,37 +45,37 @@ class ChatViewController: MessagesViewController {
         // メッセージ入力時に一番下までスクロール
         maintainPositionOnKeyboardFrameChanged = true // default false
         
-        navigationItem.title = otherSender().displayName
+        navigationItem.title = "hibino"
     }
     
-    // サンプル用に適当なメッセージ
-    private func getMessages() -> [Messages] {
-        return [
-            createmessage(text: "こんちには", sender: otherSender()),
-            createmessage(text: "こちらこそ", sender: currentSender()),
-            createmessage(text: "hogehoge\nhogehoge", sender: otherSender())
-        ]
+    private func setUpFirebase() {
+        let rootRef = Database.database().reference()
+        rootRef.queryLimited(toLast: 100).observe(DataEventType.childAdded) { snapshot in
+            let snapshotValue = snapshot.value as? NSDictionary
+            let text = snapshotValue?["text"] as! String
+            let form = snapshotValue?["from"] as! String
+            let name = snapshotValue?["name"] as! String
+            print("\(text)\(form)\(name)")
+            //let message = Messages(attributedText: attributedText, sender: currentSender(), messageId: UUID().uuidString, date: Date())
+            let sender = Sender(id: form, displayName: name)
+            let attributedText = NSAttributedString(string: text)
+            let message = Messages(attributedText: attributedText, sender: sender, messageId: UUID().uuidString, date: Date())
+            self.messageList.append(message)
+            self.messagesCollectionView.insertSections([self.messageList.count - 1])
+        }
     }
     
     private func createmessage(text: String, sender: Sender) -> Messages {
         let attributedText = NSAttributedString(string: text)
         return Messages(attributedText: attributedText, sender: sender, messageId: UUID().uuidString, date: Date())
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
 
 extension ChatViewController: MessagesDataSource {
-    
     func currentSender() -> Sender {
-        return Sender(id: "123", displayName: "自分")
+        return Sender(id: "2020", displayName: "自分")
     }
     
-    func otherSender() -> Sender {
-        return Sender(id: "456", displayName: "知らない人")
-    }
     
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
         return messageList.count
@@ -163,22 +165,17 @@ extension ChatViewController: MessageCellDelegate {
 extension ChatViewController: MessageInputBarDelegate {
     // メッセージ送信ボタンをタップした時の挙動
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
-        for component in inputBar.inputTextView.components {
-            if let image = component as? UIImage {
-                
-                let imageMessage = Messages(image: image, sender: currentSender(), messageId: UUID().uuidString, date: Date())
-                messageList.append(imageMessage)
-                messagesCollectionView.insertSections([messageList.count - 1])
-                
-            } else if let text = component as? String {
-                let attributedText = NSAttributedString(string: text)
-                let message = Messages(attributedText: attributedText, sender: currentSender(), messageId: UUID().uuidString, date: Date())
-                messageList.append(message)
-                messagesCollectionView.insertSections([messageList.count - 1])
-            }
-        }
+        sendText(text: text, senderId: "2020", name: "hibino")
         inputBar.inputTextView.text = String()
         messagesCollectionView.scrollToBottom()
+    }
+    private func sendText(text: String, senderId: String, name: String) {
+        let rootRef = Database.database().reference()
+        let postRef = rootRef.childByAutoId()
+        let post = ["from": senderId,
+                    "name": name,
+                    "text": text]
+        postRef.setValue(post)
     }
 }
 
