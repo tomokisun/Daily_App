@@ -20,7 +20,7 @@
 - Day14: [What is this color](https://github.com/tomoki69386/Daily_App/blob/master/14/README.md)
 - Day15: [ﾊﾅｹﾞﾃﾞﾃﾙﾖ](https://github.com/tomoki69386/Daily_App/blob/master/15/README.md)
 - Day16: [チャット](https://github.com/tomoki69386/Daily_App/blob/master/16/README.md)
-- Day17: [チャット](https://github.com/tomoki69386/Daily_App/blob/master/17/README.md)
+- Day17: [クイズアプリ](https://github.com/tomoki69386/Daily_App/blob/master/17/README.md)
 
 
 # 経緯
