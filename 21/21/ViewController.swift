@@ -20,10 +20,14 @@ class ViewController: UIViewController {
     private var selectedDate = Date()
     private var days = 0
     private var Array = [String]()
+    private var index: IndexPath!
+    private var row = 0
     
     private var y = 0
     private var m = 0
     private var d = 0
+    
+    private var doneView: DoneAddView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +41,29 @@ class ViewController: UIViewController {
         m = month
         d = day
         
+        doneView = UINib(nibName: "DoneAddView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? DoneAddView
+        doneView.frame = CGRect(x: 0, y: view.frame.height, width: view.frame.width, height: 367)
+        doneView.delegate = self
+        view.addSubview(doneView)
+        
         self.navigationItem.title = "\(year)年\(month)月"
         
         firstWeek(year: year, month: month)
         
         myCollectionView.dataSource = self
+        myCollectionView.delegate = self
+    }
+    
+    private func setDoneTaskhidden(_ hidden: Bool) {
+        if hidden {
+            UIView.animate(withDuration: 0.5) {
+                self.doneView.frame.origin.y = self.view.frame.height - 367
+            }
+        } else {
+            UIView.animate(withDuration: 0.5) {
+                self.doneView.frame.origin.y = self.view.frame.height
+            }
+        }
     }
     
     func firstWeek(year: Int, month: Int) {
@@ -58,7 +80,6 @@ class ViewController: UIViewController {
         
         var components = calendar.dateComponents([.year, .month], from: august2017)
         for i in 1...6 {
-            print(i)
             components.weekOfMonth = i
             for weekDay in 1...7 {
                 components.weekday = weekDay
@@ -78,6 +99,9 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! CalendarCollectionViewCell
         cell.update(day: Array[indexPath.row], indexPath: indexPath)
+        let cellSelectedBgView = UIView()
+        cellSelectedBgView.backgroundColor = .green
+        cell.selectedBackgroundView = cellSelectedBgView
         return cell
     }
     
@@ -115,8 +139,43 @@ class CalendarCollectionViewCell: UICollectionViewCell {
                 self.Label.textColor = UIColor.gray
             }
         }
-        
-        //背景の色を白にする
-        self.contentView.backgroundColor = UIColor.white
+    }
+    
+    func updateColor(row: Int) {
+        self.backgroundColor = UIColor.green
+        self.contentView.backgroundColor = UIColor.green
+    }
+}
+
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+        index = indexPath
+        row = indexPath.row
+//        setDoneTaskhidden(true)
+    }
+}
+
+extension ViewController: DoneAddViewDelegate {
+    func textField(_ view: DoneAddView, text: String) {
+        print(text)
+//        setDoneTaskhidden(false)
+        let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: index) as! CalendarCollectionViewCell
+        cell.updateColor(row: row)
+        myCollectionView.reloadData()
+    }
+}
+
+extension UIColor {
+    convenience init(hex: String, alpha: CGFloat) {
+        let v = hex.map { String($0) } + Array(repeating: "0", count: max(6 - hex.count, 0))
+        let r = CGFloat(Int(v[0] + v[1], radix: 16) ?? 0) / 255.0
+        let g = CGFloat(Int(v[2] + v[3], radix: 16) ?? 0) / 255.0
+        let b = CGFloat(Int(v[4] + v[5], radix: 16) ?? 0) / 255.0
+        self.init(red: r, green: g, blue: b, alpha: alpha)
+    }
+    
+    convenience init(hex: String) {
+        self.init(hex: hex, alpha: 1.0)
     }
 }

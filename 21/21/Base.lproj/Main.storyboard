@@ -85,8 +85,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="40" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGR-Be-WYk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="90"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qP-TS-8O3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -94,13 +94,12 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="bGR-Be-WYk" firstAttribute="leading" secondItem="ccn-c0-OVY" secondAttribute="leading" id="HUh-6w-lbd"/>
-                                            <constraint firstItem="bGR-Be-WYk" firstAttribute="top" secondItem="ccn-c0-OVY" secondAttribute="top" id="VN6-Hu-cRl"/>
-                                            <constraint firstAttribute="trailing" secondItem="bGR-Be-WYk" secondAttribute="trailing" id="nF3-db-54l"/>
-                                            <constraint firstAttribute="bottom" secondItem="bGR-Be-WYk" secondAttribute="bottom" id="yIO-DU-rt9"/>
+                                            <constraint firstItem="0qP-TS-8O3" firstAttribute="leading" secondItem="ccn-c0-OVY" secondAttribute="leading" id="0CK-27-vbj"/>
+                                            <constraint firstAttribute="trailing" secondItem="0qP-TS-8O3" secondAttribute="trailing" id="3Pa-ey-Ijd"/>
+                                            <constraint firstItem="0qP-TS-8O3" firstAttribute="top" secondItem="ccn-c0-OVY" secondAttribute="top" id="sQZ-MU-arO"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="Label" destination="bGR-Be-WYk" id="w1B-WN-us4"/>
+                                            <outlet property="Label" destination="0qP-TS-8O3" id="8OW-ff-yzH"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -118,7 +117,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dGy-MM-tbu"/>
+                    <navigationItem key="navigationItem" id="dGy-MM-tbu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KOy-M6-rFt">
+                            <connections>
+                                <segue destination="THk-yf-O2s" kind="modal" id="W9j-sD-mZ6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myCollectionView" destination="6fg-JD-CiO" id="Fm6-Gm-zQG"/>
                     </connections>
@@ -126,6 +131,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+        </scene>
+        <!--New Done List View Controller-->
+        <scene sceneID="fex-5V-Kfx">
+            <objects>
+                <viewController id="eez-8O-ZMg" customClass="NewDoneListViewController" customModule="_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umm-Sd-Zfy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.87" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やったこと" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx0-xa-Ahr">
+                                <rect key="frame" x="24" y="94" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="課題を終わらせた！" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EgG-Ed-dM8">
+                                <rect key="frame" x="24" y="121" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eez-8O-ZMg" id="hyH-dK-5Q5"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やった日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFc-Pj-yjW">
+                                <rect key="frame" x="24" y="167" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="xxx年xx月xx日" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBl-SX-zhq">
+                                <rect key="frame" x="24" y="194" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wx0-xa-Ahr" firstAttribute="top" secondItem="IOf-B9-c6u" secondAttribute="top" constant="30" id="0aG-0N-Pzy"/>
+                            <constraint firstItem="EgG-Ed-dM8" firstAttribute="leading" secondItem="wx0-xa-Ahr" secondAttribute="leading" id="2gH-gm-jkD"/>
+                            <constraint firstItem="IFc-Pj-yjW" firstAttribute="trailing" secondItem="wx0-xa-Ahr" secondAttribute="trailing" id="Gfr-Kd-ZSs"/>
+                            <constraint firstItem="ZBl-SX-zhq" firstAttribute="leading" secondItem="wx0-xa-Ahr" secondAttribute="leading" id="Q9N-1b-68i"/>
+                            <constraint firstItem="IOf-B9-c6u" firstAttribute="trailing" secondItem="wx0-xa-Ahr" secondAttribute="trailing" constant="24" id="Sgc-s8-yQe"/>
+                            <constraint firstItem="IFc-Pj-yjW" firstAttribute="top" secondItem="EgG-Ed-dM8" secondAttribute="bottom" constant="16" id="UTk-1d-cqj"/>
+                            <constraint firstItem="wx0-xa-Ahr" firstAttribute="leading" secondItem="IOf-B9-c6u" secondAttribute="leading" constant="24" id="dmR-Hx-6xO"/>
+                            <constraint firstItem="EgG-Ed-dM8" firstAttribute="top" secondItem="wx0-xa-Ahr" secondAttribute="bottom" constant="6" id="fid-4d-QUR"/>
+                            <constraint firstItem="IFc-Pj-yjW" firstAttribute="leading" secondItem="wx0-xa-Ahr" secondAttribute="leading" id="m3q-Ll-VXO"/>
+                            <constraint firstItem="ZBl-SX-zhq" firstAttribute="top" secondItem="IFc-Pj-yjW" secondAttribute="bottom" constant="6" id="n6U-nB-pQX"/>
+                            <constraint firstItem="ZBl-SX-zhq" firstAttribute="trailing" secondItem="wx0-xa-Ahr" secondAttribute="trailing" id="ven-xT-5sx"/>
+                            <constraint firstItem="EgG-Ed-dM8" firstAttribute="trailing" secondItem="wx0-xa-Ahr" secondAttribute="trailing" id="zhe-IQ-BX3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IOf-B9-c6u"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6KK-IS-Csc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Azz-YE-HfC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="t6t-7f-MB0"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uLc-SW-TlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2329" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tN2-Fj-ovF">
@@ -144,6 +211,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1J-X8-RBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="-671.51424287856082"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4dA-oL-rO7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="THk-yf-O2s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hBs-rr-gap"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t66-Gf-jxm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eez-8O-ZMg" kind="relationship" relationship="rootViewController" id="nHC-nv-rfT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ep-fV-drH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="27"/>
         </scene>
     </scenes>
 </document>
