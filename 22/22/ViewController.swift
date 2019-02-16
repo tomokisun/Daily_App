@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         } catch {
             print(error)
         }
+        
+        myButton.layer.cornerRadius = 60
     }
     
     @IBAction private func tappend(sender: UIButton) {
