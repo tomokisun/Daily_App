@@ -25,6 +25,7 @@
 - Day19: [真ん中で止めるやつ](https://github.com/tomoki69386/Daily_App/blob/master/19/README.md)
 - Day20: [Calendar](https://github.com/tomoki69386/Daily_App/blob/master/20/README.md)
 - Day21: [タスクDoneカレンダー](https://github.com/tomoki69386/Daily_App/blob/master/21/README.md)
+- Day22: [ともき頑張ってえらい！アプリ](https://github.com/tomoki69386/Daily_App/blob/master/22/README.md)
 
 # 経緯
 
