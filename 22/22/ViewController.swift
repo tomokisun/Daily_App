@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    private var myAudioPlayer : AVAudioPlayer!
+    @IBOutlet private weak var myButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let soundFilePath = Bundle.main.bundleURL.appendingPathComponent("okamochan.mp3")
+        do {
+            try myAudioPlayer = AVAudioPlayer(contentsOf: soundFilePath)
+            myAudioPlayer.prepareToPlay()
+        } catch {
+            print(error)
+        }
     }
-
-
+    
+    @IBAction private func tappend(sender: UIButton) {
+        myAudioPlayer.play()
+    }
 }
-

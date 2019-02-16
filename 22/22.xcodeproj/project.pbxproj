@@ -12,6 +12,7 @@
 		B736CF9922179B54009EF5EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B736CF9722179B54009EF5EA /* Main.storyboard */; };
 		B736CF9B22179B57009EF5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B736CF9A22179B57009EF5EA /* Assets.xcassets */; };
 		B736CF9E22179B57009EF5EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B736CF9C22179B57009EF5EA /* LaunchScreen.storyboard */; };
+		B736CFA92217AA63009EF5EA /* okamochan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B736CFA82217AA63009EF5EA /* okamochan.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B736CF9A22179B57009EF5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B736CF9D22179B57009EF5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B736CF9F22179B57009EF5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B736CFA82217AA63009EF5EA /* okamochan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = okamochan.mp3; path = ../../../../Downloads/okamochan.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B736CF9322179B54009EF5EA /* AppDelegate.swift */,
 				B736CF9522179B54009EF5EA /* ViewController.swift */,
 				B736CF9722179B54009EF5EA /* Main.storyboard */,
+				B736CFA82217AA63009EF5EA /* okamochan.mp3 */,
 				B736CF9A22179B57009EF5EA /* Assets.xcassets */,
 				B736CF9C22179B57009EF5EA /* LaunchScreen.storyboard */,
 				B736CF9F22179B57009EF5EA /* Info.plist */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B736CFA92217AA63009EF5EA /* okamochan.mp3 in Resources */,
 				B736CF9E22179B57009EF5EA /* LaunchScreen.storyboard in Resources */,
 				B736CF9B22179B57009EF5EA /* Assets.xcassets in Resources */,
 				B736CF9922179B54009EF5EA /* Main.storyboard in Resources */,
