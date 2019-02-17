@@ -32,7 +32,9 @@
 
 ノリでツイートしてこれが事の発端。
 
-<img width="619" alt="image" src="https://user-images.githubusercontent.com/28350464/51778740-be8f4b00-2146-11e9-9649-459dc25ea5c4.png">
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">いいねの数だけアプリ作る</p>&mdash; ともき (@tomoki_sun) <a href="https://twitter.com/tomoki_sun/status/1088743722806763522?ref_src=twsrc%5Etfw">2019年1月25日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
 
