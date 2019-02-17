@@ -36,8 +36,6 @@
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
-
 来ても10~20いいねぐらいだと思ってたら想像以上にいいねが来てしまった😇
 
 
