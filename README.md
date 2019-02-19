@@ -28,6 +28,7 @@
 - Day22: [ともき頑張ってえらい！アプリ](https://github.com/tomoki69386/Daily_App/blob/master/22/README.md)
 - Day23: [メンヘラ男子撲滅アプリ](https://github.com/tomoki69386/Daily_App/blob/master/23/README.md)
 - Day24: [サブスク管理](https://github.com/tomoki69386/Daily_App/blob/master/24/README.md)
+- Day25: [モンスターorコーヒー](https://github.com/tomoki69386/Daily_App/blob/master/25/README.md)
 
 # 経緯
 
