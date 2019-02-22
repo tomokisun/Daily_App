@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wb-1K-6bM">
+                                <rect key="frame" x="141.5" y="318.5" width="92" height="30"/>
+                                <state key="normal" title="ツイートする"/>
+                                <connections>
+                                    <action selector="tweetAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="VH4-2J-2Zf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フォロワーに向けてストロングゼロを 飲んでいることを宣言する" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWZ-Sq-7Js">
+                                <rect key="frame" x="16" y="247.5" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4wb-1K-6bM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KFf-Ub-0L6"/>
+                            <constraint firstItem="4wb-1K-6bM" firstAttribute="top" secondItem="yWZ-Sq-7Js" secondAttribute="bottom" constant="30" id="Upd-Tq-R8C"/>
+                            <constraint firstItem="yWZ-Sq-7Js" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k5M-1B-Mrq"/>
+                            <constraint firstItem="4wb-1K-6bM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rdk-Cu-Bgm"/>
+                            <constraint firstAttribute="trailing" secondItem="yWZ-Sq-7Js" secondAttribute="trailing" constant="16" id="tBY-0w-YZW"/>
+                            <constraint firstItem="yWZ-Sq-7Js" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ww9-8n-zCI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
