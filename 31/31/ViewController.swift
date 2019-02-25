@@ -35,13 +35,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
         let location = locations.first
-        guard let latitude = location?.coordinate.latitude else { return }
-        guard let longitude = location?.coordinate.longitude else { return }
+        guard var latitude = location?.coordinate.latitude else { return }
+        guard var longitude = location?.coordinate.longitude else { return }
         
-        print("latitude: \(latitude)\nlongitude: \(longitude)")
+        let hoge = latitude * 2
+        latitude -= hoge
         
-        //https://www.google.com/maps?q=35.6694219,139.4612045
-        print("https://www.google.com/maps?q=\(latitude),\(longitude)")
+        longitude = -180 + longitude
         
         let center = CLLocationCoordinate2DMake(latitude, longitude)
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
