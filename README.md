@@ -34,6 +34,7 @@
 - Day28: [ストロングゼロなうアプリ](https://github.com/tomoki69386/Daily_App/blob/master/28/README.md)
 - Day29: [アリ殺し](https://github.com/tomoki69386/Daily_App/blob/master/29/README.md)
 - Day30: [Qiitaクライアントアプリ](https://github.com/tomoki69386/Daily_App/blob/master/30/README.md)
+- Day31: [地球の裏には何がある？？](https://github.com/tomoki69386/Daily_App/blob/master/31/README.md)
 
 
 # 経緯
