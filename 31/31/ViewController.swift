@@ -47,6 +47,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         let region = MKCoordinateRegion(center: center, span: span)
         mapView.setRegion(region, animated: true)
+        
+        let pin = MKPointAnnotation()
+        pin.coordinate = center
+        pin.title = "現在地の裏側"
+        mapView.addAnnotation(pin)
     }
 }
 
