@@ -17,9 +17,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func action() {
-        guard let url = URL(string: "https://twitter.com/intent/tweet?text=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%AE%8C%E5%85%A8%E3%81%AB%E7%90%86%E8%A7%A3%E3%81%97%E3%81%9F") else { return }
-        let SFVC = SFSafariViewController(url: url)
-        present(SFVC, animated: true)
+        guard let url = URL(string: "twitter://post?message=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%AE%8C%E5%85%A8%E3%81%AB%E7%90%86%E8%A7%A3%E3%81%97%E3%81%9F") else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 
 }
