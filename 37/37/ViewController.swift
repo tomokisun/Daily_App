@@ -8,6 +8,18 @@
 
 import UIKit
 
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+}
+
 class ViewController: UIViewController {
     /// images/13
     private let baseURL = "https://%e8%b5%b7%e3%81%8d%e7%ab%b9%e5%9f%8e.jp/images/"
