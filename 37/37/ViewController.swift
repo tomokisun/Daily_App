@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    /// images/13
+    private let baseURL = "https://%e8%b5%b7%e3%81%8d%e7%ab%b9%e5%9f%8e.jp/images/"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    @IBAction private func action() {
+        let index = Int.random(in: 0...13)
+        guard let url = URL(string: "twitter://post?message=%e8%b5%b7%e3%81%8d%e7%ab%b9%e5%9f%8e%0A\(baseURL)\(index)") else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 }
 
