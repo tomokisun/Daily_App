@@ -42,6 +42,7 @@
 - Day36: [クソアプリジェネレーター](https://github.com/tomoki69386/Daily_App/blob/master/36/README.md)
 - Day37: [起き竹城](https://github.com/tomoki69386/Daily_App/blob/master/37/README.md)
 - Day38: [暇なうアプリ](https://github.com/tomoki69386/Daily_App/blob/master/38/README.md)
+- Day39: [スタンプアプリ](https://github.com/tomoki69386/Daily_App/blob/master/39/README.md)
 
 # 経緯
 
