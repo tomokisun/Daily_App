@@ -7,49 +7,46 @@
 //
 
 import UIKit
-import CoreLocation
 import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextViewDelegate {
     
-    private let locationManager = CLLocationManager()
+    private let urlString = "<SLACK_WEB_HOOK_URL>"
     
-    private let urlString = "http://geoapi.heartrails.com/api/json?method=searchByGeoLocation&x=135.0&y=35.0"
+    @IBOutlet private weak var textView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpLocationManager()
+        
     }
     
-    private func setUpLocationManager() {
-        locationManager.requestWhenInUseAuthorization()
-        let status = CLLocationManager.authorizationStatus()
-        if status == .authorizedWhenInUse {
-            locationManager.delegate = self
-            locationManager.distanceFilter = 10
-            locationManager.startUpdatingLocation()
-        }
+    @IBAction private func sedAction() {
+        request()
     }
 
-    private func request(x: String, y: String) {
-        PostalAPI.fetch(x: x, y: y) { result in
-            switch result {
-            case .success(let value):
-                print(value)
-            case .failure:
-                print("error")
+    private func request() {
+        guard let textString = textView.text else { return }
+        let text = """
+        内容:
+        \(textString)
+        """
+        let parameters: [String: String] = [
+            "channel": "#daily_app",
+            "username": "クソアプリ案通知",
+            "text": text,
+            "icon_url": "http://2.bp.blogspot.com/-Rd_w7b2kq70/VnE4FZen5oI/AAAAAAAA18w/mMasxPYIuCM/s800/pose_kyosyu_boy.png"
+        ]
+        
+        Alamofire.request(urlString, method: .post, parameters: parameters, encoding: JSONEncoding.default).response { response in
+            if response.response?.statusCode == 200 {
+    
+            } else {
+    
             }
         }
     }
-}
-
-extension ViewController: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        locationManager.stopUpdatingLocation()
-        let location = locations.first
-        guard let latitude = location?.coordinate.latitude else { return }
-        guard let longitude = location?.coordinate.longitude else { return }
-        request(x: String(latitude), y: String(longitude))
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
-
