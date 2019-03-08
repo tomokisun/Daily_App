@@ -13,6 +13,7 @@
 		B7DDF0D22232801B00DB5768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DDF0D02232801B00DB5768 /* Main.storyboard */; };
 		B7DDF0D42232801D00DB5768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DDF0D32232801D00DB5768 /* Assets.xcassets */; };
 		B7DDF0D72232801D00DB5768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DDF0D52232801D00DB5768 /* LaunchScreen.storyboard */; };
+		B7DDF0E0223282C000DB5768 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DDF0DF223282C000DB5768 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B7DDF0D32232801D00DB5768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7DDF0D62232801D00DB5768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7DDF0D82232801D00DB5768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DDF0DF223282C000DB5768 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E618CC01A2DEC9BBF4D68076 /* Pods-42.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42.release.xcconfig"; path = "Target Support Files/Pods-42/Pods-42.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +48,6 @@
 				39F3AAA0C8525CA3FD626BD0 /* Pods-42.debug.xcconfig */,
 				E618CC01A2DEC9BBF4D68076 /* Pods-42.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,7 @@
 			children = (
 				B7DDF0CC2232801B00DB5768 /* AppDelegate.swift */,
 				B7DDF0CE2232801B00DB5768 /* ViewController.swift */,
+				B7DDF0DF223282C000DB5768 /* APIClient.swift */,
 				B7DDF0D02232801B00DB5768 /* Main.storyboard */,
 				B7DDF0D32232801D00DB5768 /* Assets.xcassets */,
 				B7DDF0D52232801D00DB5768 /* LaunchScreen.storyboard */,
@@ -211,6 +213,7 @@
 			files = (
 				B7DDF0CF2232801B00DB5768 /* ViewController.swift in Sources */,
 				B7DDF0CD2232801B00DB5768 /* AppDelegate.swift in Sources */,
+				B7DDF0E0223282C000DB5768 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
