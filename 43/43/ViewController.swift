@@ -9,12 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        showAlert()
     }
 
-
+    private func showAlert() {
+        let body = """
+        ∧_∧　ババババ
+        （ ・ω・)=つ≡つ
+        （っ ≡つ=つ
+        `/　　)
+        (ノΠＵ
+        何回閉じても無駄ですよ?ww
+        m9（＾Д＾）プギャー！！
+        """
+        let alert = UIAlertController(title: "", message: body, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.showAlert()
+        }
+        alert.addAction(OKAction)
+        self.present(alert, animated: true)
+    }
 }
 
