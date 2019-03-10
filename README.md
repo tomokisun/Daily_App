@@ -47,6 +47,7 @@
 - Day41: [もぐら叩き](https://github.com/tomoki69386/Daily_App/blob/master/41/README.md)
 - Day42: [クソアプリBotのアプリ化](https://github.com/tomoki69386/Daily_App/blob/master/42/README.md)
 - Day43: [無限アラート](https://github.com/tomoki69386/Daily_App/blob/master/43/README.md)
+- Day44: [何時に起きる？](https://github.com/tomoki69386/Daily_App/blob/master/44/README.md)
 
 # 経緯
 
