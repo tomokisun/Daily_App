@@ -22,49 +22,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-h8-Jez">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="494"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWC-Il-mtW">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何時に起きる？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91T-A5-D7b">
-                                                        <rect key="frame" x="16" y="8" width="121.5" height="20"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="20" id="Mjh-XF-fcA"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEx-1c-1LO">
-                                                        <rect key="frame" x="16" y="36" width="343" height="30"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="Agv-e2-hUL"/>
-                                                        </constraints>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="pEx-1c-1LO" secondAttribute="trailing" constant="16" id="85w-Lk-0pv"/>
-                                                    <constraint firstItem="pEx-1c-1LO" firstAttribute="leading" secondItem="LWC-Il-mtW" secondAttribute="leading" constant="16" id="Ecl-c6-uO5"/>
-                                                    <constraint firstItem="91T-A5-D7b" firstAttribute="top" secondItem="LWC-Il-mtW" secondAttribute="top" constant="8" id="LBU-eg-gng"/>
-                                                    <constraint firstItem="91T-A5-D7b" firstAttribute="leading" secondItem="LWC-Il-mtW" secondAttribute="leading" constant="16" id="OIY-EX-nGC"/>
-                                                    <constraint firstItem="pEx-1c-1LO" firstAttribute="top" secondItem="91T-A5-D7b" secondAttribute="bottom" constant="8" id="W5K-gY-EjT"/>
-                                                    <constraint firstAttribute="bottom" secondItem="pEx-1c-1LO" secondAttribute="bottom" constant="8" id="XvF-Yg-9Mt"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXA-Qm-4Pf">
-                                                <rect key="frame" x="0.0" y="84" width="375" height="28"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="28" id="6DF-5Q-r66"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ff2-rl-qVO">
-                                                <rect key="frame" x="0.0" y="122" width="375" height="74"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朝ごはん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PG-bO-GYD">
                                                         <rect key="frame" x="16" y="8" width="69.5" height="20"/>
@@ -82,7 +43,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +57,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yul-Hq-hNB">
-                                                <rect key="frame" x="0.0" y="206" width="375" height="74"/>
+                                                <rect key="frame" x="0.0" y="84" width="375" height="74"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="シャワー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQf-ev-ys2">
                                                         <rect key="frame" x="16" y="8" width="69.5" height="20"/>
@@ -114,7 +75,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -128,7 +89,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgq-xC-Jav">
-                                                <rect key="frame" x="0.0" y="290" width="375" height="74"/>
+                                                <rect key="frame" x="0.0" y="168" width="375" height="74"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="着替え" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba7-uj-Kma">
                                                         <rect key="frame" x="16" y="8" width="52" height="20"/>
@@ -146,7 +107,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,7 +121,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJC-N9-c6E">
-                                                <rect key="frame" x="0.0" y="374" width="375" height="74"/>
+                                                <rect key="frame" x="0.0" y="252" width="375" height="74"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身だしなみ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFG-y6-Tpe">
                                                         <rect key="frame" x="16" y="8" width="87" height="20"/>
@@ -178,7 +139,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,7 +153,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gF5-Sx-2Xy">
-                                                <rect key="frame" x="0.0" y="458" width="375" height="74"/>
+                                                <rect key="frame" x="0.0" y="336" width="375" height="74"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="準備" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYw-X3-XlY">
                                                         <rect key="frame" x="16" y="8" width="35" height="20"/>
@@ -210,7 +171,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -224,7 +185,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVt-kH-whN">
-                                                <rect key="frame" x="0.0" y="542" width="375" height="74"/>
+                                                <rect key="frame" x="0.0" y="420" width="375" height="74"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="駅まで" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KD4-7w-erZ">
                                                         <rect key="frame" x="16" y="8" width="52" height="20"/>
@@ -242,7 +203,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -257,19 +218,30 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVh-14-bsB">
-                                        <rect key="frame" x="172" y="666" width="31" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-Zb-iSN">
+                                        <rect key="frame" x="166.5" y="524" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bX-0a-M4J">
+                                        <rect key="frame" x="172" y="584.5" width="31" height="30"/>
                                         <state key="normal" title="決定"/>
+                                        <connections>
+                                            <action selector="action" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfR-S8-UUi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="fVh-14-bsB" firstAttribute="top" secondItem="NHO-h8-Jez" secondAttribute="bottom" constant="50" id="7rY-dC-vPq"/>
+                                    <constraint firstItem="7bX-0a-M4J" firstAttribute="centerX" secondItem="UMP-ly-2eL" secondAttribute="centerX" id="4cM-bi-zNg"/>
                                     <constraint firstItem="NHO-h8-Jez" firstAttribute="top" secondItem="UMP-ly-2eL" secondAttribute="top" id="INq-eG-kTk"/>
                                     <constraint firstAttribute="trailing" secondItem="NHO-h8-Jez" secondAttribute="trailing" id="YrM-6G-Vki"/>
                                     <constraint firstItem="NHO-h8-Jez" firstAttribute="leading" secondItem="UMP-ly-2eL" secondAttribute="leading" id="ePP-oN-Gq5"/>
                                     <constraint firstAttribute="bottom" secondItem="NHO-h8-Jez" secondAttribute="bottom" constant="250" id="jgY-l6-mXA"/>
-                                    <constraint firstItem="fVh-14-bsB" firstAttribute="centerX" secondItem="UMP-ly-2eL" secondAttribute="centerX" id="sDa-gT-sHh"/>
+                                    <constraint firstItem="7bX-0a-M4J" firstAttribute="top" secondItem="ffa-Zb-iSN" secondAttribute="bottom" constant="40" id="qUi-1x-3ed"/>
+                                    <constraint firstItem="ffa-Zb-iSN" firstAttribute="top" secondItem="NHO-h8-Jez" secondAttribute="bottom" constant="30" id="qWm-Pp-QdO"/>
+                                    <constraint firstItem="ffa-Zb-iSN" firstAttribute="centerX" secondItem="UMP-ly-2eL" secondAttribute="centerX" id="qko-5p-5eq"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -284,6 +256,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="UeZ-dj-x8n"/>
+                    <connections>
+                        <outlet property="appearanceInput" destination="pYV-Lj-qEz" id="55R-Ea-pLH"/>
+                        <outlet property="changeInput" destination="C8Q-yz-S5S" id="72q-cq-DSt"/>
+                        <outlet property="label" destination="ffa-Zb-iSN" id="iYw-Hz-gb8"/>
+                        <outlet property="morningInput" destination="tSZ-wP-5cC" id="71f-mH-6xW"/>
+                        <outlet property="preparationInput" destination="Raf-bX-aRA" id="FNs-BC-8oC"/>
+                        <outlet property="showerInput" destination="1u4-MA-Ba1" id="sF7-fb-A4t"/>
+                        <outlet property="toStationInput" destination="XHg-WD-ODB" id="Mww-IW-HoV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
