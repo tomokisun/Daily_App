@@ -41,14 +41,24 @@
                                     <constraint firstAttribute="height" constant="100" id="oqh-kY-9yB"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-Mq-mfa">
+                                <rect key="frame" x="137.5" y="156" width="100" height="100"/>
+                                <connections>
+                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="MlA-8n-oGW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MbA-Oc-ZQf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="7Be-G3-Lb9"/>
+                            <constraint firstItem="s6L-Mq-mfa" firstAttribute="bottom" secondItem="A1n-eL-w4R" secondAttribute="bottom" id="IJS-xl-vQt"/>
                             <constraint firstItem="A1n-eL-w4R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MI9-QT-VDu"/>
                             <constraint firstItem="A1n-eL-w4R" firstAttribute="top" secondItem="dsL-jn-whC" secondAttribute="bottom" constant="16" id="Mjq-xQ-3A0"/>
                             <constraint firstItem="dsL-jn-whC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="V9T-Oe-5Bz"/>
+                            <constraint firstItem="s6L-Mq-mfa" firstAttribute="leading" secondItem="A1n-eL-w4R" secondAttribute="leading" id="bar-D0-klY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MbA-Oc-ZQf" secondAttribute="trailing" constant="16" id="go3-c5-ySq"/>
+                            <constraint firstItem="s6L-Mq-mfa" firstAttribute="top" secondItem="A1n-eL-w4R" secondAttribute="top" id="l3L-EJ-B7Y"/>
+                            <constraint firstItem="s6L-Mq-mfa" firstAttribute="trailing" secondItem="A1n-eL-w4R" secondAttribute="trailing" id="nfK-nq-jyZ"/>
                             <constraint firstItem="dsL-jn-whC" firstAttribute="top" secondItem="MbA-Oc-ZQf" secondAttribute="bottom" constant="16" id="u1y-UP-yfw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsL-jn-whC" secondAttribute="trailing" constant="16" id="vMZ-h0-8JW"/>
                             <constraint firstItem="MbA-Oc-ZQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yy6-Au-ZqJ"/>
@@ -62,6 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>

@@ -25,7 +25,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction private func save() {
-        
+        let alert = UIAlertController(title: "保存します", message: "作った画像を保存します", preferredStyle: .alert)
+        let OKButton = UIAlertAction(title: "OK", style: .default) { _ in
+            self.saveImage()
+        }
+        alert.addAction(OKButton)
+        present(alert, animated: true)
+    }
+    
+    private func saveImage() {
+        guard let image = imageView.image else { return }
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
     }
     
     private func emojiToImage(text: String, size: CGFloat = 100) -> UIImage {
