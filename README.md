@@ -52,6 +52,7 @@
 - Day46: [画像ジェネレーター](https://github.com/tomoki69386/Daily_App/blob/master/46/README.md)
 - Day47: [給料日まで....](https://github.com/tomoki69386/Daily_App/blob/master/47/README.md)
 - Day48: [カラースライダー](https://github.com/tomoki69386/Daily_App/blob/master/48/README.md)
+- Day49: [ARアプリ](https://github.com/tomoki69386/Daily_App/blob/master/49/README.md)
 
 # 経緯
 
