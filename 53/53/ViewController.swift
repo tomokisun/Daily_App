@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         sceneView.scene.rootNode.addChildNode(node) // 生成したノードをシーンに追加する
     }
     
-    private func emojiToImage(text: String, size: CGFloat = 500) -> UIImage {
+    private func emojiToImage(text: String, size: CGFloat = 1000) -> UIImage {
         let outputImageSize = CGSize.init(width: size, height: size)
         let baseSize = text.boundingRect(with: CGSize(width: 2048, height: 2048),
                                          options: .usesLineFragmentOrigin,
