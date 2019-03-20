@@ -12,6 +12,8 @@
 		B76F8FFA224275CC0064A4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76F8FF8224275CC0064A4D5 /* Main.storyboard */; };
 		B76F8FFC224275CE0064A4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76F8FFB224275CE0064A4D5 /* Assets.xcassets */; };
 		B76F8FFF224275CE0064A4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76F8FFD224275CE0064A4D5 /* LaunchScreen.storyboard */; };
+		B76F901422427FDB0064A4D5 /* AppFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F901322427FDB0064A4D5 /* AppFeedback.framework */; };
+		B76F9017224280B50064A4D5 /* Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B76F901522427FEA0064A4D5 /* Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B76F8FFB224275CE0064A4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76F8FFE224275CE0064A4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B76F9000224275CE0064A4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76F901322427FDB0064A4D5 /* AppFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppFeedback.framework; path = Carthage/Build/iOS/AppFeedback.framework; sourceTree = "<group>"; };
+		B76F901522427FEA0064A4D5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76F901422427FDB0064A4D5 /* AppFeedback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				B76F8FF3224275CC0064A4D5 /* 54 */,
 				B76F8FF2224275CC0064A4D5 /* Products */,
+				B76F901222427FDA0064A4D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				B76F8FF4224275CC0064A4D5 /* AppDelegate.swift */,
+				B76F901522427FEA0064A4D5 /* Bridging-Header.h */,
 				B76F8FF6224275CC0064A4D5 /* ViewController.swift */,
 				B76F8FF8224275CC0064A4D5 /* Main.storyboard */,
 				B76F8FFB224275CE0064A4D5 /* Assets.xcassets */,
@@ -64,16 +71,37 @@
 			path = 54;
 			sourceTree = "<group>";
 		};
+		B76F901222427FDA0064A4D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B76F901322427FDB0064A4D5 /* AppFeedback.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B76F9016224280AF0064A4D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76F9017224280B50064A4D5 /* Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B76F8FF0224275CC0064A4D5 /* 54 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B76F9003224275CE0064A4D5 /* Build configuration list for PBXNativeTarget "54" */;
 			buildPhases = (
+				B76F9016224280AF0064A4D5 /* Headers */,
 				B76F8FED224275CC0064A4D5 /* Sources */,
 				B76F8FEE224275CC0064A4D5 /* Frameworks */,
 				B76F8FEF224275CC0064A4D5 /* Resources */,
+				B76F901122427FB80064A4D5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B76F901122427FB80064A4D5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AppFeedback.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B76F8FED224275CC0064A4D5 /* Sources */ = {
@@ -283,6 +332,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMPLD4D4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 54/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomoki.-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +355,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMPLD4D4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 54/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomoki.-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,0 +1,746 @@
+BCSymbolMap Version: 2.0
+-[DrawViewController viewDidLoad]
+-[DrawViewController didReceiveMemoryWarning]
+-[DrawViewController undo:]
+-[DrawViewController finishPannig:]
+-[DrawViewController closeButtonTapped:]
+-[DrawViewController toolBar]
+-[DrawViewController setToolBar:]
+-[DrawViewController imageView]
+-[DrawViewController setImageView:]
+-[DrawViewController drawingView]
+-[DrawViewController setDrawingView:]
+-[DrawViewController clearButton]
+-[DrawViewController setClearButton:]
+-[DrawViewController originImage]
+-[DrawViewController setOriginImage:]
+-[DrawViewController editingImage]
+-[DrawViewController setEditingImage:]
+-[DrawViewController startPoint]
+-[DrawViewController setStartPoint:]
+-[DrawViewController currentPoint]
+-[DrawViewController setCurrentPoint:]
+-[DrawViewController .cxx_destruct]
+_OBJC_IVAR_$_DrawViewController._toolBar
+_OBJC_IVAR_$_DrawViewController._imageView
+_OBJC_IVAR_$_DrawViewController._drawingView
+_OBJC_IVAR_$_DrawViewController._clearButton
+_OBJC_IVAR_$_DrawViewController._originImage
+_OBJC_IVAR_$_DrawViewController._editingImage
+_OBJC_IVAR_$_DrawViewController._startPoint
+_OBJC_IVAR_$_DrawViewController._currentPoint
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_DrawViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_DrawViewDelegate
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/DrawViewController.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/DrawViewController.h
+-[OverlayWindow init]
+-[OverlayWindow presentViewController:animated:completion:]
+___59-[OverlayWindow presentViewController:animated:completion:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[OverlayWindow pointInside:withEvent:]
+-[OverlayWindow monitorModal:]
+-[OverlayWindow modalTimer]
+-[OverlayWindow setModalTimer:]
+-[OverlayWindow shapeLayer]
+-[OverlayWindow setShapeLayer:]
+-[OverlayWindow .cxx_destruct]
+___block_descriptor_tmp
+_OBJC_IVAR_$_OverlayWindow._modalTimer
+_OBJC_IVAR_$_OverlayWindow._shapeLayer
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/OverlayWindow.m
+__destroy_helper_block_
+__copy_helper_block_
+__59-[OverlayWindow presentViewController:animated:completion:]_block_invoke
+-[NSURL(Size) fileSize]
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/NSURL+Sizse.m
++[AnimationUtil animateWithDuration:easing:]
++[AnimationUtil animateWithDuration:easing:completion:]
++[AnimationUtil animateWithDuration:delay:resolution:easing:completion:]
+___72+[AnimationUtil animateWithDuration:delay:resolution:easing:completion:]_block_invoke
+___72+[AnimationUtil animateWithDuration:delay:resolution:easing:completion:]_block_invoke_2
+___copy_helper_block_.3
+___destroy_helper_block_.4
+___72+[AnimationUtil animateWithDuration:delay:resolution:easing:completion:]_block_invoke.6
+___copy_helper_block_.7
+___destroy_helper_block_.8
++[AnimationUtil easeElasticOut:]
+___block_descriptor_tmp.5
+___block_descriptor_tmp.10
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/AnimationUtil.m
+__72+[AnimationUtil animateWithDuration:delay:resolution:easing:completion:]_block_invoke.6
+__72+[AnimationUtil animateWithDuration:delay:resolution:easing:completion:]_block_invoke_2
+__72+[AnimationUtil animateWithDuration:delay:resolution:easing:completion:]_block_invoke
+-[UIPlaceHolderTextView dealloc]
+-[UIPlaceHolderTextView awakeFromNib]
+-[UIPlaceHolderTextView initWithFrame:]
+-[UIPlaceHolderTextView textChanged:]
+-[UIPlaceHolderTextView setText:]
+-[UIPlaceHolderTextView drawRect:]
+-[UIPlaceHolderTextView placeholder]
+-[UIPlaceHolderTextView setPlaceholder:]
+-[UIPlaceHolderTextView placeholderColor]
+-[UIPlaceHolderTextView setPlaceholderColor:]
+-[UIPlaceHolderTextView placeHolderLabel]
+-[UIPlaceHolderTextView setPlaceHolderLabel:]
+-[UIPlaceHolderTextView .cxx_destruct]
+_OBJC_IVAR_$_UIPlaceHolderTextView._placeHolderLabel
+_OBJC_IVAR_$_UIPlaceHolderTextView._placeholder
+_OBJC_IVAR_$_UIPlaceHolderTextView._placeholderColor
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/UIPlaceHolderTextView.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/UIPlaceHolderTextView.h
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
++[DeviceUtil appVersion]
++[DeviceUtil appBuildVersion]
++[DeviceUtil OSName]
++[DeviceUtil OSVersion]
++[DeviceUtil ModelCode]
++[DeviceUtil ModelName]
++[StringUtil match:string:]
++[StringUtil matchPattern:string:]
++[StringUtil matchPattern:string:ignoreCase:]
++[StringUtil makeRegularExpression:ignoreCase:]
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/DeviceUtil.m
+-[AutoResizeTextView awakeFromNib]
+-[AutoResizeTextView dealloc]
+-[AutoResizeTextView layoutSubviews]
+-[AutoResizeTextView autoResizeTextViewtextChanged:]
+-[AutoResizeTextView minHeight]
+-[AutoResizeTextView setMinHeight:]
+-[AutoResizeTextView heightConstraint]
+-[AutoResizeTextView setHeightConstraint:]
+-[AutoResizeTextView .cxx_destruct]
+_OBJC_IVAR_$_AutoResizeTextView._minHeight
+_OBJC_IVAR_$_AutoResizeTextView._heightConstraint
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/AutoResizeTextView.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/AutoResizeTextView.h
+-[ExpansionButton setPerceivableAreaWithLeftArea:rightArea:]
+-[ExpansionButton pointInside:withEvent:]
+-[ExpansionButton leftPerceivableArea]
+-[ExpansionButton setLeftPerceivableArea:]
+-[ExpansionButton rightPerceivableArea]
+-[ExpansionButton setRightPerceivableArea:]
+_OBJC_IVAR_$_ExpansionButton._leftPerceivableArea
+_OBJC_IVAR_$_ExpansionButton._rightPerceivableArea
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/ExpansionButton.m
+-[FloatingProgressView startProgressWithSecs:]
+-[FloatingProgressView endProgress]
+-[FloatingProgressView startAnimationWithSecs:]
+-[FloatingProgressView makeCircleAtLocation:radius:percent:]
+-[FloatingProgressView shapeLayer]
+-[FloatingProgressView setShapeLayer:]
+-[FloatingProgressView .cxx_destruct]
+_OBJC_IVAR_$_FloatingProgressView._shapeLayer
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingProgressView.m
++[Color navBarTint]
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/Color.m
++[ScreenCapture captureImageWithScale:size:baseOrientation:]
++[ScreenCapture orientationIndex:]
++[ScreenCapture transformWith:imageOrientation:baseSize:]
++[ScreenCapture captureImage]
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/ScreenCapture.m
+-[FloatingButtonWindow init]
+-[FloatingButtonWindow pointInside:withEvent:]
+-[FloatingButtonWindow buttonView]
+-[FloatingButtonWindow setButtonView:]
+-[FloatingButtonWindow .cxx_destruct]
+_OBJC_IVAR_$_FloatingButtonWindow._buttonView
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonWindow.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonWindow.h
+-[ScreenVideoCaptureSession init]
+-[ScreenVideoCaptureSession interval]
+-[ScreenVideoCaptureSession cleanupWriter]
+-[ScreenVideoCaptureSession dealloc]
+-[ScreenVideoCaptureSession tempFileURL:]
+-[ScreenVideoCaptureSession clearFile:]
+-[ScreenVideoCaptureSession setUpWriter]
+-[ScreenVideoCaptureSession fixedImageScale]
+-[ScreenVideoCaptureSession runRecordFrameLoop:]
+___48-[ScreenVideoCaptureSession runRecordFrameLoop:]_block_invoke
+___48-[ScreenVideoCaptureSession runRecordFrameLoop:]_block_invoke.91
+___copy_helper_block_.94
+___destroy_helper_block_.95
+-[ScreenVideoCaptureSession recordFrame]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___40-[ScreenVideoCaptureSession recordFrame]_block_invoke
+___copy_helper_block_.105
+___destroy_helper_block_.106
+-[ScreenVideoCaptureSession completeRecordingSession]
+___53-[ScreenVideoCaptureSession completeRecordingSession]_block_invoke
+___53-[ScreenVideoCaptureSession completeRecordingSession]_block_invoke_2
+___copy_helper_block_.131
+___destroy_helper_block_.132
+___53-[ScreenVideoCaptureSession completeRecordingSession]_block_invoke.134
+___copy_helper_block_.135
+___destroy_helper_block_.136
+___copy_helper_block_.138
+___destroy_helper_block_.139
+-[ScreenVideoCaptureSession startRecordingUntil:callback:]
+-[ScreenVideoCaptureSession stopRecording]
+-[ScreenVideoCaptureSession timerFired:]
+-[ScreenVideoCaptureSession writeVideoFrameAtTime:image:]
+-[ScreenVideoCaptureSession recording]
+-[ScreenVideoCaptureSession setRecording:]
+-[ScreenVideoCaptureSession startedAt]
+-[ScreenVideoCaptureSession setStartedAt:]
+-[ScreenVideoCaptureSession outputFile]
+-[ScreenVideoCaptureSession setOutputFile:]
+-[ScreenVideoCaptureSession initOrientation]
+-[ScreenVideoCaptureSession setInitOrientation:]
+-[ScreenVideoCaptureSession initScreenSize]
+-[ScreenVideoCaptureSession setInitScreenSize:]
+-[ScreenVideoCaptureSession initScreenScale]
+-[ScreenVideoCaptureSession setInitScreenScale:]
+-[ScreenVideoCaptureSession callback]
+-[ScreenVideoCaptureSession setCallback:]
+-[ScreenVideoCaptureSession frameRate]
+-[ScreenVideoCaptureSession setFrameRate:]
+-[ScreenVideoCaptureSession videoWriter]
+-[ScreenVideoCaptureSession setVideoWriter:]
+-[ScreenVideoCaptureSession videoWriterInput]
+-[ScreenVideoCaptureSession setVideoWriterInput:]
+-[ScreenVideoCaptureSession avAdaptor]
+-[ScreenVideoCaptureSession setAvAdaptor:]
+-[ScreenVideoCaptureSession timer]
+-[ScreenVideoCaptureSession setTimer:]
+-[ScreenVideoCaptureSession .cxx_destruct]
+_OBJC_IVAR_$_ScreenVideoCaptureSession._avAdaptor
+_OBJC_IVAR_$_ScreenVideoCaptureSession._videoWriterInput
+_OBJC_IVAR_$_ScreenVideoCaptureSession._videoWriter
+_OBJC_IVAR_$_ScreenVideoCaptureSession._outputFile
+_OBJC_IVAR_$_ScreenVideoCaptureSession._startedAt
+___block_descriptor_tmp.96
+___block_descriptor_tmp.107
+___block_descriptor_tmp.133
+___block_descriptor_tmp.137
+___block_descriptor_tmp.140
+_OBJC_IVAR_$_ScreenVideoCaptureSession._recording
+_OBJC_IVAR_$_ScreenVideoCaptureSession._initOrientation
+_OBJC_IVAR_$_ScreenVideoCaptureSession._initScreenSize
+_OBJC_IVAR_$_ScreenVideoCaptureSession._initScreenScale
+_OBJC_IVAR_$_ScreenVideoCaptureSession._callback
+_OBJC_IVAR_$_ScreenVideoCaptureSession._frameRate
+_OBJC_IVAR_$_ScreenVideoCaptureSession._timer
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/ScreenVideoCaptureSession.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/ScreenVideoCaptureSession.h
+__53-[ScreenVideoCaptureSession completeRecordingSession]_block_invoke.134
+__53-[ScreenVideoCaptureSession completeRecordingSession]_block_invoke_2
+__53-[ScreenVideoCaptureSession completeRecordingSession]_block_invoke
+__40-[ScreenVideoCaptureSession recordFrame]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__48-[ScreenVideoCaptureSession runRecordFrameLoop:]_block_invoke.91
+__48-[ScreenVideoCaptureSession runRecordFrameLoop:]_block_invoke
+-[FloatingButtonView setButtonState:]
+-[FloatingButtonView startProgressWithSecs:]
+-[FloatingButtonView endProgress]
+-[FloatingButtonView pointInside:withEvent:]
+-[FloatingButtonView buttonState]
+-[FloatingButtonView feedbackImage]
+-[FloatingButtonView setFeedbackImage:]
+-[FloatingButtonView stopImage]
+-[FloatingButtonView setStopImage:]
+-[FloatingButtonView progressView]
+-[FloatingButtonView setProgressView:]
+-[FloatingButtonView .cxx_destruct]
+_OBJC_IVAR_$_FloatingButtonView._buttonState
+_OBJC_IVAR_$_FloatingButtonView._feedbackImage
+_OBJC_IVAR_$_FloatingButtonView._stopImage
+_OBJC_IVAR_$_FloatingButtonView._progressView
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonView.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonView.h
++[AppFeedback shared]
++[AppFeedback frameworkBundle]
++[AppFeedback configureWithSlackToken:slackChannel:]
++[AppFeedback configureWithSlackChannel:]
++[AppFeedback feedbackCategories]
++[AppFeedback setFeedbackCategories:]
++[AppFeedback slackApiUrl]
++[AppFeedback setSlackApiUrl:]
++[AppFeedback isHidden]
++[AppFeedback setIsHidden:]
++[AppFeedback showFeedbackDialog]
++[AppFeedback readyFeedbackGesture]
++[AppFeedback readyScreenShot]
++[AppFeedback startRecording]
++[AppFeedback endRecording]
+-[AppFeedback init]
+-[AppFeedback configureWithSlackToken:slackChannel:]
+-[AppFeedback createFloatingViewController]
+-[AppFeedback setFeedbackCategories:]
+-[AppFeedback getFeedbackCategories]
+-[AppFeedback readyFeedbackGesture]
+___35-[AppFeedback readyFeedbackGesture]_block_invoke
+-[AppFeedback floatingButtinWindow]
+-[AppFeedback p_handleLongPressGesture:]
+-[AppFeedback p_removeLongPressGesture:]
+-[AppFeedback setIsHidden:]
+-[AppFeedback updateFloatingButtonState]
+-[AppFeedback showFeedbackDialog]
+-[AppFeedback showFeedbackDialogWithImage:video:]
+___49-[AppFeedback showFeedbackDialogWithImage:video:]_block_invoke
+___copy_helper_block_.153
+___destroy_helper_block_.154
+-[AppFeedback readyScreenShot]
+___30-[AppFeedback readyScreenShot]_block_invoke
+___copy_helper_block_.163
+___destroy_helper_block_.164
+-[AppFeedback startRecording]
+___29-[AppFeedback startRecording]_block_invoke
+___29-[AppFeedback startRecording]_block_invoke_2
+___copy_helper_block_.199
+___destroy_helper_block_.200
+-[AppFeedback endRecording]
+-[AppFeedback handleScreenShotNotification]
+-[AppFeedback presentViewController:animated:completion:]
+-[AppFeedback navigationController]
+-[AppFeedback floatingButtonTapped]
+-[AppFeedback reportViewControllerClosed]
+-[AppFeedback config]
+-[AppFeedback setConfig:]
+-[AppFeedback overlayWindow]
+-[AppFeedback setOverlayWindow:]
+-[AppFeedback captureOverlayWindow]
+-[AppFeedback setCaptureOverlayWindow:]
+-[AppFeedback floatingButtonController]
+-[AppFeedback setFloatingButtonController:]
+-[AppFeedback screenVideoCaptureSession]
+-[AppFeedback setScreenVideoCaptureSession:]
+-[AppFeedback isHidden]
+-[AppFeedback feedbackCategories]
+-[AppFeedback feedbackDialogPresented]
+-[AppFeedback setFeedbackDialogPresented:]
+-[AppFeedback reportViewController]
+-[AppFeedback setReportViewController:]
+-[AppFeedback setNavigationController:]
+-[AppFeedback .cxx_destruct]
+_sharedData
+_OBJC_IVAR_$_AppFeedback._isHidden
+_OBJC_IVAR_$_AppFeedback._reportViewController
+___block_descriptor_tmp.155
+___block_descriptor_tmp.166
+___block_descriptor_tmp.194
+___block_literal_global
+___block_descriptor_tmp.202
+_OBJC_IVAR_$_AppFeedback._navigationController
+_OBJC_IVAR_$_AppFeedback._config
+_OBJC_IVAR_$_AppFeedback._overlayWindow
+_OBJC_IVAR_$_AppFeedback._captureOverlayWindow
+_OBJC_IVAR_$_AppFeedback._floatingButtonController
+_OBJC_IVAR_$_AppFeedback._screenVideoCaptureSession
+_OBJC_IVAR_$_AppFeedback._feedbackCategories
+_OBJC_IVAR_$_AppFeedback._feedbackDialogPresented
+l_OBJC_PROTOCOL_$_FloatingButtonDelegate
+l_OBJC_LABEL_PROTOCOL_$_FloatingButtonDelegate
+l_OBJC_PROTOCOL_$_ReportViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_ReportViewControllerDelegate
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/AppFeedbackInternal.m
+__29-[AppFeedback startRecording]_block_invoke_2
+__29-[AppFeedback startRecording]_block_invoke
+__30-[AppFeedback readyScreenShot]_block_invoke
+__49-[AppFeedback showFeedbackDialogWithImage:video:]_block_invoke
+__35-[AppFeedback readyFeedbackGesture]_block_invoke
+-[FloatingButtonController init]
+-[FloatingButtonController hidden]
+-[FloatingButtonController setHidden:]
+-[FloatingButtonController setButtonState:]
+-[FloatingButtonController loadView]
+-[FloatingButtonController viewDidLoad]
+-[FloatingButtonController didReceiveMemoryWarning]
+-[FloatingButtonController viewDidLayoutSubviews]
+-[FloatingButtonController snapButtonToSocket]
+-[FloatingButtonController sockets]
+-[FloatingButtonController pandDidFire:]
+___40-[FloatingButtonController pandDidFire:]_block_invoke
+-[FloatingButtonController buttonTapped:]
+-[FloatingButtonController viewWillTransitionToSize:withTransitionCoordinator:]
+___79-[FloatingButtonController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+___copy_helper_block_.119
+___destroy_helper_block_.120
+___79-[FloatingButtonController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.123
+-[FloatingButtonController startProgressWithSecs:]
+-[FloatingButtonController endProgress]
+-[FloatingButtonController buttonState]
+-[FloatingButtonController window]
+-[FloatingButtonController setWindow:]
+-[FloatingButtonController delegate]
+-[FloatingButtonController setDelegate:]
+-[FloatingButtonController buttonView]
+-[FloatingButtonController setButtonView:]
+-[FloatingButtonController .cxx_destruct]
+___block_descriptor_tmp.122
+___block_descriptor_tmp.124
+_OBJC_IVAR_$_FloatingButtonController._buttonState
+_OBJC_IVAR_$_FloatingButtonController._window
+_OBJC_IVAR_$_FloatingButtonController._delegate
+_OBJC_IVAR_$_FloatingButtonController._buttonView
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonController.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonController.h
+__79-[FloatingButtonController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.123
+__79-[FloatingButtonController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+__40-[FloatingButtonController pandDidFire:]_block_invoke
+CGPointMake
+-[DrawView initWithCoder:]
+-[DrawView drawRect:]
+-[DrawView transformViewToImage]
+-[DrawView linkUIImageView:]
+-[DrawView touchesBegan:withEvent:]
+-[DrawView touchesMoved:withEvent:]
+-[DrawView touchesEnded:withEvent:]
+-[DrawView delegate]
+-[DrawView setDelegate:]
+-[DrawView imageView]
+-[DrawView setImageView:]
+-[DrawView panningStartPoint]
+-[DrawView setPanningStartPoint:]
+-[DrawView panningRect]
+-[DrawView setPanningRect:]
+-[DrawView lineWidthRatio]
+-[DrawView setLineWidthRatio:]
+-[DrawView .cxx_destruct]
+_OBJC_IVAR_$_DrawView._delegate
+_OBJC_IVAR_$_DrawView._imageView
+_OBJC_IVAR_$_DrawView._panningStartPoint
+_OBJC_IVAR_$_DrawView._panningRect
+_OBJC_IVAR_$_DrawView._lineWidthRatio
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/DrawView.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/DrawView.h
+CGSizeMake
+-[PopUpTransitionAnimater initWithPresenting:]
+-[PopUpTransitionAnimater init]
+-[PopUpTransitionAnimater transitionDuration:]
+-[PopUpTransitionAnimater animateTransition:]
+___45-[PopUpTransitionAnimater animateTransition:]_block_invoke
+___45-[PopUpTransitionAnimater animateTransition:]_block_invoke.19
+___45-[PopUpTransitionAnimater animateTransition:]_block_invoke_2
+___copy_helper_block_.23
+___destroy_helper_block_.24
+___45-[PopUpTransitionAnimater animateTransition:]_block_invoke.27
+___copy_helper_block_.30
+___destroy_helper_block_.31
+___copy_helper_block_.35
+___destroy_helper_block_.36
+-[PopUpTransitionAnimater presenting]
+-[PopUpTransitionAnimater setPresenting:]
+___block_descriptor_tmp.26
+___block_descriptor_tmp.32
+___block_descriptor_tmp.38
+_OBJC_IVAR_$_PopUpTransitionAnimater._presenting
+l_OBJC_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+l_OBJC_LABEL_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/PopUpTransitionAnimater.m
+__45-[PopUpTransitionAnimater animateTransition:]_block_invoke.27
+__45-[PopUpTransitionAnimater animateTransition:]_block_invoke_2
+__45-[PopUpTransitionAnimater animateTransition:]_block_invoke.19
+__45-[PopUpTransitionAnimater animateTransition:]_block_invoke
+-[Config init]
+-[Config loadInfoPlist]
+-[Config isValid]
+-[Config loadInfoPlistDic:]
+-[Config getRequiredKey:key:]
+-[Config categories]
+-[Config setCategories:]
+-[Config slackApiUrl]
+-[Config setSlackApiUrl:]
+-[Config slackToken]
+-[Config setSlackToken:]
+-[Config slackChannel]
+-[Config setSlackChannel:]
+-[Config branchName]
+-[Config setBranchName:]
+-[Config .cxx_destruct]
+_OBJC_IVAR_$_Config._categories
+_OBJC_IVAR_$_Config._slackApiUrl
+_OBJC_IVAR_$_Config._slackToken
+_OBJC_IVAR_$_Config._slackChannel
+_OBJC_IVAR_$_Config._branchName
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/Config.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/Config.h
+-[FloatingButtonControllerIOS9 viewDidLoad]
+-[FloatingButtonControllerIOS9 updateStatusBar:]
+-[FloatingButtonControllerIOS9 preferredStatusBarStyle]
+-[FloatingButtonControllerIOS9 prefersStatusBarHidden]
+-[FloatingButtonControllerIOS9 vcForStatusBarHidden:]
+-[FloatingButtonControllerIOS9 vcForStatusBarStyle:]
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonControllerIOS9.m
+-[FloatingButtonOuterView pointInside:withEvent:]
+-[FloatingButtonOuterView buttonView]
+-[FloatingButtonOuterView setButtonView:]
+-[FloatingButtonOuterView .cxx_destruct]
+_OBJC_IVAR_$_FloatingButtonOuterView._buttonView
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonOuterView.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/FloatingButtonOuterView.h
+-[ReportViewController viewDidLoad]
+-[ReportViewController viewWillAppear:]
+-[ReportViewController viewWillDisappear:]
+-[ReportViewController p_close]
+___31-[ReportViewController p_close]_block_invoke
+-[ReportViewController p_close:]
+___32-[ReportViewController p_close:]_block_invoke
+-[ReportViewController p_setupView]
+-[ReportViewController p_setupImageView]
+-[ReportViewController hiddenButton]
+-[ReportViewController closeKeyboard]
+-[ReportViewController p_createAlertWithTitle:message:cancelButtonTitle:destructiveButtonTitle:otherButtonTitle:tapBlock:]
+___122-[ReportViewController p_createAlertWithTitle:message:cancelButtonTitle:destructiveButtonTitle:otherButtonTitle:tapBlock:]_block_invoke
+___copy_helper_block_.140
+___destroy_helper_block_.141
+___122-[ReportViewController p_createAlertWithTitle:message:cancelButtonTitle:destructiveButtonTitle:otherButtonTitle:tapBlock:]_block_invoke.148
+___copy_helper_block_.149
+___destroy_helper_block_.150
+___122-[ReportViewController p_createAlertWithTitle:message:cancelButtonTitle:destructiveButtonTitle:otherButtonTitle:tapBlock:]_block_invoke.152
+-[ReportViewController p_takeScreenShot:]
+-[ReportViewController p_sendMessage]
+-[ReportViewController p_sendMessage:videoPath:]
+___48-[ReportViewController p_sendMessage:videoPath:]_block_invoke
+___48-[ReportViewController p_sendMessage:videoPath:]_block_invoke_2
+___copy_helper_block_.272
+___destroy_helper_block_.273
+___copy_helper_block_.285
+___destroy_helper_block_.286
+-[ReportViewController enableActivityIndicator:]
+-[ReportViewController setTextData:textDictionary:boundary:]
+-[ReportViewController setImageData:imageData:videoPath:boundary:]
+-[ReportViewController scrollToTextViewCaret:]
+-[ReportViewController generateVideoPreviewImage:]
+-[ReportViewController didTapOK:]
+___33-[ReportViewController didTapOK:]_block_invoke
+___copy_helper_block_.371
+___destroy_helper_block_.372
+___33-[ReportViewController didTapOK:]_block_invoke.378
+___copy_helper_block_.379
+___destroy_helper_block_.380
+___33-[ReportViewController didTapOK:]_block_invoke.394
+___copy_helper_block_.397
+___destroy_helper_block_.398
+-[ReportViewController didTapCancel:]
+-[ReportViewController videoButtonTapped:]
+___42-[ReportViewController videoButtonTapped:]_block_invoke
+___42-[ReportViewController videoButtonTapped:]_block_invoke_2
+___copy_helper_block_.410
+___destroy_helper_block_.411
+-[ReportViewController playButtonTapped:]
+___41-[ReportViewController playButtonTapped:]_block_invoke
+___copy_helper_block_.423
+___destroy_helper_block_.424
+-[ReportViewController closeKeyboardButtonTapped:]
+-[ReportViewController textFieldShouldReturn:]
+-[ReportViewController keyboardWillChange:]
+-[ReportViewController keyboardWillHidden:]
+-[ReportViewController textFieldDidBeginEditing:]
+-[ReportViewController textFieldDidEndEditing:]
+-[ReportViewController textViewShouldBeginEditing:]
+-[ReportViewController textViewDidChange:]
+-[ReportViewController textViewShouldEndEditing:]
+-[ReportViewController prepareForSegue:sender:]
+-[ReportViewController unwindToDrawViewController:]
+-[ReportViewController editButton:]
+-[ReportViewController setupNavBarAttributes:]
+-[ReportViewController selectFeedbackCategory:]
+___47-[ReportViewController selectFeedbackCategory:]_block_invoke
+___47-[ReportViewController selectFeedbackCategory:]_block_invoke_2
+___47-[ReportViewController selectFeedbackCategory:]_block_invoke_3
+___copy_helper_block_.513
+___destroy_helper_block_.514
+___copy_helper_block_.520
+___destroy_helper_block_.521
+-[ReportViewController doneSelectedFeedbackCategory::]
+-[ReportViewController container]
+-[ReportViewController setContainer:]
+-[ReportViewController imageView]
+-[ReportViewController setImageView:]
+-[ReportViewController image]
+-[ReportViewController setImage:]
+-[ReportViewController videoPath]
+-[ReportViewController setVideoPath:]
+-[ReportViewController drawnImage]
+-[ReportViewController setDrawnImage:]
+-[ReportViewController sourceClassName]
+-[ReportViewController setSourceClassName:]
+-[ReportViewController config]
+-[ReportViewController setConfig:]
+-[ReportViewController delegate]
+-[ReportViewController setDelegate:]
+-[ReportViewController titleTextField]
+-[ReportViewController setTitleTextField:]
+-[ReportViewController reporterName]
+-[ReportViewController setReporterName:]
+-[ReportViewController freeCommentField]
+-[ReportViewController setFreeCommentField:]
+-[ReportViewController scrollView]
+-[ReportViewController setScrollView:]
+-[ReportViewController playButton]
+-[ReportViewController setPlayButton:]
+-[ReportViewController keyboardAccessoryView]
+-[ReportViewController setKeyboardAccessoryView:]
+-[ReportViewController keyboardAccessoryBottomConstraint]
+-[ReportViewController setKeyboardAccessoryBottomConstraint:]
+-[ReportViewController freeCommentHeightConstraint]
+-[ReportViewController setFreeCommentHeightConstraint:]
+-[ReportViewController keyboardHeight]
+-[ReportViewController setKeyboardHeight:]
+-[ReportViewController activityView]
+-[ReportViewController setActivityView:]
+-[ReportViewController activityIndicator]
+-[ReportViewController setActivityIndicator:]
+-[ReportViewController sendButton]
+-[ReportViewController setSendButton:]
+-[ReportViewController DrawingButton]
+-[ReportViewController setDrawingButton:]
+-[ReportViewController RecordingButton]
+-[ReportViewController setRecordingButton:]
+-[ReportViewController feedbackCategoryLabel]
+-[ReportViewController setFeedbackCategoryLabel:]
+-[ReportViewController sendingLabel]
+-[ReportViewController setSendingLabel:]
+-[ReportViewController feedbackCategoryButton]
+-[ReportViewController setFeedbackCategoryButton:]
+-[ReportViewController notSelectedCategoryTitle]
+-[ReportViewController setNotSelectedCategoryTitle:]
+-[ReportViewController .cxx_destruct]
+___block_descriptor_tmp.77
+___block_descriptor_tmp.143
+___block_descriptor_tmp.151
+___block_descriptor_tmp.275
+___block_descriptor_tmp.288
+___block_descriptor_tmp.373
+___block_descriptor_tmp.381
+___block_descriptor_tmp.399
+___block_descriptor_tmp.406
+___block_literal_global.407
+___block_descriptor_tmp.412
+___block_descriptor_tmp.425
+_OBJC_IVAR_$_ReportViewController.focusOnReporterName
+_OBJC_IVAR_$_ReportViewController._scrollView
+___block_descriptor_tmp.507
+___block_literal_global.508
+___block_descriptor_tmp.515
+___block_descriptor_tmp.523
+_OBJC_IVAR_$_ReportViewController._container
+_OBJC_IVAR_$_ReportViewController._imageView
+_OBJC_IVAR_$_ReportViewController._image
+_OBJC_IVAR_$_ReportViewController._videoPath
+_OBJC_IVAR_$_ReportViewController._drawnImage
+_OBJC_IVAR_$_ReportViewController._sourceClassName
+_OBJC_IVAR_$_ReportViewController._config
+_OBJC_IVAR_$_ReportViewController._delegate
+_OBJC_IVAR_$_ReportViewController._titleTextField
+_OBJC_IVAR_$_ReportViewController._reporterName
+_OBJC_IVAR_$_ReportViewController._freeCommentField
+_OBJC_IVAR_$_ReportViewController._playButton
+_OBJC_IVAR_$_ReportViewController._keyboardAccessoryView
+_OBJC_IVAR_$_ReportViewController._keyboardAccessoryBottomConstraint
+_OBJC_IVAR_$_ReportViewController._freeCommentHeightConstraint
+_OBJC_IVAR_$_ReportViewController._keyboardHeight
+_OBJC_IVAR_$_ReportViewController._activityView
+_OBJC_IVAR_$_ReportViewController._activityIndicator
+_OBJC_IVAR_$_ReportViewController._sendButton
+_OBJC_IVAR_$_ReportViewController._DrawingButton
+_OBJC_IVAR_$_ReportViewController._RecordingButton
+_OBJC_IVAR_$_ReportViewController._feedbackCategoryLabel
+_OBJC_IVAR_$_ReportViewController._sendingLabel
+_OBJC_IVAR_$_ReportViewController._feedbackCategoryButton
+_OBJC_IVAR_$_ReportViewController._notSelectedCategoryTitle
+l_OBJC_PROTOCOL_$_UITextFieldDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_PROTOCOL_$_UITextViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/ReportViewController.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/ReportViewController.h
+__47-[ReportViewController selectFeedbackCategory:]_block_invoke_3
+__47-[ReportViewController selectFeedbackCategory:]_block_invoke_2
+__47-[ReportViewController selectFeedbackCategory:]_block_invoke
+__41-[ReportViewController playButtonTapped:]_block_invoke
+__42-[ReportViewController videoButtonTapped:]_block_invoke_2
+__42-[ReportViewController videoButtonTapped:]_block_invoke
+__33-[ReportViewController didTapOK:]_block_invoke.394
+__33-[ReportViewController didTapOK:]_block_invoke.378
+__33-[ReportViewController didTapOK:]_block_invoke
+__48-[ReportViewController p_sendMessage:videoPath:]_block_invoke_2
+__48-[ReportViewController p_sendMessage:videoPath:]_block_invoke
+__122-[ReportViewController p_createAlertWithTitle:message:cancelButtonTitle:destructiveButtonTitle:otherButtonTitle:tapBlock:]_block_invoke.152
+__122-[ReportViewController p_createAlertWithTitle:message:cancelButtonTitle:destructiveButtonTitle:otherButtonTitle:tapBlock:]_block_invoke.148
+__122-[ReportViewController p_createAlertWithTitle:message:cancelButtonTitle:destructiveButtonTitle:otherButtonTitle:tapBlock:]_block_invoke
+__32-[ReportViewController p_close:]_block_invoke
+__31-[ReportViewController p_close]_block_invoke
+-[CaptureOverlayWindow init]
+-[CaptureOverlayWindow setEnableCapture:]
+-[CaptureOverlayWindow showAnimationAt:]
+___40-[CaptureOverlayWindow showAnimationAt:]_block_invoke
+___40-[CaptureOverlayWindow showAnimationAt:]_block_invoke.37
+___copy_helper_block_.40
+___destroy_helper_block_.41
+-[CaptureOverlayWindow pointInside:withEvent:]
+-[CaptureOverlayWindow isUnderFloatingButton:withEvent:]
+-[CaptureOverlayWindow enableCapture]
+___block_descriptor_tmp.43
+_OBJC_IVAR_$_CaptureOverlayWindow._enableCapture
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/CaptureOverlayWindow.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/CaptureOverlayWindow.h
+__40-[CaptureOverlayWindow showAnimationAt:]_block_invoke.37
+__40-[CaptureOverlayWindow showAnimationAt:]_block_invoke
+-[SendData imageData]
+-[SendData setImageData:]
+-[SendData videoPath]
+-[SendData setVideoPath:]
+-[SendData title]
+-[SendData setTitle:]
+-[SendData category]
+-[SendData setCategory:]
+-[SendData comment]
+-[SendData setComment:]
+-[SendData username]
+-[SendData setUsername:]
+-[SendData appTitle]
+-[SendData setAppTitle:]
+-[SendData appVersion]
+-[SendData setAppVersion:]
+-[SendData appBuildVersion]
+-[SendData setAppBuildVersion:]
+-[SendData systemVersion]
+-[SendData setSystemVersion:]
+-[SendData modelCode]
+-[SendData setModelCode:]
+-[SendData modelName]
+-[SendData setModelName:]
+-[SendData .cxx_destruct]
+-[SlackAPI initWithToken:channel:apiUrl:branch:]
+-[SlackAPI postData:completionHandler:]
+-[SlackAPI setTextData:textDictionary:boundary:]
+-[SlackAPI setImageData:imageData:videoPath:boundary:]
+-[SlackAPI token]
+-[SlackAPI setToken:]
+-[SlackAPI channel]
+-[SlackAPI setChannel:]
+-[SlackAPI apiUrl]
+-[SlackAPI setApiUrl:]
+-[SlackAPI branchName]
+-[SlackAPI setBranchName:]
+-[SlackAPI .cxx_destruct]
+_OBJC_IVAR_$_SendData._imageData
+_OBJC_IVAR_$_SendData._videoPath
+_OBJC_IVAR_$_SendData._title
+_OBJC_IVAR_$_SendData._category
+_OBJC_IVAR_$_SendData._comment
+_OBJC_IVAR_$_SendData._username
+_OBJC_IVAR_$_SendData._appTitle
+_OBJC_IVAR_$_SendData._appVersion
+_OBJC_IVAR_$_SendData._appBuildVersion
+_OBJC_IVAR_$_SendData._systemVersion
+_OBJC_IVAR_$_SendData._modelCode
+_OBJC_IVAR_$_SendData._modelName
+_OBJC_IVAR_$_SlackAPI._token
+_OBJC_IVAR_$_SlackAPI._channel
+_OBJC_IVAR_$_SlackAPI._apiUrl
+_OBJC_IVAR_$_SlackAPI._branchName
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/SlackAPI.m
+/Users/tomoki_sun/Desktop/Daily_App/54/Carthage/Checkouts/AppFeedback-ios/AppFeedback/SlackAPI.h
+/Users/tomoki_sun/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/AppFeedback-ios/1.3.0/Build/Intermediates.noindex/ArchiveIntermediates/AppFeedback/IntermediateBuildFilesPath/AppFeedback.build/Release-iphoneos/AppFeedback.build/DerivedSources/AppFeedback_vers.c

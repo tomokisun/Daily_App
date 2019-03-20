@@ -1,0 +1,6 @@
+framework module AppFeedback {
+  umbrella header "AppFeedback.h"
+
+  export *
+  module * { export * }
+}

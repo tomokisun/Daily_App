@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
+        AppFeedback.readyFeedbackGesture()
+        AppFeedback.readyScreenShot()
+        AppFeedback.configure(withSlackToken: "yEu2f77V1sPbAvcI2XtTzjVc", slackChannel: "daily_app")
+        AppFeedback.slackApiUrl = "https://hooks.slack.com/services/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"
         return true
     }
 

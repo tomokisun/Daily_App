@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.3.0",
+  "iOS" : [
+    {
+      "name" : "AppFeedback",
+      "hash" : "270f9182b755e5b81a05b33a4474b8b3d34e41100998096ff6300932c5f50672"
+    }
+  ]
+}

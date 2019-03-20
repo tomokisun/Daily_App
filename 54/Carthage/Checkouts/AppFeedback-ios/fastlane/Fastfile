@@ -1,0 +1,33 @@
+fastlane_version "2.1.1"
+
+default_platform :ios
+
+platform :ios do
+  scheme = 'AppFeedback'
+  workspace = 'AppFeedback.xcworkspace'
+  project = 'AppFeedback.xcodeproj'
+  repository = 'SDKCore/AppFeedback'
+  configuration = 'Release'
+
+  before_all do |lane, options|
+  end
+
+  lane :test do
+    # try carthage build
+    carthage(command: 'build',
+             no_skip_current: true,
+             platform: 'iOS',
+             configuration: configuration)
+
+    run_tests(
+      project: project,
+      scheme: scheme,
+      skip_build: true
+    )
+
+    slather(
+      proj: project,
+      scheme: scheme,
+    )
+  end
+end
