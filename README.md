@@ -58,6 +58,7 @@
 - Day52: [アプリ図鑑](https://github.com/tomoki69386/Daily_App/blob/master/52/README.md)
 - Day53: [ARMOJI](https://github.com/tomoki69386/Daily_App/blob/master/53/README.md)
 - Day54: [フィードバックSDK](https://github.com/tomoki69386/Daily_App/blob/master/54/README.md)
+- Day55: [ルーレット](https://github.com/tomoki69386/Daily_App/blob/master/55/README.md)
 
 # 経緯
 
