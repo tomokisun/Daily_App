@@ -22,19 +22,39 @@ import Template
     }
 }
 
-class ViewController: UITableViewController {
+class ViewController: UIViewController {
     
     private var priceView: TotalView!
+    @IBOutlet private weak var tableView: UITableView! {
+        didSet {
+            tableView.register(ItemTableViewCell.nib, forCellReuseIdentifier: ItemTableViewCell.name)
+        }
+    }
+    @IBOutlet private weak var totalPriceView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let view = TotalView.loadFromNib()
-        priceView = view
-        tableView.addSubview(priceView)
+        let commonView = TotalView.loadFromNib()
+        priceView = commonView
+        totalPriceView.addSubview(priceView)
         priceView.snp.makeConstraints { make in
-            make.left.right.bottom.equalToSuperview()
-            make.height.equalTo(80)
+            make.top.left.right.bottom.equalToSuperview()
         }
+        tableView.reloadData()
+    }
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.name) else {
+            assertionFailure("error")
+            return UITableViewCell()
+        }
+        return cell
     }
 }
