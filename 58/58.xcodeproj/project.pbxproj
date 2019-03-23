@@ -12,6 +12,10 @@
 		B7CE3A2422468FF800AD427D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CE3A2222468FF800AD427D /* Main.storyboard */; };
 		B7CE3A2622468FF900AD427D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CE3A2522468FF900AD427D /* Assets.xcassets */; };
 		B7CE3A2922468FF900AD427D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CE3A2722468FF900AD427D /* LaunchScreen.storyboard */; };
+		B7CE3A4E2246909700AD427D /* Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CE3A4D2246909700AD427D /* Template.framework */; };
+		B7CE3A51224699AB00AD427D /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CE3A50224699AB00AD427D /* TotalView.swift */; };
+		B7CE3A53224699B300AD427D /* TotalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CE3A52224699B300AD427D /* TotalView.xib */; };
+		B7CE3A5522469BC700AD427D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CE3A5422469BC700AD427D /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		B7CE3A2A22468FF900AD427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7CE3A2F22468FF900AD427D /* 58Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 58Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CE3A3A22468FF900AD427D /* 58UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 58UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CE3A4D2246909700AD427D /* Template.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Template.framework; path = Carthage/Build/iOS/Template.framework; sourceTree = "<group>"; };
+		B7CE3A50224699AB00AD427D /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
+		B7CE3A52224699B300AD427D /* TotalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalView.xib; sourceTree = "<group>"; };
+		B7CE3A5422469BC700AD427D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7CE3A5522469BC700AD427D /* SnapKit.framework in Frameworks */,
+				B7CE3A4E2246909700AD427D /* Template.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +83,7 @@
 			children = (
 				B7CE3A1D22468FF800AD427D /* 58 */,
 				B7CE3A1C22468FF800AD427D /* Products */,
+				B7CE3A4C2246909400AD427D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,12 +102,23 @@
 			children = (
 				B7CE3A1E22468FF800AD427D /* AppDelegate.swift */,
 				B7CE3A2022468FF800AD427D /* ViewController.swift */,
+				B7CE3A50224699AB00AD427D /* TotalView.swift */,
+				B7CE3A52224699B300AD427D /* TotalView.xib */,
 				B7CE3A2222468FF800AD427D /* Main.storyboard */,
 				B7CE3A2522468FF900AD427D /* Assets.xcassets */,
 				B7CE3A2722468FF900AD427D /* LaunchScreen.storyboard */,
 				B7CE3A2A22468FF900AD427D /* Info.plist */,
 			);
 			path = 58;
+			sourceTree = "<group>";
+		};
+		B7CE3A4C2246909400AD427D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7CE3A5422469BC700AD427D /* SnapKit.framework */,
+				B7CE3A4D2246909700AD427D /* Template.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +131,7 @@
 				B7CE3A1722468FF800AD427D /* Sources */,
 				B7CE3A1822468FF800AD427D /* Frameworks */,
 				B7CE3A1922468FF800AD427D /* Resources */,
+				B7CE3A4F224690A000AD427D /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -204,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7CE3A2922468FF900AD427D /* LaunchScreen.storyboard in Resources */,
+				B7CE3A53224699B300AD427D /* TotalView.xib in Resources */,
 				B7CE3A2622468FF900AD427D /* Assets.xcassets in Resources */,
 				B7CE3A2422468FF800AD427D /* Main.storyboard in Resources */,
 			);
@@ -225,11 +249,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B7CE3A4F224690A000AD427D /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Template.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B7CE3A1722468FF800AD427D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7CE3A51224699AB00AD427D /* TotalView.swift in Sources */,
 				B7CE3A2122468FF800AD427D /* ViewController.swift in Sources */,
 				B7CE3A1F22468FF800AD427D /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +453,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 58/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,6 +474,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 58/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,24 +1,650 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EjM-pq-JJu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Subsclip-->
+        <scene sceneID="nl2-UL-el6">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="pUD-15-bZG" customClass="ViewController" customModule="_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="76" estimatedRowHeight="-1" sectionHeaderHeight="15" sectionFooterHeight="18" id="g87-EK-F32">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="3月25日" id="W3E-Xe-e29">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="o4o-K4-PdI">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o4o-K4-PdI" id="vqG-fm-pF0">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotify" translatesAutoresizingMaskIntoConstraints="NO" id="LBX-mZ-D0d" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="8jk-Lj-RxH"/>
+                                                        <constraint firstAttribute="width" constant="60" id="p39-J1-ER1"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOO-Ao-OaO">
+                                                    <rect key="frame" x="318" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥450" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aug-6a-sAx">
+                                                    <rect key="frame" x="274" y="28" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="05S-Lp-nVk">
+                                                    <rect key="frame" x="88" y="8" width="138" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKQ-Mf-GlI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azh-Jq-llx">
+                                                            <rect key="frame" x="0.0" y="20" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月25日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOv-gu-b3F">
+                                                            <rect key="frame" x="0.0" y="40" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SOO-Ao-OaO" firstAttribute="leading" secondItem="Aug-6a-sAx" secondAttribute="trailing" constant="2" id="H35-d2-qP8"/>
+                                                <constraint firstItem="SOO-Ao-OaO" firstAttribute="trailing" secondItem="vqG-fm-pF0" secondAttribute="trailingMargin" id="LpB-Vx-aNn"/>
+                                                <constraint firstItem="Aug-6a-sAx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="05S-Lp-nVk" secondAttribute="trailing" constant="12" id="UMh-LW-Fc5"/>
+                                                <constraint firstItem="05S-Lp-nVk" firstAttribute="leading" secondItem="LBX-mZ-D0d" secondAttribute="trailing" constant="12" id="Vdx-RO-AMu"/>
+                                                <constraint firstItem="LBX-mZ-D0d" firstAttribute="leading" secondItem="vqG-fm-pF0" secondAttribute="leading" constant="16" id="WeR-KM-XeS"/>
+                                                <constraint firstItem="LBX-mZ-D0d" firstAttribute="top" secondItem="vqG-fm-pF0" secondAttribute="top" constant="8" id="h8N-Hq-zmY"/>
+                                                <constraint firstItem="Aug-6a-sAx" firstAttribute="centerY" secondItem="vqG-fm-pF0" secondAttribute="centerY" id="hhv-MO-fMG"/>
+                                                <constraint firstItem="SOO-Ao-OaO" firstAttribute="centerY" secondItem="vqG-fm-pF0" secondAttribute="centerY" id="lMT-1j-rWR"/>
+                                                <constraint firstItem="05S-Lp-nVk" firstAttribute="top" secondItem="LBX-mZ-D0d" secondAttribute="top" id="nd5-eb-CGl"/>
+                                                <constraint firstItem="05S-Lp-nVk" firstAttribute="bottom" secondItem="LBX-mZ-D0d" secondAttribute="bottom" id="rXo-ph-BBi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="ldc-mG-J6E">
+                                        <rect key="frame" x="0.0" y="131.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ldc-mG-J6E" id="lRn-ap-b4N">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Netflix" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-dw-0th" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="hcX-Tl-1Cw"/>
+                                                        <constraint firstAttribute="height" constant="60" id="mwH-re-OcE"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQo-WF-cio">
+                                                    <rect key="frame" x="318" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥980" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRa-iJ-sfn">
+                                                    <rect key="frame" x="274" y="28" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZOG-9z-cUg">
+                                                    <rect key="frame" x="88" y="8" width="138" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netflix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ru-d2-yb9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スタンダードプラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-yK-vOE">
+                                                            <rect key="frame" x="0.0" y="20" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月25日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zX1-Jg-8FM">
+                                                            <rect key="frame" x="0.0" y="40" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fRa-iJ-sfn" firstAttribute="centerY" secondItem="lRn-ap-b4N" secondAttribute="centerY" id="4gy-75-h4X"/>
+                                                <constraint firstItem="JQo-WF-cio" firstAttribute="leading" secondItem="fRa-iJ-sfn" secondAttribute="trailing" constant="2" id="Ik8-Oa-7to"/>
+                                                <constraint firstItem="ZOG-9z-cUg" firstAttribute="top" secondItem="H4I-dw-0th" secondAttribute="top" id="UPk-Uy-6id"/>
+                                                <constraint firstItem="JQo-WF-cio" firstAttribute="centerY" secondItem="lRn-ap-b4N" secondAttribute="centerY" id="W4T-rY-h1j"/>
+                                                <constraint firstItem="fRa-iJ-sfn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZOG-9z-cUg" secondAttribute="trailing" constant="12" id="W6f-zq-RtH"/>
+                                                <constraint firstItem="ZOG-9z-cUg" firstAttribute="leading" secondItem="H4I-dw-0th" secondAttribute="trailing" constant="12" id="WMr-Tr-XyY"/>
+                                                <constraint firstItem="ZOG-9z-cUg" firstAttribute="bottom" secondItem="H4I-dw-0th" secondAttribute="bottom" id="WRT-Pc-RPu"/>
+                                                <constraint firstItem="JQo-WF-cio" firstAttribute="trailing" secondItem="lRn-ap-b4N" secondAttribute="trailingMargin" id="agc-af-HhA"/>
+                                                <constraint firstItem="H4I-dw-0th" firstAttribute="leading" secondItem="lRn-ap-b4N" secondAttribute="leading" constant="16" id="itU-sH-APu"/>
+                                                <constraint firstItem="H4I-dw-0th" firstAttribute="top" secondItem="lRn-ap-b4N" secondAttribute="top" constant="8" id="kTT-Gg-KIe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="3月26日" id="JEC-hX-wNQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="G2o-bO-HMe">
+                                        <rect key="frame" x="0.0" y="263.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G2o-bO-HMe" id="Yfb-lV-kCc">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewsPicks" translatesAutoresizingMaskIntoConstraints="NO" id="zhc-aZ-nEn" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="ZNd-OU-wuV"/>
+                                                        <constraint firstAttribute="height" constant="60" id="gcC-dV-W9P"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTT-2V-isZ">
+                                                    <rect key="frame" x="318" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥1,500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpP-6M-JZA">
+                                                    <rect key="frame" x="263" y="28" width="53" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="43J-SE-N37">
+                                                    <rect key="frame" x="88" y="8" width="138" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsPicks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i91-5e-8yA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月額プラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2j-mW-avy">
+                                                            <rect key="frame" x="0.0" y="20" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月26日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-wa-YNG">
+                                                            <rect key="frame" x="0.0" y="40" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="43J-SE-N37" firstAttribute="top" secondItem="zhc-aZ-nEn" secondAttribute="top" id="VIt-TQ-YBo"/>
+                                                <constraint firstItem="43J-SE-N37" firstAttribute="bottom" secondItem="zhc-aZ-nEn" secondAttribute="bottom" id="WRE-0H-NmO"/>
+                                                <constraint firstItem="YTT-2V-isZ" firstAttribute="trailing" secondItem="Yfb-lV-kCc" secondAttribute="trailingMargin" id="YyX-lu-aZf"/>
+                                                <constraint firstItem="YTT-2V-isZ" firstAttribute="leading" secondItem="LpP-6M-JZA" secondAttribute="trailing" constant="2" id="Zdb-VK-Tsm"/>
+                                                <constraint firstItem="zhc-aZ-nEn" firstAttribute="leading" secondItem="Yfb-lV-kCc" secondAttribute="leading" constant="16" id="iqD-Zq-KLI"/>
+                                                <constraint firstItem="LpP-6M-JZA" firstAttribute="centerY" secondItem="Yfb-lV-kCc" secondAttribute="centerY" id="kMF-o9-GQR"/>
+                                                <constraint firstItem="YTT-2V-isZ" firstAttribute="centerY" secondItem="Yfb-lV-kCc" secondAttribute="centerY" id="pmB-Ik-aHy"/>
+                                                <constraint firstItem="zhc-aZ-nEn" firstAttribute="top" secondItem="Yfb-lV-kCc" secondAttribute="top" constant="8" id="wR7-PQ-2ra"/>
+                                                <constraint firstItem="43J-SE-N37" firstAttribute="leading" secondItem="zhc-aZ-nEn" secondAttribute="trailing" constant="12" id="ycT-HG-KZb"/>
+                                                <constraint firstItem="LpP-6M-JZA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="43J-SE-N37" secondAttribute="trailing" constant="12" id="zNM-NQ-f24"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="sAR-a6-0jh">
+                                        <rect key="frame" x="0.0" y="339.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sAR-a6-0jh" id="50N-P0-O1r">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adobe" translatesAutoresizingMaskIntoConstraints="NO" id="RTw-bl-2fe" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="657-NP-vfn"/>
+                                                        <constraint firstAttribute="width" constant="60" id="Lp1-vI-r4s"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-GQ-Fe5">
+                                                    <rect key="frame" x="318" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥5,680" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OW-P2-Kuc">
+                                                    <rect key="frame" x="260.5" y="28" width="55.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gM6-8F-iG5">
+                                                    <rect key="frame" x="88" y="8" width="138" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adobe CC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wH-1P-Byi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コンプリートプラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-5D-PMO">
+                                                            <rect key="frame" x="0.0" y="20" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月26日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKv-gO-ugZ">
+                                                            <rect key="frame" x="0.0" y="40" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gM6-8F-iG5" firstAttribute="leading" secondItem="RTw-bl-2fe" secondAttribute="trailing" constant="12" id="6UP-7F-ozN"/>
+                                                <constraint firstItem="gM6-8F-iG5" firstAttribute="top" secondItem="RTw-bl-2fe" secondAttribute="top" id="8ep-11-trH"/>
+                                                <constraint firstItem="6OW-P2-Kuc" firstAttribute="centerY" secondItem="50N-P0-O1r" secondAttribute="centerY" id="a6X-LQ-5dw"/>
+                                                <constraint firstItem="Upr-GQ-Fe5" firstAttribute="leading" secondItem="6OW-P2-Kuc" secondAttribute="trailing" constant="2" id="bhy-Qp-sIz"/>
+                                                <constraint firstItem="Upr-GQ-Fe5" firstAttribute="trailing" secondItem="50N-P0-O1r" secondAttribute="trailingMargin" id="c2f-Xv-X5p"/>
+                                                <constraint firstItem="Upr-GQ-Fe5" firstAttribute="centerY" secondItem="50N-P0-O1r" secondAttribute="centerY" id="fze-Z2-6I7"/>
+                                                <constraint firstItem="RTw-bl-2fe" firstAttribute="leading" secondItem="50N-P0-O1r" secondAttribute="leading" constant="16" id="glX-8S-Pmi"/>
+                                                <constraint firstItem="gM6-8F-iG5" firstAttribute="bottom" secondItem="RTw-bl-2fe" secondAttribute="bottom" id="i1C-gv-htl"/>
+                                                <constraint firstItem="6OW-P2-Kuc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gM6-8F-iG5" secondAttribute="trailing" constant="12" id="jCw-ix-nhC"/>
+                                                <constraint firstItem="RTw-bl-2fe" firstAttribute="top" secondItem="50N-P0-O1r" secondAttribute="top" constant="8" id="xnd-ZG-cts"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="HWP-44-lzp">
+                                        <rect key="frame" x="0.0" y="415.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HWP-44-lzp" id="bqZ-uo-l9r">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icloud" translatesAutoresizingMaskIntoConstraints="NO" id="iX7-Ns-qhg" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="CTZ-YT-zeN"/>
+                                                        <constraint firstAttribute="width" constant="60" id="RNE-DS-moJ"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOu-nk-9is">
+                                                    <rect key="frame" x="318" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMu-Dh-c7O">
+                                                    <rect key="frame" x="274" y="28" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-pb-AuM">
+                                                    <rect key="frame" x="88" y="8" width="138" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCloud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUX-H3-4Pi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200GBプラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5p-xm-76C">
+                                                            <rect key="frame" x="0.0" y="20" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月26日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfb-4u-Xqp">
+                                                            <rect key="frame" x="0.0" y="40" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uMu-Dh-c7O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fDh-pb-AuM" secondAttribute="trailing" constant="12" id="8LK-D8-cHU"/>
+                                                <constraint firstItem="GOu-nk-9is" firstAttribute="centerY" secondItem="bqZ-uo-l9r" secondAttribute="centerY" id="Drc-P4-vzr"/>
+                                                <constraint firstItem="iX7-Ns-qhg" firstAttribute="top" secondItem="bqZ-uo-l9r" secondAttribute="top" constant="8" id="SeP-md-HDx"/>
+                                                <constraint firstItem="fDh-pb-AuM" firstAttribute="bottom" secondItem="iX7-Ns-qhg" secondAttribute="bottom" id="Uzb-Hv-8rM"/>
+                                                <constraint firstItem="uMu-Dh-c7O" firstAttribute="centerY" secondItem="bqZ-uo-l9r" secondAttribute="centerY" id="VmD-3K-QTB"/>
+                                                <constraint firstItem="GOu-nk-9is" firstAttribute="leading" secondItem="uMu-Dh-c7O" secondAttribute="trailing" constant="2" id="amy-kq-sy1"/>
+                                                <constraint firstItem="iX7-Ns-qhg" firstAttribute="leading" secondItem="bqZ-uo-l9r" secondAttribute="leading" constant="16" id="lct-Ij-y2a"/>
+                                                <constraint firstItem="GOu-nk-9is" firstAttribute="trailing" secondItem="bqZ-uo-l9r" secondAttribute="trailingMargin" id="pmv-ls-lcv"/>
+                                                <constraint firstItem="fDh-pb-AuM" firstAttribute="leading" secondItem="iX7-Ns-qhg" secondAttribute="trailing" constant="12" id="q2t-xg-NKi"/>
+                                                <constraint firstItem="fDh-pb-AuM" firstAttribute="top" secondItem="iX7-Ns-qhg" secondAttribute="top" id="wxJ-8V-viL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="3月27日" id="WWe-Du-YyU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="H9s-yd-TzH">
+                                        <rect key="frame" x="0.0" y="547.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H9s-yd-TzH" id="xHp-V0-gxW">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouTube" translatesAutoresizingMaskIntoConstraints="NO" id="A7K-wi-UqW" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="jXE-8s-qG3"/>
+                                                        <constraint firstAttribute="width" constant="60" id="nEC-hj-Uox"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-AA-mYp">
+                                                    <rect key="frame" x="318" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥1,180" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rl-kD-kDW">
+                                                    <rect key="frame" x="265.5" y="28" width="50.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ttN-YB-Qj8">
+                                                    <rect key="frame" x="88" y="8" width="151.5" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTubePremium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt6-lj-m3y">
+                                                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月額プラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPV-Qu-eoV">
+                                                            <rect key="frame" x="0.0" y="20" width="151.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月27日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaA-MO-2wW">
+                                                            <rect key="frame" x="0.0" y="40" width="151.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aJG-AA-mYp" firstAttribute="centerY" secondItem="xHp-V0-gxW" secondAttribute="centerY" id="6ci-ss-WM2"/>
+                                                <constraint firstItem="A7K-wi-UqW" firstAttribute="top" secondItem="xHp-V0-gxW" secondAttribute="top" constant="8" id="J3V-bw-yTk"/>
+                                                <constraint firstItem="A7K-wi-UqW" firstAttribute="leading" secondItem="xHp-V0-gxW" secondAttribute="leading" constant="16" id="NTk-92-YBr"/>
+                                                <constraint firstItem="ttN-YB-Qj8" firstAttribute="bottom" secondItem="A7K-wi-UqW" secondAttribute="bottom" id="Q4N-Mw-Q7H"/>
+                                                <constraint firstItem="1rl-kD-kDW" firstAttribute="centerY" secondItem="xHp-V0-gxW" secondAttribute="centerY" id="RGs-mR-Vfy"/>
+                                                <constraint firstItem="ttN-YB-Qj8" firstAttribute="leading" secondItem="A7K-wi-UqW" secondAttribute="trailing" constant="12" id="VNY-oN-IgF"/>
+                                                <constraint firstItem="aJG-AA-mYp" firstAttribute="leading" secondItem="1rl-kD-kDW" secondAttribute="trailing" constant="2" id="dLl-Bl-G4C"/>
+                                                <constraint firstItem="1rl-kD-kDW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ttN-YB-Qj8" secondAttribute="trailing" constant="12" id="djO-WP-3gB"/>
+                                                <constraint firstItem="aJG-AA-mYp" firstAttribute="trailing" secondItem="xHp-V0-gxW" secondAttribute="trailingMargin" id="jaH-bT-g2O"/>
+                                                <constraint firstItem="ttN-YB-Qj8" firstAttribute="top" secondItem="A7K-wi-UqW" secondAttribute="top" id="prN-hw-pA8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="48k-fg-4Lh">
+                                        <rect key="frame" x="0.0" y="623.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="48k-fg-4Lh" id="rtk-Qr-j6Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Evernote" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-P5-3wy" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="AMb-8A-bLj"/>
+                                                        <constraint firstAttribute="width" constant="60" id="S7y-3z-7Gd"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzV-Je-zGD">
+                                                    <rect key="frame" x="326" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOx-fp-mJ0">
+                                                    <rect key="frame" x="282" y="27.5" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fGN-HR-dbO">
+                                                    <rect key="frame" x="88" y="8" width="138" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evernote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmT-kB-XzU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EvernotePremium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2a8-oS-wuu">
+                                                            <rect key="frame" x="0.0" y="20" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月27日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65p-4l-fhk">
+                                                            <rect key="frame" x="0.0" y="40" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Q01-P5-3wy" firstAttribute="leading" secondItem="rtk-Qr-j6Y" secondAttribute="leading" constant="16" id="0FX-ej-kZU"/>
+                                                <constraint firstItem="fGN-HR-dbO" firstAttribute="leading" secondItem="Q01-P5-3wy" secondAttribute="trailing" constant="12" id="0pP-0y-haI"/>
+                                                <constraint firstItem="dzV-Je-zGD" firstAttribute="leading" secondItem="WOx-fp-mJ0" secondAttribute="trailing" constant="2" id="WhI-ry-g4N"/>
+                                                <constraint firstItem="WOx-fp-mJ0" firstAttribute="centerY" secondItem="rtk-Qr-j6Y" secondAttribute="centerY" id="Ytu-Q4-5J6"/>
+                                                <constraint firstItem="dzV-Je-zGD" firstAttribute="centerY" secondItem="rtk-Qr-j6Y" secondAttribute="centerY" id="Zme-Ye-yAK"/>
+                                                <constraint firstItem="WOx-fp-mJ0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fGN-HR-dbO" secondAttribute="trailing" constant="12" id="e0W-0i-GTM"/>
+                                                <constraint firstItem="Q01-P5-3wy" firstAttribute="top" secondItem="rtk-Qr-j6Y" secondAttribute="top" constant="8" id="euZ-O3-UF5"/>
+                                                <constraint firstItem="fGN-HR-dbO" firstAttribute="top" secondItem="Q01-P5-3wy" secondAttribute="top" id="gfU-wU-WNh"/>
+                                                <constraint firstItem="fGN-HR-dbO" firstAttribute="bottom" secondItem="Q01-P5-3wy" secondAttribute="bottom" id="hBU-bh-SFK"/>
+                                                <constraint firstItem="dzV-Je-zGD" firstAttribute="trailing" secondItem="rtk-Qr-j6Y" secondAttribute="trailingMargin" id="hH6-ID-Q4X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="WKi-j7-7GE">
+                                        <rect key="frame" x="0.0" y="699.5" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WKi-j7-7GE" id="Crc-Fq-IIj">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="kGx-oV-oub" customClass="iconImageView" customModule="_8" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="4xv-30-003"/>
+                                                        <constraint firstAttribute="width" constant="60" id="jOC-m7-WJP"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiu">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBm-2D-572">
+                                                    <rect key="frame" x="326" y="33" width="15" height="10"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ6-EM-eQd">
+                                                    <rect key="frame" x="304" y="27.5" width="20" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VlP-hX-94e">
+                                                    <rect key="frame" x="88" y="8" width="138" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.87000000476837158" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjm-rA-7kH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月額プラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zx-i3-deD">
+                                                            <rect key="frame" x="0.0" y="20" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.54000002145767212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新：2018年3月27日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urK-HB-cHO">
+                                                            <rect key="frame" x="0.0" y="40" width="138" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LZ6-EM-eQd" firstAttribute="centerY" secondItem="Crc-Fq-IIj" secondAttribute="centerY" id="Eld-rQ-XVP"/>
+                                                <constraint firstItem="XBm-2D-572" firstAttribute="leading" secondItem="LZ6-EM-eQd" secondAttribute="trailing" constant="2" id="F9m-hO-uN4"/>
+                                                <constraint firstItem="XBm-2D-572" firstAttribute="trailing" secondItem="Crc-Fq-IIj" secondAttribute="trailingMargin" id="NCP-fz-wSE"/>
+                                                <constraint firstItem="LZ6-EM-eQd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VlP-hX-94e" secondAttribute="trailing" constant="12" id="V6o-VU-D4V"/>
+                                                <constraint firstItem="XBm-2D-572" firstAttribute="centerY" secondItem="Crc-Fq-IIj" secondAttribute="centerY" id="Wgc-4z-Ad2"/>
+                                                <constraint firstItem="VlP-hX-94e" firstAttribute="bottom" secondItem="kGx-oV-oub" secondAttribute="bottom" id="YJm-sY-N46"/>
+                                                <constraint firstItem="VlP-hX-94e" firstAttribute="leading" secondItem="kGx-oV-oub" secondAttribute="trailing" constant="12" id="Z7m-ZP-nny"/>
+                                                <constraint firstItem="kGx-oV-oub" firstAttribute="top" secondItem="Crc-Fq-IIj" secondAttribute="top" constant="8" id="c23-Vf-8mA"/>
+                                                <constraint firstItem="VlP-hX-94e" firstAttribute="top" secondItem="kGx-oV-oub" secondAttribute="top" id="hIe-AS-U1Q"/>
+                                                <constraint firstItem="kGx-oV-oub" firstAttribute="leading" secondItem="Crc-Fq-IIj" secondAttribute="leading" constant="16" id="otg-Sm-1lb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="pUD-15-bZG" id="Dug-UI-1M8"/>
+                            <outlet property="delegate" destination="pUD-15-bZG" id="6pl-fA-ZWc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Subsclip" id="auU-Ae-Xwr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDf-pC-bDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1044" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Shw-vS-Lzj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EjM-pq-JJu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="zyH-hg-Hsy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pUD-15-bZG" kind="relationship" relationship="rootViewController" id="WsS-1H-w8f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiE-dS-K8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Adobe" width="256" height="256"/>
+        <image name="Evernote" width="355" height="355"/>
+        <image name="GitHub" width="393" height="390"/>
+        <image name="Netflix" width="370" height="368"/>
+        <image name="NewsPicks" width="512" height="512"/>
+        <image name="Spotify" width="512" height="512"/>
+        <image name="YouTube" width="512" height="512"/>
+        <image name="icloud" width="284" height="284"/>
+    </resources>
 </document>

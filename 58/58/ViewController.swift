@@ -7,14 +7,34 @@
 //
 
 import UIKit
+import SnapKit
+import Template
 
-class ViewController: UIViewController {
+@IBDesignable class iconImageView: UIImageView {
+    @IBInspectable var cornerRadiu: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+}
+
+class ViewController: UITableViewController {
+    
+    private var priceView: TotalView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let view = TotalView.loadFromNib()
+        priceView = view
+        tableView.addSubview(priceView)
+        priceView.snp.makeConstraints { make in
+            make.left.right.bottom.equalToSuperview()
+            make.height.equalTo(80)
+        }
     }
-
-
 }
-
