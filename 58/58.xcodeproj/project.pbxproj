@@ -16,6 +16,7 @@
 		B7CE3A51224699AB00AD427D /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CE3A50224699AB00AD427D /* TotalView.swift */; };
 		B7CE3A53224699B300AD427D /* TotalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CE3A52224699B300AD427D /* TotalView.xib */; };
 		B7CE3A5522469BC700AD427D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CE3A5422469BC700AD427D /* SnapKit.framework */; };
+		B7CE3A572246A46A00AD427D /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CE3A562246A46A00AD427D /* ItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B7CE3A50224699AB00AD427D /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
 		B7CE3A52224699B300AD427D /* TotalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalView.xib; sourceTree = "<group>"; };
 		B7CE3A5422469BC700AD427D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		B7CE3A562246A46A00AD427D /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				B7CE3A2022468FF800AD427D /* ViewController.swift */,
 				B7CE3A50224699AB00AD427D /* TotalView.swift */,
 				B7CE3A52224699B300AD427D /* TotalView.xib */,
+				B7CE3A562246A46A00AD427D /* ItemTableViewCell.xib */,
 				B7CE3A2222468FF800AD427D /* Main.storyboard */,
 				B7CE3A2522468FF900AD427D /* Assets.xcassets */,
 				B7CE3A2722468FF900AD427D /* LaunchScreen.storyboard */,
@@ -229,6 +232,7 @@
 				B7CE3A2922468FF900AD427D /* LaunchScreen.storyboard in Resources */,
 				B7CE3A53224699B300AD427D /* TotalView.xib in Resources */,
 				B7CE3A2622468FF900AD427D /* Assets.xcassets in Resources */,
+				B7CE3A572246A46A00AD427D /* ItemTableViewCell.xib in Resources */,
 				B7CE3A2422468FF800AD427D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
