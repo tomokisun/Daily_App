@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     private var priceView: TotalView!
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
+            tableView.tableFooterView = UIView()
             tableView.register(ItemTableViewCell.nib, forCellReuseIdentifier: ItemTableViewCell.name)
         }
     }
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,5 +57,13 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "3月25日"
+    }
+    
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        return 3
     }
 }
