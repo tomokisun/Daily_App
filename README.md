@@ -61,6 +61,7 @@
 - Day55: [ルーレット](https://github.com/tomoki69386/Daily_App/blob/master/55/README.md)
 - Day56: [お天気アプリ](https://github.com/tomoki69386/Daily_App/blob/master/56/README.md)
 - Day57: [Qiitadon](https://github.com/tomoki69386/Daily_App/blob/master/57/README.md)
+- Day58: [Subscription](https://github.com/tomoki69386/Daily_App/blob/master/58/README.md)
 
 # 経緯
 
