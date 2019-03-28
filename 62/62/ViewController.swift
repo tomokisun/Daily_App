@@ -14,6 +14,8 @@ import Template
 class ViewController: UIViewController {
     
     private let sections = ["select Frappucino", "select customize"]
+    private let frappucino = ["キャラメルフラペチーノ", "コーヒーフラペチーノ", "ダークモカチップフラペチーノ", "抹茶クリームフラペチーノ", "バニラクリームフラペチーノ", "マンゴーパッションティーフラペチーノ"]
+    private let customize = ["エクストラホイップ", "キャラメルソース追加", "チョコチップ追加", "バニラシロップ追加", "キャラメルシロップ追加", "モカシロップ追加", "ホワイトモカシロップ追加", "ヘーゼルナッツシロップ追加", "アーモンドトフィーシロップ追加", "クラシックシロップ追加", "チャイシロップ追加", "バレンシアシロップ追加", "ジンジャーシロップ追加"]
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -39,9 +41,9 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 2
+            return frappucino.count
         } else {
-            return 5
+            return customize.count
         }
     }
     
@@ -50,13 +52,13 @@ extension ViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: FrappucinoTableViewCell.name) as? FrappucinoTableViewCell else {
                 fatalError()
             }
-            cell.label.text = "抹茶クリームフラペチーノ"
+            cell.label.text = frappucino[indexPath.row]
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ToppingTableViewCell.name) as? ToppingTableViewCell else {
                 fatalError()
             }
-            cell.label.text = "チョコ追加"
+            cell.label.text = customize[indexPath.row]
             return cell
         }
     }
