@@ -14,6 +14,7 @@
 		B7FAC083224CD02900A54F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC081224CD02900A54F69 /* Main.storyboard */; };
 		B7FAC085224CD02B00A54F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC084224CD02B00A54F69 /* Assets.xcassets */; };
 		B7FAC088224CD02B00A54F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC086224CD02B00A54F69 /* LaunchScreen.storyboard */; };
+		B7FAC0B2224D00CB00A54F69 /* Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FAC0B1224D00CB00A54F69 /* Template.framework */; };
 		DFD37921B25C8A360B5903AE /* Pods_62.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E86ADF2ECD4F44B2C9DCBA3 /* Pods_62.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		B7FAC089224CD02B00A54F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7FAC08E224CD02B00A54F69 /* 62Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 62Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FAC099224CD02B00A54F69 /* 62UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 62UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FAC0B1224D00CB00A54F69 /* Template.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Template.framework; path = Carthage/Build/iOS/Template.framework; sourceTree = "<group>"; };
 		C393592C1BF2753DD00237B1 /* Pods-62UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-62UITests.release.xcconfig"; path = "Target Support Files/Pods-62UITests/Pods-62UITests.release.xcconfig"; sourceTree = "<group>"; };
 		C540B0C18460C1A0A35BD24B /* Pods-62.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-62.debug.xcconfig"; path = "Target Support Files/Pods-62/Pods-62.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7FAC0B2224D00CB00A54F69 /* Template.framework in Frameworks */,
 				DFD37921B25C8A360B5903AE /* Pods_62.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +122,7 @@
 		F4BAD72558900A87AC0A0257 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7FAC0B1224D00CB00A54F69 /* Template.framework */,
 				7E86ADF2ECD4F44B2C9DCBA3 /* Pods_62.framework */,
 				46A31438980F1FD4070DC625 /* Pods_62Tests.framework */,
 				513A1306D983D1B280AE22BC /* Pods_62UITests.framework */,
@@ -136,7 +140,6 @@
 				7F43419E04083D382F7A0CBE /* Pods-62UITests.debug.xcconfig */,
 				C393592C1BF2753DD00237B1 /* Pods-62UITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +155,7 @@
 				B7FAC077224CD02900A54F69 /* Frameworks */,
 				B7FAC078224CD02900A54F69 /* Resources */,
 				D41AEB91241ABBEC371F0118 /* [CP] Embed Pods Frameworks */,
+				B7FAC0B3224D00D000A54F69 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -314,6 +318,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B7FAC0B3224D00D000A54F69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Template.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		D1EA7FFC1593A6BAEFEBD8EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -547,6 +569,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMPLD4D4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 62/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -566,6 +592,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMPLD4D4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 62/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

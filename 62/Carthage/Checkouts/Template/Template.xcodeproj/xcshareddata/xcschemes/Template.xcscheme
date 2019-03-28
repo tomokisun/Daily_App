@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8667B60A2C54E0E47C5506992F5D44C6"
-               BuildableName = "Pods_62UITests.framework"
-               BlueprintName = "Pods-62UITests"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "B7CE39322246779700AD427D"
+               BuildableName = "Template.framework"
+               BlueprintName = "Template"
+               ReferencedContainer = "container:Template.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B7CE393B2246779700AD427D"
+               BuildableName = "TemplateTests.xctest"
+               BlueprintName = "TemplateTests"
+               ReferencedContainer = "container:Template.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B7CE39322246779700AD427D"
+            BuildableName = "Template.framework"
+            BlueprintName = "Template"
+            ReferencedContainer = "container:Template.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,10 +64,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8667B60A2C54E0E47C5506992F5D44C6"
-            BuildableName = "Pods_62UITests.framework"
-            BlueprintName = "Pods-62UITests"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "B7CE39322246779700AD427D"
+            BuildableName = "Template.framework"
+            BlueprintName = "Template"
+            ReferencedContainer = "container:Template.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,6 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B7CE39322246779700AD427D"
+            BuildableName = "Template.framework"
+            BlueprintName = "Template"
+            ReferencedContainer = "container:Template.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
