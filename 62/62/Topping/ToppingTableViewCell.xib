@@ -27,6 +27,9 @@
                     </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Q1-gL-Qxl">
                         <rect key="frame" x="255" y="6.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="switching:" destination="KGk-i7-Jjw" eventType="valueChanged" id="b53-VF-1WE"/>
+                        </connections>
                     </switch>
                 </subviews>
                 <constraints>

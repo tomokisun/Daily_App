@@ -11,4 +11,13 @@ import UIKit
 class ToppingTableViewCell: UITableViewCell {
     @IBOutlet weak var switchButton: UISwitch!
     @IBOutlet weak var label: UILabel!
+    
+    @IBAction private func switching(_ sender: UISwitch) {
+        print(sender.isOn)
+        if sender.isOn {
+            
+        } else {
+            
+        }
+    }
 }
