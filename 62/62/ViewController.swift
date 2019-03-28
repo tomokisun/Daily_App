@@ -11,11 +11,19 @@ import RxSwift
 import RxCocoa
 import Template
 
+struct AppSubject {
+    private init() {}
+    
+    
+}
+
 class ViewController: UIViewController {
     
     private let sections = ["select Frappucino", "select customize"]
     private let frappucino = ["キャラメルフラペチーノ", "コーヒーフラペチーノ", "ダークモカチップフラペチーノ", "抹茶クリームフラペチーノ", "バニラクリームフラペチーノ", "マンゴーパッションティーフラペチーノ"]
     private let customize = ["エクストラホイップ", "キャラメルソース追加", "チョコチップ追加", "バニラシロップ追加", "キャラメルシロップ追加", "モカシロップ追加", "ホワイトモカシロップ追加", "ヘーゼルナッツシロップ追加", "アーモンドトフィーシロップ追加", "クラシックシロップ追加", "チャイシロップ追加", "バレンシアシロップ追加", "ジンジャーシロップ追加"]
+    
+    @IBOutlet private weak var frappucinoLabel: UILabel!
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -66,19 +74,15 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
-    // セルが選択された時に呼び出される
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at:indexPath)
-        
-        // チェックマークを入れる
         cell?.accessoryType = .checkmark
+        frappucinoLabel.text = frappucino[indexPath.row]
     }
     
     // セルの選択が外れた時に呼び出される
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at:indexPath)
-        
-        // チェックマークを外す
         cell?.accessoryType = .none
     }
 }
