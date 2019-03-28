@@ -15,6 +15,10 @@
 		B7FAC085224CD02B00A54F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC084224CD02B00A54F69 /* Assets.xcassets */; };
 		B7FAC088224CD02B00A54F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC086224CD02B00A54F69 /* LaunchScreen.storyboard */; };
 		B7FAC0B2224D00CB00A54F69 /* Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FAC0B1224D00CB00A54F69 /* Template.framework */; };
+		B7FAC0B7224D014100A54F69 /* FrappucinoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FAC0B5224D014100A54F69 /* FrappucinoTableViewCell.swift */; };
+		B7FAC0B8224D014100A54F69 /* FrappucinoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC0B6224D014100A54F69 /* FrappucinoTableViewCell.xib */; };
+		B7FAC0BC224D02A100A54F69 /* ToppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FAC0BA224D02A100A54F69 /* ToppingTableViewCell.swift */; };
+		B7FAC0BD224D02A100A54F69 /* ToppingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC0BB224D02A100A54F69 /* ToppingTableViewCell.xib */; };
 		DFD37921B25C8A360B5903AE /* Pods_62.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E86ADF2ECD4F44B2C9DCBA3 /* Pods_62.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		B7FAC08E224CD02B00A54F69 /* 62Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 62Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FAC099224CD02B00A54F69 /* 62UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 62UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FAC0B1224D00CB00A54F69 /* Template.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Template.framework; path = Carthage/Build/iOS/Template.framework; sourceTree = "<group>"; };
+		B7FAC0B5224D014100A54F69 /* FrappucinoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrappucinoTableViewCell.swift; sourceTree = "<group>"; };
+		B7FAC0B6224D014100A54F69 /* FrappucinoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrappucinoTableViewCell.xib; sourceTree = "<group>"; };
+		B7FAC0BA224D02A100A54F69 /* ToppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingTableViewCell.swift; sourceTree = "<group>"; };
+		B7FAC0BB224D02A100A54F69 /* ToppingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToppingTableViewCell.xib; sourceTree = "<group>"; };
 		C393592C1BF2753DD00237B1 /* Pods-62UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-62UITests.release.xcconfig"; path = "Target Support Files/Pods-62UITests/Pods-62UITests.release.xcconfig"; sourceTree = "<group>"; };
 		C540B0C18460C1A0A35BD24B /* Pods-62.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-62.debug.xcconfig"; path = "Target Support Files/Pods-62/Pods-62.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,11 +120,31 @@
 				B7FAC07D224CD02900A54F69 /* AppDelegate.swift */,
 				B7FAC07F224CD02900A54F69 /* ViewController.swift */,
 				B7FAC081224CD02900A54F69 /* Main.storyboard */,
+				B7FAC0B9224D029600A54F69 /* Topping */,
+				B7FAC0B4224D011300A54F69 /* Frappucino */,
 				B7FAC084224CD02B00A54F69 /* Assets.xcassets */,
 				B7FAC086224CD02B00A54F69 /* LaunchScreen.storyboard */,
 				B7FAC089224CD02B00A54F69 /* Info.plist */,
 			);
 			path = 62;
+			sourceTree = "<group>";
+		};
+		B7FAC0B4224D011300A54F69 /* Frappucino */ = {
+			isa = PBXGroup;
+			children = (
+				B7FAC0B5224D014100A54F69 /* FrappucinoTableViewCell.swift */,
+				B7FAC0B6224D014100A54F69 /* FrappucinoTableViewCell.xib */,
+			);
+			path = Frappucino;
+			sourceTree = "<group>";
+		};
+		B7FAC0B9224D029600A54F69 /* Topping */ = {
+			isa = PBXGroup;
+			children = (
+				B7FAC0BA224D02A100A54F69 /* ToppingTableViewCell.swift */,
+				B7FAC0BB224D02A100A54F69 /* ToppingTableViewCell.xib */,
+			);
+			path = Topping;
 			sourceTree = "<group>";
 		};
 		F4BAD72558900A87AC0A0257 /* Frameworks */ = {
@@ -254,6 +282,8 @@
 			files = (
 				B7FAC088224CD02B00A54F69 /* LaunchScreen.storyboard in Resources */,
 				B7FAC085224CD02B00A54F69 /* Assets.xcassets in Resources */,
+				B7FAC0BD224D02A100A54F69 /* ToppingTableViewCell.xib in Resources */,
+				B7FAC0B8224D014100A54F69 /* FrappucinoTableViewCell.xib in Resources */,
 				B7FAC083224CD02900A54F69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +422,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7FAC0B7224D014100A54F69 /* FrappucinoTableViewCell.swift in Sources */,
+				B7FAC0BC224D02A100A54F69 /* ToppingTableViewCell.swift in Sources */,
 				B7FAC080224CD02900A54F69 /* ViewController.swift in Sources */,
 				B7FAC07E224CD02900A54F69 /* AppDelegate.swift in Sources */,
 			);
