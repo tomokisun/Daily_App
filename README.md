@@ -65,6 +65,7 @@
 - Day59: [ハリーボッター](https://github.com/tomoki69386/Daily_App/blob/master/59/README.md)
 - Day60: [ルーティンワーク管理 todoリストアプリ](https://github.com/tomoki69386/Daily_App/blob/master/60/README.md)
 - Day61: [あ!Phoneを探せ](https://github.com/tomoki69386/Daily_App/blob/master/61/README.md)
+- Day62: [フラペチーノカスタマイザー](https://github.com/tomoki69386/Daily_App/blob/master/62/README.md)
 
 # 経緯
 
