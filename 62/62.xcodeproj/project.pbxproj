@@ -19,6 +19,7 @@
 		B7FAC0B8224D014100A54F69 /* FrappucinoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC0B6224D014100A54F69 /* FrappucinoTableViewCell.xib */; };
 		B7FAC0BC224D02A100A54F69 /* ToppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FAC0BA224D02A100A54F69 /* ToppingTableViewCell.swift */; };
 		B7FAC0BD224D02A100A54F69 /* ToppingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FAC0BB224D02A100A54F69 /* ToppingTableViewCell.xib */; };
+		B7FAC0BF224D0CCB00A54F69 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FAC0BE224D0CCB00A54F69 /* Array.swift */; };
 		DFD37921B25C8A360B5903AE /* Pods_62.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E86ADF2ECD4F44B2C9DCBA3 /* Pods_62.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		B7FAC0B6224D014100A54F69 /* FrappucinoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrappucinoTableViewCell.xib; sourceTree = "<group>"; };
 		B7FAC0BA224D02A100A54F69 /* ToppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingTableViewCell.swift; sourceTree = "<group>"; };
 		B7FAC0BB224D02A100A54F69 /* ToppingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToppingTableViewCell.xib; sourceTree = "<group>"; };
+		B7FAC0BE224D0CCB00A54F69 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		C393592C1BF2753DD00237B1 /* Pods-62UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-62UITests.release.xcconfig"; path = "Target Support Files/Pods-62UITests/Pods-62UITests.release.xcconfig"; sourceTree = "<group>"; };
 		C540B0C18460C1A0A35BD24B /* Pods-62.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-62.debug.xcconfig"; path = "Target Support Files/Pods-62/Pods-62.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				B7FAC07D224CD02900A54F69 /* AppDelegate.swift */,
+				B7FAC0BE224D0CCB00A54F69 /* Array.swift */,
 				B7FAC07F224CD02900A54F69 /* ViewController.swift */,
 				B7FAC081224CD02900A54F69 /* Main.storyboard */,
 				B7FAC0B9224D029600A54F69 /* Topping */,
@@ -423,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7FAC0B7224D014100A54F69 /* FrappucinoTableViewCell.swift in Sources */,
+				B7FAC0BF224D0CCB00A54F69 /* Array.swift in Sources */,
 				B7FAC0BC224D02A100A54F69 /* ToppingTableViewCell.swift in Sources */,
 				B7FAC080224CD02900A54F69 /* ViewController.swift in Sources */,
 				B7FAC07E224CD02900A54F69 /* AppDelegate.swift in Sources */,

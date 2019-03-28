@@ -13,11 +13,6 @@ class ToppingTableViewCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
     
     @IBAction private func switching(_ sender: UISwitch) {
-        print(sender.isOn)
-        if sender.isOn {
-            
-        } else {
-            
-        }
+        AppSubject.frappucino.onNext((sender.isOn, sender.tag))
     }
 }
