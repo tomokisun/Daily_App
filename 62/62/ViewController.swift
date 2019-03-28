@@ -11,6 +11,15 @@ import RxSwift
 import RxCocoa
 import Template
 
+extension UILabel {
+    static func label() -> UILabel {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont.init(name: "HiraginoSans-W6", size: 10)
+        return label
+    }
+}
+
 struct AppSubject {
     private init() {}
     
@@ -23,7 +32,19 @@ class ViewController: UIViewController {
     private let sections = ["select Frappucino", "select customize"]
     private let frappucino = ["キャラメルフラペチーノ", "コーヒーフラペチーノ", "ダークモカチップフラペチーノ", "抹茶クリームフラペチーノ", "バニラクリームフラペチーノ", "マンゴーパッションティーフラペチーノ"]
     private let customize = ["エクストラホイップ", "キャラメルソース追加", "チョコチップ追加", "バニラシロップ追加", "キャラメルシロップ追加", "モカシロップ追加", "ホワイトモカシロップ追加", "ヘーゼルナッツシロップ追加", "アーモンドトフィーシロップ追加", "クラシックシロップ追加", "チャイシロップ追加", "バレンシアシロップ追加", "ジンジャーシロップ追加"]
-    private var items = [String]()
+    private var items = [String]() {
+        didSet {
+            for _view in stackView.subviews {
+                self.stackView.removeArrangedSubview(_view)
+                _view.removeFromSuperview()
+            }
+            for item in items {
+                let label = UILabel.label()
+                label.text = item
+                self.stackView.addArrangedSubview(label)
+            }
+        }
+    }
     
     @IBOutlet private weak var frappucinoLabel: UILabel!
     @IBOutlet private weak var stackView: UIStackView!
@@ -40,8 +61,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         AppSubject.frappucino.subscribe(onNext: { [weak self] index in
-            self?.items.append(self?.customize[index.1])
+            if index.0 {
+                self?.applend(with: index.1)
+            } else {
+                self?.remove(with: index.1)
+            }
         }).disposed(by: disposeBag)
+    }
+    
+    private func remove(with index: Int) {
+        items.remove(element: customize[index])
+    }
+    
+    private func applend(with index: Int) {
+        items.append(customize[index])
     }
 }
 
