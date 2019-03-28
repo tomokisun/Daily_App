@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
+            tableView.allowsMultipleSelection = false
             tableView.register(FrappucinoTableViewCell.nib, forCellReuseIdentifier: FrappucinoTableViewCell.name)
             tableView.register(ToppingTableViewCell.nib, forCellReuseIdentifier: ToppingTableViewCell.name)
         }
@@ -61,5 +62,23 @@ extension ViewController: UITableViewDataSource {
             cell.label.text = customize[indexPath.row]
             return cell
         }
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    // セルが選択された時に呼び出される
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at:indexPath)
+        
+        // チェックマークを入れる
+        cell?.accessoryType = .checkmark
+    }
+    
+    // セルの選択が外れた時に呼び出される
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at:indexPath)
+        
+        // チェックマークを外す
+        cell?.accessoryType = .none
     }
 }
