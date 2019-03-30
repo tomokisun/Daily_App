@@ -1,0 +1,11 @@
+framework module ScalingCarousel {
+  umbrella header "ScalingCarousel-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ScalingCarousel.Swift {
+    header "ScalingCarousel-Swift.h"
+    requires objc
+}

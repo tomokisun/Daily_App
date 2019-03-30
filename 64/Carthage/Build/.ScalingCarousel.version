@@ -1,0 +1,9 @@
+{
+  "commitish" : "v2.4.1",
+  "iOS" : [
+    {
+      "name" : "ScalingCarousel",
+      "hash" : "9a53c660414fa1138cb046953505ed40fd68b652fd944e768d8ea13d237f0277"
+    }
+  ]
+}
