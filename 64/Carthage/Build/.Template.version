@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.0.1",
+  "iOS" : [
+    {
+      "name" : "Template",
+      "hash" : "8b6ab274642bb00edf7999a7b9543d2542190c0c5bc468d8adaba24580f90005"
+    }
+  ]
+}

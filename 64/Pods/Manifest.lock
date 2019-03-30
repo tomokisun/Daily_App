@@ -1,0 +1,16 @@
+PODS:
+  - ScalingCarousel (2.4.1)
+
+DEPENDENCIES:
+  - ScalingCarousel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ScalingCarousel
+
+SPEC CHECKSUMS:
+  ScalingCarousel: 2f8d7d7dc02a4aff33ad0ca4148f9b27b2c8f91c
+
+PODFILE CHECKSUM: c50b05730647951487b88496132e713478b9552e
+
+COCOAPODS: 1.6.1
