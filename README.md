@@ -72,6 +72,8 @@
 - Day66: [カウンター](https://github.com/tomoki69386/Daily_App/blob/master/66/README.md)
 - Day67: [コンパス](https://github.com/tomoki69386/Daily_App/blob/master/67/README.md)
 - Day68: [サイゼでバーテン](https://github.com/tomoki69386/Daily_App/blob/master/68/README.md)
+- Day69: [計算機](https://github.com/tomoki69386/Daily_App/blob/master/69/README.md)
+- Day70: [メモ帳](https://github.com/tomoki69386/Daily_App/blob/master/70/README.md)
 
 # 経緯
 
