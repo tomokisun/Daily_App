@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLd-OA-Aj9">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                </imageView>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1g7-hk-3V2">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dwl-yb-gBq">
+                            <rect key="frame" x="94" y="230" width="187.5" height="187.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dwl-yb-gBq" secondAttribute="height" multiplier="1:1" id="j7M-Ld-88r"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dwl-yb-gBq" firstAttribute="centerY" secondItem="1g7-hk-3V2" secondAttribute="centerY" id="7PO-N1-Onm"/>
+                        <constraint firstItem="dwl-yb-gBq" firstAttribute="width" secondItem="1g7-hk-3V2" secondAttribute="width" multiplier="0.5" id="Bub-lD-qKv"/>
+                        <constraint firstItem="dwl-yb-gBq" firstAttribute="centerX" secondItem="1g7-hk-3V2" secondAttribute="centerX" id="fjK-fI-zTg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1g7-hk-3V2" secondAttribute="trailing" id="IxH-iz-6nb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1g7-hk-3V2" secondAttribute="bottom" id="L54-4M-spI"/>
+                <constraint firstItem="1g7-hk-3V2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ncu-Af-g8E"/>
+                <constraint firstItem="VLd-OA-Aj9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XC5-0N-662"/>
+                <constraint firstItem="1g7-hk-3V2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="adA-0d-QL0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VLd-OA-Aj9" secondAttribute="bottom" id="bbl-r8-V0M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VLd-OA-Aj9" secondAttribute="trailing" id="kMe-Bn-BqF"/>
+                <constraint firstItem="VLd-OA-Aj9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yyc-fW-Nv2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headerImageView" destination="VLd-OA-Aj9" id="KSu-Ts-ldj"/>
+                <outlet property="mainImageView" destination="dwl-yb-gBq" id="2xy-Ag-6Qi"/>
+            </connections>
+        </view>
+    </objects>
+</document>
