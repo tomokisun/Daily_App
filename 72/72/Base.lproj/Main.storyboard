@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,69 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSR-GT-X8Q">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <state key="normal" image="iPhone 8"/>
+                                <connections>
+                                    <action selector="didTappend" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKi-1V-76f"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qSR-GT-X8Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5gi-1i-iVp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qSR-GT-X8Q" secondAttribute="bottom" id="JkI-ip-7cA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qSR-GT-X8Q" secondAttribute="trailing" id="SNq-Yn-UVJ"/>
+                            <constraint firstItem="qSR-GT-X8Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VSx-w5-qwa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="JKD-W6-UNu" kind="modal" identifier="toHoge" id="CTH-Ba-akr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="98" y="27"/>
+        </scene>
+        <!--Hoge View Controller-->
+        <scene sceneID="ZVi-Wo-ZMN">
+            <objects>
+                <viewController id="JKD-W6-UNu" customClass="HogeViewController" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eNw-4T-s1T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wex-Gv-ExR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <state key="normal" title="Button" image="iPhone 8_result"/>
+                                <connections>
+                                    <action selector="backButton" destination="JKD-W6-UNu" eventType="touchUpInside" id="RUY-As-xkU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QkI-3q-Woc" firstAttribute="bottom" secondItem="wex-Gv-ExR" secondAttribute="bottom" id="hSo-zZ-rZh"/>
+                            <constraint firstItem="wex-Gv-ExR" firstAttribute="top" secondItem="QkI-3q-Woc" secondAttribute="top" id="iRg-m5-bHG"/>
+                            <constraint firstItem="QkI-3q-Woc" firstAttribute="trailing" secondItem="wex-Gv-ExR" secondAttribute="trailing" id="rGa-n9-pCS"/>
+                            <constraint firstItem="wex-Gv-ExR" firstAttribute="leading" secondItem="QkI-3q-Woc" secondAttribute="leading" id="rO7-eG-kEp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QkI-3q-Woc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCf-Aq-N7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iPhone 8" width="750" height="1334"/>
+        <image name="iPhone 8_result" width="750" height="1334"/>
+    </resources>
 </document>
