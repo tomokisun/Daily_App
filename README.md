@@ -76,7 +76,7 @@
 - Day70: [メモ帳](https://github.com/tomoki69386/Daily_App/blob/master/70/README.md)
 - Day71: [音楽プレイヤー](https://github.com/tomoki69386/Daily_App/blob/master/71/README.md)
 - Day72: [Payルーレット](https://github.com/tomoki69386/Daily_App/blob/master/72/README.md)
-- Day73: [Payルーレット](https://github.com/tomoki69386/Daily_App/blob/master/73/README.md)
+- Day73: [10分で健康アプリ](https://github.com/tomoki69386/Daily_App/blob/master/73/README.md)
 
 # 経緯
 
