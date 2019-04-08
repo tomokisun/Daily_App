@@ -66,13 +66,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIE-Sa-Wvb">
                                 <rect key="frame" x="0.0" y="433.5" width="375" height="233.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjd-WO-y6q">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjd-WO-y6q">
                                         <rect key="frame" x="87.5" y="82" width="200" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="2U3-pb-GzB"/>
                                             <constraint firstAttribute="width" constant="200" id="dZ4-GU-CW3"/>
                                         </constraints>
-                                        <state key="normal" title="shuffle">
+                                        <state key="normal" title="shuffle" image="button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -109,4 +109,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="button" width="345" height="107"/>
+    </resources>
 </document>
