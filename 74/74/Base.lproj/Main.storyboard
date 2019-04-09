@@ -1,24 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-    </dependencies>
-    <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-    </scenes>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pe5-Vh-o2F">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<!--View Controller-->
+<scene sceneID="6Ep-Vk-EhD">
+<objects>
+<viewController id="pe5-Vh-o2F" customClass="ViewController" customModule="_7" customModuleProvider="target" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="0ib-yt-qF7"/>
+<viewControllerLayoutGuide type="bottom" id="8Xz-Ac-Ata"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="f9d-TB-092">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Appleクイズ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2BZ-Sq-wou">
+<rect key="frame" x="52" y="63" width="270" height="156"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+</textView>
+<button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-07-3xW">
+<rect key="frame" x="96" y="367" width="182" height="90"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<fontDescription key="fontDescription" type="system" pointSize="30"/>
+<state key="normal" title="START!">
+<color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</state>
+<connections>
+<segue destination="Dgn-gI-529" kind="presentation" id="vQg-Ze-eXf"/>
+</connections>
+</button>
+</subviews>
+<color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<viewLayoutGuide key="safeArea" id="TSj-mM-fU5"/>
+</view>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="OOI-Sw-fDT" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="125.59999999999999" y="129.98500749625188"/>
+</scene>
+<!--Quiz View Controller-->
+<scene sceneID="vQP-mE-ote">
+<objects>
+<viewController id="Dgn-gI-529" customClass="QuizViewController" customModule="_7" customModuleProvider="target" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="wxf-cW-qXw"/>
+<viewControllerLayoutGuide type="bottom" id="rKH-Ba-j0i"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="v1y-tX-3lO">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P9a-cN-fo3">
+<rect key="frame" x="48" y="65" width="279" height="152"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+</textView>
+<button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KE1-0E-NwK">
+<rect key="frame" x="48" y="307" width="279" height="76"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="解答1"/>
+<connections>
+<action selector="choiceAnswerWithSender:" destination="Dgn-gI-529" eventType="touchUpInside" id="Bgo-IH-1UT"/>
+</connections>
+</button>
+<button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1n-c3-fjO">
+<rect key="frame" x="48" y="391" width="279" height="76"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="解答2"/>
+<connections>
+<action selector="choiceAnswerWithSender:" destination="Dgn-gI-529" eventType="touchUpInside" id="znP-ue-AJn"/>
+</connections>
+</button>
+<button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-J2-7fW">
+<rect key="frame" x="48" y="475" width="279" height="76"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="解答3"/>
+<connections>
+<action selector="choiceAnswerWithSender:" destination="Dgn-gI-529" eventType="touchUpInside" id="iE5-cA-klj"/>
+</connections>
+</button>
+</subviews>
+<color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<viewLayoutGuide key="safeArea" id="Q5A-1J-6zM"/>
+</view>
+<connections>
+<outlet property="choiceButton1" destination="KE1-0E-NwK" id="7d0-ge-2qd"/>
+<outlet property="choiceButton2" destination="j1n-c3-fjO" id="kvZ-ZI-nsR"/>
+<outlet property="choiceButton3" destination="bHt-J2-7fW" id="X8A-VA-rnZ"/>
+<outlet property="guizTextView" destination="P9a-cN-fo3" id="Qm6-9a-NxS"/>
+<segue destination="ylC-6H-px0" kind="presentation" identifier="toResultView" id="bRM-t6-HxY"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="npg-7Y-yJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="789.60000000000002" y="129.98500749625188"/>
+</scene>
+<!--Result View Controller-->
+<scene sceneID="6zp-Lp-pJ1">
+<objects>
+<viewController id="ylC-6H-px0" customClass="ResultViewController" customModule="_7" customModuleProvider="target" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="SNp-no-acB"/>
+<viewControllerLayoutGuide type="bottom" id="DgV-JE-q7i"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="9nQ-Tc-IZk">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTU-4P-em7">
+<rect key="frame" x="91" y="444" width="194" height="76"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<fontDescription key="fontDescription" type="system" pointSize="32"/>
+<state key="normal" title="タイトル戻る"/>
+<connections>
+<action selector="back" destination="ylC-6H-px0" eventType="touchUpInside" id="tKO-t1-DSu"/>
+</connections>
+</button>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukp-lz-cb3">
+<rect key="frame" x="117" y="199" width="141" height="62"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="21"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<viewLayoutGuide key="safeArea" id="hpk-6O-zwh"/>
+</view>
+<connections>
+<outlet property="resultlabel" destination="ukp-lz-cb3" id="gHJ-yf-moD"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="gHK-6l-jKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="1455" y="130"/>
+</scene>
+</scenes>
 </document>
