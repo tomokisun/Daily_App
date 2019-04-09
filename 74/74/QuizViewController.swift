@@ -17,12 +17,12 @@ class QuizViewController: UIViewController {
     var correctAnswer = 0
     
     //クイズを表示するTextView
-    @IBOutlet var guizTextView: UITextView!
+    @IBOutlet var guizTextView: UILabel!
     
     //選択肢のボタン
-    @IBOutlet var choiceButton1: UIButton!
-    @IBOutlet var choiceButton2: UIButton!
-    @IBOutlet var choiceButton3: UIButton!
+    @IBOutlet var choiceButton1: Button!
+    @IBOutlet var choiceButton2: Button!
+    @IBOutlet var choiceButton3: Button!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,3 +104,18 @@ class QuizViewController: UIViewController {
     }
 }
 
+
+
+class Button: UIButton {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        setUp()
+    }
+    
+    private func setUp() {
+        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 4
+    }
+}
