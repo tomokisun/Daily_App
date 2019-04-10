@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-KU-iSx">
+                                <rect key="frame" x="24" y="74" width="327" height="604"/>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="024707c64c81ba12f46cd7ab1675c0cb" translatesAutoresizingMaskIntoConstraints="NO" id="t5G-U7-Hzd">
+                                <rect key="frame" x="0.0" y="537" width="275" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t5G-U7-Hzd" secondAttribute="height" multiplier="1:1" id="vyP-6h-3O5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fb-8e-PfQ">
+                                <rect key="frame" x="235" y="622" width="100" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fbd-Qj-ArI"/>
+                                    <constraint firstAttribute="height" constant="40" id="nLd-KI-tkt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t5G-U7-Hzd" secondAttribute="trailing" constant="100" id="2Oi-qA-xcC"/>
+                            <constraint firstItem="1Fb-8e-PfQ" firstAttribute="trailing" secondItem="ES7-KU-iSx" secondAttribute="trailing" constant="-16" id="EUJ-HP-JdR"/>
+                            <constraint firstItem="ES7-KU-iSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Ttx-av-QLQ"/>
+                            <constraint firstItem="1Fb-8e-PfQ" firstAttribute="bottom" secondItem="ES7-KU-iSx" secondAttribute="bottom" constant="-16" id="VgT-g0-5At"/>
+                            <constraint firstItem="ES7-KU-iSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="a7A-R0-8dd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ES7-KU-iSx" secondAttribute="trailing" constant="24" id="hom-0c-7xw"/>
+                            <constraint firstAttribute="bottom" secondItem="t5G-U7-Hzd" secondAttribute="bottom" id="qQ6-fr-yYm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ES7-KU-iSx" secondAttribute="bottom" constant="100" id="tVT-ui-uGB"/>
+                            <constraint firstItem="t5G-U7-Hzd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zXu-t8-kfS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="1Fb-8e-PfQ" id="nwf-EC-Nit"/>
+                        <outlet property="myMapView" destination="ES7-KU-iSx" id="pDH-yF-VjR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="024707c64c81ba12f46cd7ab1675c0cb" width="566.8800048828125" height="566.8800048828125"/>
+    </resources>
+</document>
