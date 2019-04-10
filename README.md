@@ -78,6 +78,7 @@
 - Day72: [Payルーレット](https://github.com/tomoki69386/Daily_App/blob/master/72/README.md)
 - Day73: [10分で健康アプリ](https://github.com/tomoki69386/Daily_App/blob/master/73/README.md)
 - Day74: [平成クイズ](https://github.com/tomoki69386/Daily_App/blob/master/74/README.md)
+- Day75: [桜の名所記録アプリ](https://github.com/tomoki69386/Daily_App/blob/master/75/README.md)
 
 # 経緯
 
