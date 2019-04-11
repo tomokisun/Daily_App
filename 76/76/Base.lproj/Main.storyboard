@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JYd-Ak-qE7">
+                                <rect key="frame" x="0.0" y="228" width="375" height="211"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JYd-Ak-qE7" secondAttribute="height" multiplier="16:9" id="q3u-vK-pjp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzg-Q5-hak">
+                                <rect key="frame" x="43.5" y="539" width="288" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vzg-Q5-hak" secondAttribute="height" multiplier="100:34" id="6HA-7K-rby"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="button"/>
+                                <connections>
+                                    <action selector="selectImageButtonDidTappend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVf-8Q-6SA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame" translatesAutoresizingMaskIntoConstraints="NO" id="yvw-E0-I0c">
+                                <rect key="frame" x="24" y="44" width="327" height="160"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R:118 G:118 B:188" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgz-WX-kRs">
+                                <rect key="frame" x="106" y="70" width="163.5" height="16"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ndb-g7-zoe">
+                                <rect key="frame" x="154.5" y="102" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ndb-g7-zoe" secondAttribute="height" multiplier="1:1" id="Rwx-DM-rZc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yvw-E0-I0c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="17O-TS-ks7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYd-Ak-qE7" secondAttribute="trailing" id="29Z-Gy-nXz"/>
+                            <constraint firstItem="Ndb-g7-zoe" firstAttribute="top" secondItem="fgz-WX-kRs" secondAttribute="bottom" constant="16" id="2nC-qD-LMo"/>
+                            <constraint firstItem="JYd-Ak-qE7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3VG-1S-KtM"/>
+                            <constraint firstItem="JYd-Ak-qE7" firstAttribute="top" secondItem="Ndb-g7-zoe" secondAttribute="bottom" constant="60" id="3ok-pS-orH"/>
+                            <constraint firstItem="Ndb-g7-zoe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4iQ-oJ-T94"/>
+                            <constraint firstItem="yvw-E0-I0c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="5sQ-c0-vwm"/>
+                            <constraint firstAttribute="bottom" secondItem="vzg-Q5-hak" secondAttribute="bottom" constant="30" id="EaK-ur-fft"/>
+                            <constraint firstItem="JYd-Ak-qE7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GyS-Tp-a2M"/>
+                            <constraint firstItem="vzg-Q5-hak" firstAttribute="top" secondItem="JYd-Ak-qE7" secondAttribute="bottom" constant="100" id="NwE-Ja-PPG"/>
+                            <constraint firstItem="vzg-Q5-hak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W25-zG-m2V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yvw-E0-I0c" secondAttribute="trailing" constant="24" id="gbR-Id-dg6"/>
+                            <constraint firstItem="JYd-Ak-qE7" firstAttribute="top" secondItem="yvw-E0-I0c" secondAttribute="bottom" constant="24" id="mhP-D1-DKK"/>
+                            <constraint firstItem="fgz-WX-kRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="o24-Uh-PGD"/>
+                            <constraint firstItem="fgz-WX-kRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppB-68-ctk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="IH1-L4-FQO" appends="YES" id="VjS-Kq-Ufm"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="colorImage" destination="Ndb-g7-zoe" id="h2O-bd-3bK"/>
+                        <outlet property="colorLabel" destination="fgz-WX-kRs" id="lSV-oD-n47"/>
+                        <outlet property="photoImageView" destination="JYd-Ak-qE7" id="cr3-lF-Es4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="IH1-L4-FQO">
+                    <connections>
+                        <action selector="getImageRGB:" destination="BYZ-38-t0r" id="9ee-nu-4bu"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="448" height="174"/>
+        <image name="flame" width="750" height="424"/>
+    </resources>
+</document>
