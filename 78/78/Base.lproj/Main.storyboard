@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soil" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-vq-GVB">
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signboard" translatesAutoresizingMaskIntoConstraints="NO" id="B6D-Ul-YTb">
+                                <rect key="frame" x="0.0" y="59" width="400" height="254"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 pt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lt-q6-rTR">
+                                <rect key="frame" x="159.5" y="132" width="56.5" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kp-1K-OJV" customClass="Button" customModule="_8" customModuleProvider="target">
+                                <rect key="frame" x="31" y="283" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="edG-gD-auM"/>
+                                    <constraint firstAttribute="height" constant="90" id="gKb-j5-Lpm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mogura_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csa-4S-iws" customClass="Button" customModule="_8" customModuleProvider="target">
+                                <rect key="frame" x="177" y="328" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Py5-z7-93W"/>
+                                    <constraint firstAttribute="width" constant="90" id="Rxt-Jj-UEm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mogura_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jc-Jh-18e" customClass="Button" customModule="_8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="400" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="evH-1f-ZAa"/>
+                                    <constraint firstAttribute="width" constant="90" id="gUY-vh-fr4"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mogura_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj5-ub-geS" customClass="Button" customModule="_8" customModuleProvider="target">
+                                <rect key="frame" x="66" y="543" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="brY-9s-VEs"/>
+                                    <constraint firstAttribute="width" constant="90" id="ie2-dC-Sr3"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mogura_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uER-84-kFR" customClass="Button" customModule="_8" customModuleProvider="target">
+                                <rect key="frame" x="150" y="440" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="GMh-WG-fNE"/>
+                                    <constraint firstAttribute="width" constant="90" id="oRZ-HA-8mo"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mogura_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FK-Fz-j7h" customClass="Button" customModule="_8" customModuleProvider="target">
+                                <rect key="frame" x="207" y="543" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="AIi-ZO-Qjf"/>
+                                    <constraint firstAttribute="width" constant="90" id="F7g-pZ-R3B"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mogura_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRs-L4-ujE" customClass="Button" customModule="_8" customModuleProvider="target">
+                                <rect key="frame" x="263" y="420" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="3SO-j7-rQL"/>
+                                    <constraint firstAttribute="width" constant="90" id="mhq-Us-5fS"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mogura_0"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qHu-vq-GVB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Fj-q8-Sg3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qHu-vq-GVB" secondAttribute="bottom" id="6Ka-uf-0Q4"/>
+                            <constraint firstItem="csa-4S-iws" firstAttribute="leading" secondItem="5Kp-1K-OJV" secondAttribute="trailing" constant="56" id="7bm-Qd-aNL"/>
+                            <constraint firstItem="oj5-ub-geS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="7ke-YS-g78"/>
+                            <constraint firstItem="oj5-ub-geS" firstAttribute="top" secondItem="9jc-Jh-18e" secondAttribute="bottom" constant="53" id="Dbg-95-C95"/>
+                            <constraint firstItem="6Lt-q6-rTR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="LDv-nj-VNT"/>
+                            <constraint firstItem="qHu-vq-GVB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Nfa-B1-fF8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B6D-Ul-YTb" secondAttribute="bottom" constant="354" id="Oul-c1-FRs"/>
+                            <constraint firstItem="pRs-L4-ujE" firstAttribute="leading" secondItem="uER-84-kFR" secondAttribute="trailing" constant="23" id="V3M-Z6-cJV"/>
+                            <constraint firstItem="pRs-L4-ujE" firstAttribute="top" secondItem="csa-4S-iws" secondAttribute="bottom" constant="2" id="VNJ-Q9-kLl"/>
+                            <constraint firstItem="csa-4S-iws" firstAttribute="top" secondItem="B6D-Ul-YTb" secondAttribute="bottom" constant="15" id="XgX-3E-kns"/>
+                            <constraint firstItem="qHu-vq-GVB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yl7-W9-GOi"/>
+                            <constraint firstItem="3FK-Fz-j7h" firstAttribute="top" secondItem="uER-84-kFR" secondAttribute="bottom" constant="13" id="ePE-Ew-7rD"/>
+                            <constraint firstItem="6Lt-q6-rTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdm-ga-Xk7"/>
+                            <constraint firstItem="B6D-Ul-YTb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="gLU-lL-XOb"/>
+                            <constraint firstAttribute="trailing" secondItem="B6D-Ul-YTb" secondAttribute="trailing" constant="-25" id="hNf-mB-8Gs"/>
+                            <constraint firstItem="uER-84-kFR" firstAttribute="leading" secondItem="9jc-Jh-18e" secondAttribute="trailing" constant="60" id="m44-2b-qgb"/>
+                            <constraint firstItem="5Kp-1K-OJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="ogD-K7-454"/>
+                            <constraint firstItem="B6D-Ul-YTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pSe-OZ-oVW"/>
+                            <constraint firstItem="3FK-Fz-j7h" firstAttribute="leading" secondItem="oj5-ub-geS" secondAttribute="trailing" constant="51" id="qm6-8T-rUH"/>
+                            <constraint firstItem="9jc-Jh-18e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s0Z-f2-svI"/>
+                            <constraint firstItem="5Kp-1K-OJV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="263" id="u5N-2v-7cD"/>
+                            <constraint firstItem="9jc-Jh-18e" firstAttribute="top" secondItem="5Kp-1K-OJV" secondAttribute="bottom" constant="27" id="uaQ-Vx-gFA"/>
+                            <constraint firstItem="uER-84-kFR" firstAttribute="top" secondItem="csa-4S-iws" secondAttribute="bottom" constant="22" id="zco-39-jhZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="6Lt-q6-rTR" id="aa9-ES-XzW"/>
+                        <outletCollection property="buttons" destination="5Kp-1K-OJV" collectionClass="NSMutableArray" id="UnY-Q4-kB3"/>
+                        <outletCollection property="buttons" destination="csa-4S-iws" collectionClass="NSMutableArray" id="KYw-O6-PKA"/>
+                        <outletCollection property="buttons" destination="9jc-Jh-18e" collectionClass="NSMutableArray" id="4hV-ge-VtA"/>
+                        <outletCollection property="buttons" destination="uER-84-kFR" collectionClass="NSMutableArray" id="hvt-M8-iUh"/>
+                        <outletCollection property="buttons" destination="pRs-L4-ujE" collectionClass="NSMutableArray" id="gIT-jB-4sx"/>
+                        <outletCollection property="buttons" destination="oj5-ub-geS" collectionClass="NSMutableArray" id="0Bi-n5-5F5"/>
+                        <outletCollection property="buttons" destination="3FK-Fz-j7h" collectionClass="NSMutableArray" id="93l-hM-fCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mogura_0" width="240" height="240"/>
+        <image name="signboard" width="750" height="440"/>
+        <image name="soil" width="750" height="1060"/>
+    </resources>
+</document>
