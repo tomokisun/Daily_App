@@ -82,6 +82,7 @@
 - Day76: [カラーピッカー](https://github.com/tomoki69386/Daily_App/blob/master/76/README.md)
 - Day77: [貯金しよう](https://github.com/tomoki69386/Daily_App/blob/master/77/README.md)
 - Day78: [もぐら叩きv2](https://github.com/tomoki69386/Daily_App/blob/master/78/README.md)
+- Day79: [あと何日？](https://github.com/tomoki69386/Daily_App/blob/master/79/README.md)
 
 # 経緯
 
