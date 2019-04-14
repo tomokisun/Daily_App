@@ -8,6 +8,23 @@
 
 import UIKit
 
+class Model {
+    let title: String
+    let date: Date
+    
+    init(title: String, date: Date) {
+        self.title = title
+        self.date = date
+    }
+    
+    init() {
+        self.title = ""
+        self.date = Date()
+    }
+}
+
+var model = Model()
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -59,7 +76,7 @@ class SecondViewController: UIViewController {
     @objc func done() {
         dateTextInput.endEditing(true)
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd"
+        formatter.dateFormat = "yyyy-MM-dd"
         dateTextInput.text = "\(formatter.string(from: datePicker.date))"
     }
 }
