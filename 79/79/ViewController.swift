@@ -26,15 +26,21 @@ class Model {
 var model = Model()
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBOutlet private weak var daysLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.titleLabel.text = model.title
+        self.daysLabel.text = model.date
     }
 }
 
 
 class SecondViewController: UIViewController {
+    
     @IBOutlet private weak var titleTextInput: UITextField!
     @IBOutlet private weak var dateTextInput: UITextField!
     private var datePicker = UIDatePicker()
@@ -51,6 +57,7 @@ class SecondViewController: UIViewController {
         
         if !title.isEmpty, !date.isEmpty {
             model = Model(title: title, date: date)
+            self.dismiss(animated: true)
         }
     }
     

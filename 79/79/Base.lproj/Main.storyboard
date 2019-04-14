@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGj-WS-Zox">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,23 +18,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_flame" translatesAutoresizingMaskIntoConstraints="NO" id="RvL-Uv-wBu">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_flame" translatesAutoresizingMaskIntoConstraints="NO" id="edN-n2-EfA">
+                                <rect key="frame" x="20" y="50" width="335" height="477"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O10-Hj-RAY">
+                                <rect key="frame" x="62.5" y="488.5" width="250" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O10-Hj-RAY" secondAttribute="height" multiplier="287:80" id="707-lO-D8F"/>
+                                    <constraint firstAttribute="width" constant="250" id="Zd3-88-ytR"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="buttton_1"/>
+                                <connections>
+                                    <segue destination="UGj-WS-Zox" kind="modal" id="Zka-Rq-hIX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmp-B5-Pu0">
+                                <rect key="frame" x="154" y="311" width="67" height="26"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkw-bH-WKF">
+                                <rect key="frame" x="172" y="383" width="31" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJc-EG-Msd">
+                                <rect key="frame" x="187.5" y="443" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="56" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK1-Pe-km7">
+                                <rect key="frame" x="66" y="106" width="244" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96080118417739868" green="0.96458965539932251" blue="0.97255069017410278" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="RvL-Uv-wBu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9fQ-A6-Y2P"/>
-                            <constraint firstItem="RvL-Uv-wBu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KN2-SE-e0B"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RvL-Uv-wBu" secondAttribute="trailing" id="T5d-Hm-HLt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RvL-Uv-wBu" secondAttribute="bottom" id="hAn-Cx-0t5"/>
+                            <constraint firstItem="edN-n2-EfA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2gd-VV-qAP"/>
+                            <constraint firstItem="Rmp-B5-Pu0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8gf-kM-gIe"/>
+                            <constraint firstItem="nkw-bH-WKF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMS-dK-4bq"/>
+                            <constraint firstItem="O10-Hj-RAY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="190" id="GeB-Gg-k13"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="edN-n2-EfA" secondAttribute="trailing" constant="20" id="KaX-fT-peC"/>
+                            <constraint firstItem="nkw-bH-WKF" firstAttribute="top" secondItem="Rmp-B5-Pu0" secondAttribute="bottom" constant="46" id="LaG-Gc-nJX"/>
+                            <constraint firstItem="edN-n2-EfA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="VUK-mQ-xKn"/>
+                            <constraint firstItem="HJc-EG-Msd" firstAttribute="top" secondItem="nkw-bH-WKF" secondAttribute="bottom" constant="30" id="aKs-kt-XX9"/>
+                            <constraint firstItem="O10-Hj-RAY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cDJ-wi-Mcj"/>
+                            <constraint firstItem="HJc-EG-Msd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAS-x6-yzq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="edN-n2-EfA" secondAttribute="bottom" constant="140" id="uPR-ye-sya"/>
+                            <constraint firstItem="O10-Hj-RAY" firstAttribute="top" secondItem="Rmp-B5-Pu0" secondAttribute="bottom" constant="151.5" id="wIx-zv-eao"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="daysLabel" destination="PK1-Pe-km7" id="n3I-Jx-zoO"/>
+                        <outlet property="titleLabel" destination="HJc-EG-Msd" id="omU-3c-tAO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="134"/>
+            <point key="canvasLocation" x="180" y="133.5832083958021"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="itg-Hp-AOg">
@@ -122,6 +170,7 @@
     <resources>
         <image name="background" width="750" height="1334"/>
         <image name="button_2" width="520" height="160"/>
+        <image name="buttton_1" width="520" height="160"/>
         <image name="flame" width="750" height="1072"/>
         <image name="round_flame" width="686" height="986"/>
     </resources>
