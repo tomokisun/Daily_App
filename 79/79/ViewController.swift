@@ -10,16 +10,16 @@ import UIKit
 
 class Model {
     let title: String
-    let date: Date
+    let date: String
     
-    init(title: String, date: Date) {
+    init(title: String, date: String) {
         self.title = title
         self.date = date
     }
     
     init() {
         self.title = ""
-        self.date = Date()
+        self.date = ""
     }
 }
 
@@ -50,7 +50,7 @@ class SecondViewController: UIViewController {
         let date = dateTextInput.text!
         
         if !title.isEmpty, !date.isEmpty {
-            print(title, date)
+            model = Model(title: title, date: date)
         }
     }
     
