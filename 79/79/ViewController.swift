@@ -14,7 +14,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
 
+
+class SecondViewController: UIViewController {
+    @IBOutlet private weak var titleTextInput: UITextField!
+    @IBOutlet private weak var dateTextInput: UITextField!
+    
+    @IBAction private func didButtonTappend(_ sender: UIButton) {
+        let title = titleTextInput.text!
+        let date = dateTextInput.text!
+        
+        if !title.isEmpty, !date.isEmpty {
+            print(title, date)
+        }
+    }
+}
