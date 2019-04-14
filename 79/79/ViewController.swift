@@ -33,8 +33,11 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.titleLabel.text = model.title
-        self.daysLabel.text = model.date
+        
+        if !model.title.isEmpty, !model.date.isEmpty {
+            daysLabel.text = "56"
+            titleLabel.text = "アプリリリースまで"
+        }
     }
 }
 
