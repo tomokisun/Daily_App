@@ -1,0 +1,6 @@
+framework module Pods_80 {
+  umbrella header "Pods-80-umbrella.h"
+
+  export *
+  module * { export * }
+}
