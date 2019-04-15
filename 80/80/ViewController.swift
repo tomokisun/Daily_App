@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     
     @IBOutlet private weak var inputFieldBottom: NSLayoutConstraint!
     @IBOutlet private weak var textField: UITextField!
+    @IBOutlet private weak var tableView: UITableView! {
+        didSet {
+            tableView.tableFooterView = UIView()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,4 +36,5 @@ class ViewController: UIViewController {
         if text.isEmpty { return }
     }
 }
+
 
