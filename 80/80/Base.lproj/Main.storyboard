@@ -71,7 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="mCo-6C-Lm1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="Qg1-LX-b8h"/>
+                        <barButtonItem key="rightBarButtonItem" image="i_button" id="Qg1-LX-b8h"/>
                     </navigationItem>
                     <connections>
                         <outlet property="inputFieldBottom" destination="lJV-wL-2tM" id="jtM-AO-RIb"/>
@@ -104,5 +104,6 @@
     </scenes>
     <resources>
         <image name="Artboard" width="60" height="60"/>
+        <image name="i_button" width="60" height="60"/>
     </resources>
 </document>
