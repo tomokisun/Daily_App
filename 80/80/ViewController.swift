@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import RxSwift
+import RxKeyboard
 
 class ViewController: UIViewController {
+    
+    private let disposeBag = DisposeBag()
+    
+    @IBOutlet private weak var inputFieldBottom: NSLayoutConstraint!
+    @IBOutlet private weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        RxKeyboard.instance.visibleHeight.asDriver().drive(onNext: { [weak self] height in
+            guard let `self` = self else { return }
+            self.inputFieldBottom.constant = height
+        }).disposed(by: disposeBag)
     }
 
-
+    @IBAction private func pushButtonDidTappend(_ sender: UIButton) {
+        let text = textField.text!
+        if text.isEmpty { return }
+    }
 }
 
