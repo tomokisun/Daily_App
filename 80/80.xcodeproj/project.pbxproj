@@ -13,6 +13,11 @@
 		B7F155F72264AD4000E14B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F155F62264AD4000E14B52 /* Assets.xcassets */; };
 		B7F155FA2264AD4000E14B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F155F82264AD4000E14B52 /* LaunchScreen.storyboard */; };
 		B7F156022264AE0200E14B52 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F156012264AE0200E14B52 /* UITableView+Extension.swift */; };
+		B7F156052264B00000E14B52 /* HogeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F156032264B00000E14B52 /* HogeTableViewCell.swift */; };
+		B7F156062264B00000E14B52 /* HogeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F156042264B00000E14B52 /* HogeTableViewCell.xib */; };
+		B7F156092264B01000E14B52 /* FugaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F156072264B01000E14B52 /* FugaTableViewCell.swift */; };
+		B7F1560A2264B01000E14B52 /* FugaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F156082264B01000E14B52 /* FugaTableViewCell.xib */; };
+		B7F1560C2264B0FE00E14B52 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1560B2264B0FE00E14B52 /* UIView+Extension.swift */; };
 		CD14888556371A9E74183CFC /* Pods_80.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4407C02EBC295765E3E3846D /* Pods_80.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,11 @@
 		B7F155F92264AD4000E14B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7F155FB2264AD4000E14B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7F156012264AE0200E14B52 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		B7F156032264B00000E14B52 /* HogeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogeTableViewCell.swift; sourceTree = "<group>"; };
+		B7F156042264B00000E14B52 /* HogeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HogeTableViewCell.xib; sourceTree = "<group>"; };
+		B7F156072264B01000E14B52 /* FugaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FugaTableViewCell.swift; sourceTree = "<group>"; };
+		B7F156082264B01000E14B52 /* FugaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FugaTableViewCell.xib; sourceTree = "<group>"; };
+		B7F1560B2264B0FE00E14B52 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C9A987643B84C39924FA38E2 /* Pods-80.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-80.release.xcconfig"; path = "Target Support Files/Pods-80/Pods-80.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +92,12 @@
 			children = (
 				B7F155EF2264AD3E00E14B52 /* AppDelegate.swift */,
 				B7F155F12264AD3E00E14B52 /* ViewController.swift */,
+				B7F156032264B00000E14B52 /* HogeTableViewCell.swift */,
+				B7F156042264B00000E14B52 /* HogeTableViewCell.xib */,
+				B7F156072264B01000E14B52 /* FugaTableViewCell.swift */,
+				B7F156082264B01000E14B52 /* FugaTableViewCell.xib */,
 				B7F156012264AE0200E14B52 /* UITableView+Extension.swift */,
+				B7F1560B2264B0FE00E14B52 /* UIView+Extension.swift */,
 				B7F155F32264AD3E00E14B52 /* Main.storyboard */,
 				B7F155F62264AD4000E14B52 /* Assets.xcassets */,
 				B7F155F82264AD4000E14B52 /* LaunchScreen.storyboard */,
@@ -151,7 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F156062264B00000E14B52 /* HogeTableViewCell.xib in Resources */,
 				B7F155FA2264AD4000E14B52 /* LaunchScreen.storyboard in Resources */,
+				B7F1560A2264B01000E14B52 /* FugaTableViewCell.xib in Resources */,
 				B7F155F72264AD4000E14B52 /* Assets.xcassets in Resources */,
 				B7F155F52264AD3E00E14B52 /* Main.storyboard in Resources */,
 			);
@@ -215,7 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F1560C2264B0FE00E14B52 /* UIView+Extension.swift in Sources */,
+				B7F156052264B00000E14B52 /* HogeTableViewCell.swift in Sources */,
 				B7F155F22264AD3E00E14B52 /* ViewController.swift in Sources */,
+				B7F156092264B01000E14B52 /* FugaTableViewCell.swift in Sources */,
 				B7F155F02264AD3E00E14B52 /* AppDelegate.swift in Sources */,
 				B7F156022264AE0200E14B52 /* UITableView+Extension.swift in Sources */,
 			);
