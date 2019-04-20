@@ -18,3 +18,12 @@ class ViewController: UIViewController {
 
 }
 
+@IBDesignable
+class Button: UIButton {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        self.layer.cornerRadius = 21
+        self.layer.masksToBounds = true
+    }
+}

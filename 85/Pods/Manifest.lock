@@ -1,0 +1,25 @@
+PODS:
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxKeyboard (0.9.0):
+    - RxCocoa (>= 4.3.1)
+    - RxSwift (>= 4.3.1)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - RxKeyboard
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxKeyboard
+    - RxSwift
+
+SPEC CHECKSUMS:
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxKeyboard: 4f782303f499f41577b41c96c6a9a5d7acd51a47
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: c7f3399445fb633fd5f1c217d32fa7ce2cd727aa
+
+COCOAPODS: 1.6.1
