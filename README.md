@@ -89,6 +89,7 @@
 - Day83: [歩数計](https://github.com/tomoki69386/Daily_App/blob/master/83/README.md)
 - Day84: [共有メモアプリ](https://github.com/tomoki69386/Daily_App/blob/master/84/README.md)
 - Day85: [Sign Up画面](https://github.com/tomoki69386/Daily_App/blob/master/85/README.md)
+- Day86: [席替えアプリ](https://github.com/tomoki69386/Daily_App/blob/master/86/README.md)
 
 # 経緯
 
