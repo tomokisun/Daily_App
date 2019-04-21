@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,450 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="2L8-z2-5xz">
+                                <rect key="frame" x="40" y="80" width="295" height="372.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="eyL-HH-yqa">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="63.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQP-7w-nAe" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iQP-7w-nAe" secondAttribute="height" multiplier="1:1" id="ZKN-vG-UAu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-ec-T1H" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="77.5" y="0.0" width="63" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ncd-ec-T1H" secondAttribute="height" multiplier="1:1" id="DCy-re-Fhi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCd-Y5-Roh" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="154.5" y="0.0" width="63.5" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FCd-Y5-Roh" secondAttribute="height" multiplier="1:1" id="JtB-hT-gYm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6G-9v-0sF" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="63" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="K6G-9v-0sF" secondAttribute="height" multiplier="1:1" id="h65-XQ-hJE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="K6G-9v-0sF" firstAttribute="width" secondItem="K6G-9v-0sF" secondAttribute="height" multiplier="1:1" id="74j-Vj-5ZN"/>
+                                            <constraint firstItem="FCd-Y5-Roh" firstAttribute="width" secondItem="FCd-Y5-Roh" secondAttribute="height" multiplier="1:1" id="8Ix-28-1Io"/>
+                                            <constraint firstItem="ncd-ec-T1H" firstAttribute="width" secondItem="ncd-ec-T1H" secondAttribute="height" multiplier="1:1" id="cRJ-H0-G41"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ksl-jX-mh0">
+                                        <rect key="frame" x="0.0" y="77.5" width="295" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiL-Lz-13N" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uiL-Lz-13N" secondAttribute="height" multiplier="1:1" id="jHn-dC-Fe7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyX-aR-M48" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="77.5" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="UyX-aR-M48" secondAttribute="height" multiplier="1:1" id="Pti-6E-y7T"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFm-My-i14" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="154.5" y="0.0" width="63.5" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dFm-My-i14" secondAttribute="height" multiplier="1:1" id="3Zq-u7-Wp0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4q-Fo-Pzo" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="S4q-Fo-Pzo" secondAttribute="height" multiplier="1:1" id="ORu-QS-EW6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dFm-My-i14" firstAttribute="width" secondItem="dFm-My-i14" secondAttribute="height" multiplier="1:1" id="DFB-f0-Kjb"/>
+                                            <constraint firstItem="S4q-Fo-Pzo" firstAttribute="width" secondItem="S4q-Fo-Pzo" secondAttribute="height" multiplier="1:1" id="hr5-it-5Ep"/>
+                                            <constraint firstItem="UyX-aR-M48" firstAttribute="width" secondItem="UyX-aR-M48" secondAttribute="height" multiplier="1:1" id="qbO-xJ-2GT"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="00q-Ri-173">
+                                        <rect key="frame" x="0.0" y="154.5" width="295" height="63.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynn-Ga-hSL" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ynn-Ga-hSL" secondAttribute="height" multiplier="1:1" id="RS8-kU-O8a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naS-Qn-Yoy" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="77.5" y="0.0" width="63" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="naS-Qn-Yoy" secondAttribute="height" multiplier="1:1" id="IDr-YZ-2DT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BE-tu-daa" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="154.5" y="0.0" width="63.5" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7BE-tu-daa" secondAttribute="height" multiplier="1:1" id="9qP-HK-hj7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-H0-JQ8" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="63" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QdJ-H0-JQ8" secondAttribute="height" multiplier="1:1" id="ufH-tW-wNr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="naS-Qn-Yoy" firstAttribute="width" secondItem="naS-Qn-Yoy" secondAttribute="height" multiplier="1:1" id="6re-U4-tC8"/>
+                                            <constraint firstItem="QdJ-H0-JQ8" firstAttribute="width" secondItem="QdJ-H0-JQ8" secondAttribute="height" multiplier="1:1" id="JmO-BB-RIb"/>
+                                            <constraint firstItem="7BE-tu-daa" firstAttribute="width" secondItem="7BE-tu-daa" secondAttribute="height" multiplier="1:1" id="eaV-SL-Tpw"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="lrq-IJ-hVv">
+                                        <rect key="frame" x="0.0" y="232" width="295" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayv-BV-oiI" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ayv-BV-oiI" secondAttribute="height" multiplier="1:1" id="Fib-U8-9qx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-wG-Hb2" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="77.5" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gA5-wG-Hb2" secondAttribute="height" multiplier="1:1" id="DDQ-ox-bWg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-Rd-pgP" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="154.5" y="0.0" width="63.5" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gp5-Rd-pgP" secondAttribute="height" multiplier="1:1" id="uLS-bi-lDC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jO-1R-ETv" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0jO-1R-ETv" secondAttribute="height" multiplier="1:1" id="Ied-0W-ODM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gA5-wG-Hb2" firstAttribute="width" secondItem="gA5-wG-Hb2" secondAttribute="height" multiplier="1:1" id="1Px-rC-6gb"/>
+                                            <constraint firstItem="gp5-Rd-pgP" firstAttribute="width" secondItem="gp5-Rd-pgP" secondAttribute="height" multiplier="1:1" id="HC3-cf-jfF"/>
+                                            <constraint firstItem="0jO-1R-ETv" firstAttribute="width" secondItem="0jO-1R-ETv" secondAttribute="height" multiplier="1:1" id="cWf-d6-bmj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="uHK-NX-Xmw">
+                                        <rect key="frame" x="0.0" y="309" width="295" height="63.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qv-b7-ad9" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0qv-b7-ad9" secondAttribute="height" multiplier="1:1" id="ak9-ZK-22f"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-8b-7KK" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="77.5" y="0.0" width="63" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iGN-8b-7KK" secondAttribute="height" multiplier="1:1" id="VdR-Fg-yCi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2e-4w-Xcj" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="154.5" y="0.0" width="63.5" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="w2e-4w-Xcj" secondAttribute="height" multiplier="1:1" id="Obx-cf-2pu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPa-el-bX4" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="63" height="63.5"/>
+                                                <color key="backgroundColor" name="yellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JPa-el-bX4" secondAttribute="height" multiplier="1:1" id="pqN-yC-vhQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                                <state key="normal" title="名前を入力">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="w2e-4w-Xcj" firstAttribute="width" secondItem="w2e-4w-Xcj" secondAttribute="height" multiplier="1:1" id="Lux-5t-FKU"/>
+                                            <constraint firstItem="iGN-8b-7KK" firstAttribute="width" secondItem="iGN-8b-7KK" secondAttribute="height" multiplier="1:1" id="kqA-eZ-i4v"/>
+                                            <constraint firstItem="JPa-el-bX4" firstAttribute="width" secondItem="JPa-el-bX4" secondAttribute="height" multiplier="1:1" id="oYv-g5-llF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tm-zf-Jvc" customClass="Button" customModule="_6" customModuleProvider="target">
+                                <rect key="frame" x="40" y="507" width="295" height="80"/>
+                                <color key="backgroundColor" name="red"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="szU-Lw-PYJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="せきがえする">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shuffleButtonDidTappend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7H-v6-eOq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="blue"/>
+                        <constraints>
+                            <constraint firstItem="2L8-z2-5xz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9Hx-6a-OPN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1tm-zf-Jvc" secondAttribute="trailing" constant="40" id="Nxs-Gu-Q5x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1tm-zf-Jvc" secondAttribute="bottom" constant="80" id="cv0-iK-JHR"/>
+                            <constraint firstItem="2L8-z2-5xz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="gb9-kV-v5W"/>
+                            <constraint firstItem="1tm-zf-Jvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jit-Wu-ODL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2L8-z2-5xz" secondAttribute="trailing" constant="40" id="tjX-8D-yaf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="iQP-7w-nAe" collectionClass="NSMutableArray" id="Beq-3R-TrF"/>
+                        <outletCollection property="buttons" destination="ncd-ec-T1H" collectionClass="NSMutableArray" id="Nx6-tI-nfp"/>
+                        <outletCollection property="buttons" destination="FCd-Y5-Roh" collectionClass="NSMutableArray" id="ZvK-Vo-npS"/>
+                        <outletCollection property="buttons" destination="K6G-9v-0sF" collectionClass="NSMutableArray" id="bmG-QH-v3t"/>
+                        <outletCollection property="buttons" destination="uiL-Lz-13N" collectionClass="NSMutableArray" id="RdC-aN-qw6"/>
+                        <outletCollection property="buttons" destination="UyX-aR-M48" collectionClass="NSMutableArray" id="9sR-tD-jdF"/>
+                        <outletCollection property="buttons" destination="dFm-My-i14" collectionClass="NSMutableArray" id="U94-eB-UyK"/>
+                        <outletCollection property="buttons" destination="S4q-Fo-Pzo" collectionClass="NSMutableArray" id="3fp-Wi-DJa"/>
+                        <outletCollection property="buttons" destination="ynn-Ga-hSL" collectionClass="NSMutableArray" id="S5Y-Kf-dut"/>
+                        <outletCollection property="buttons" destination="naS-Qn-Yoy" collectionClass="NSMutableArray" id="Gi1-FW-WJ5"/>
+                        <outletCollection property="buttons" destination="7BE-tu-daa" collectionClass="NSMutableArray" id="bZv-wM-Cop"/>
+                        <outletCollection property="buttons" destination="QdJ-H0-JQ8" collectionClass="NSMutableArray" id="5BO-2h-bo2"/>
+                        <outletCollection property="buttons" destination="ayv-BV-oiI" collectionClass="NSMutableArray" id="7TG-OB-PXz"/>
+                        <outletCollection property="buttons" destination="gA5-wG-Hb2" collectionClass="NSMutableArray" id="XMt-AY-Gdm"/>
+                        <outletCollection property="buttons" destination="gp5-Rd-pgP" collectionClass="NSMutableArray" id="J5v-7q-dLh"/>
+                        <outletCollection property="buttons" destination="0jO-1R-ETv" collectionClass="NSMutableArray" id="loO-uK-tHm"/>
+                        <outletCollection property="buttons" destination="0qv-b7-ad9" collectionClass="NSMutableArray" id="a88-c8-BXC"/>
+                        <outletCollection property="buttons" destination="iGN-8b-7KK" collectionClass="NSMutableArray" id="TQz-Iz-WTn"/>
+                        <outletCollection property="buttons" destination="w2e-4w-Xcj" collectionClass="NSMutableArray" id="SoX-cN-Rgq"/>
+                        <outletCollection property="buttons" destination="JPa-el-bX4" collectionClass="NSMutableArray" id="eBL-aA-D7Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33" y="27"/>
+        </scene>
+        <!--Input View Controller-->
+        <scene sceneID="ALE-NB-VcW">
+            <objects>
+                <viewController storyboardIdentifier="InputViewController" id="Jjj-nL-avQ" customClass="InputViewController" customModule="_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wgd-Fk-TlD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zar-PY-L9d">
+                                <rect key="frame" x="38" y="465" width="299" height="172"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeL-Vm-L9v" customClass="Button" customModule="_6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="299" height="80"/>
+                                        <color key="backgroundColor" name="red"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="4p4-s9-yC3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="名前を決定">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doneButtonDidTappend:" destination="Jjj-nL-avQ" eventType="touchUpInside" id="1ce-Ps-Qof"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.87" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXm-uo-ooS" customClass="Button" customModule="_6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="299" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="LKT-a7-cnF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="名前をリセット">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="border"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="skipButtonDidTappend:" destination="Jjj-nL-avQ" eventType="touchUpInside" id="Kn4-IV-Bva"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-o5-AKf" customClass="NameButton" customModule="_6" customModuleProvider="target">
+                                <rect key="frame" x="75" y="109" width="225" height="225"/>
+                                <color key="backgroundColor" name="yellow"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="G0e-Yh-MXd"/>
+                                    <constraint firstAttribute="width" constant="225" id="ni3-XJ-KfS"/>
+                                </constraints>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="名前を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sjb-0n-ssM" customClass="InputField" customModule="_6" customModuleProvider="target">
+                                <rect key="frame" x="75" y="109" width="225" height="225"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="blue"/>
+                        <constraints>
+                            <constraint firstItem="zar-PY-L9d" firstAttribute="leading" secondItem="byA-be-FrU" secondAttribute="leading" constant="38" id="6Fe-eO-Tfp"/>
+                            <constraint firstItem="Sjb-0n-ssM" firstAttribute="trailing" secondItem="pM1-o5-AKf" secondAttribute="trailing" id="D9j-La-4aQ"/>
+                            <constraint firstItem="Sjb-0n-ssM" firstAttribute="bottom" secondItem="pM1-o5-AKf" secondAttribute="bottom" id="DDY-lI-odJ"/>
+                            <constraint firstItem="byA-be-FrU" firstAttribute="bottom" secondItem="zar-PY-L9d" secondAttribute="bottom" constant="30" id="U8U-uA-gJd"/>
+                            <constraint firstItem="byA-be-FrU" firstAttribute="trailing" secondItem="zar-PY-L9d" secondAttribute="trailing" constant="38" id="bW8-M3-JUr"/>
+                            <constraint firstItem="Sjb-0n-ssM" firstAttribute="top" secondItem="pM1-o5-AKf" secondAttribute="top" id="btc-Sn-tbm"/>
+                            <constraint firstItem="pM1-o5-AKf" firstAttribute="centerX" secondItem="wgd-Fk-TlD" secondAttribute="centerX" id="i6m-wl-BfQ"/>
+                            <constraint firstItem="Sjb-0n-ssM" firstAttribute="leading" secondItem="pM1-o5-AKf" secondAttribute="leading" id="sqy-RD-hz3"/>
+                            <constraint firstItem="pM1-o5-AKf" firstAttribute="top" secondItem="byA-be-FrU" secondAttribute="top" constant="89" id="wwh-9O-9k5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="byA-be-FrU"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameInputField" destination="Sjb-0n-ssM" id="X9v-Hk-pzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9a-FC-Phc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="blue">
+            <color red="0.31372549019607843" green="0.78431372549019607" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="border">
+            <color red="0.27450980392156865" green="0.70980392156862748" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="0.92941176470588238" green="0.23921568627450981" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellow">
+            <color red="0.98431372549019602" green="0.83529411764705885" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
