@@ -22,6 +22,7 @@
 		B7F30E392271C85B0077CDD0 /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F30E342271C85B0077CDD0 /* SwiftyGifManager.swift */; };
 		B7F30E3A2271C85B0077CDD0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B7F30E352271C85B0077CDD0 /* LICENSE */; };
 		B7F30E3B2271C85B0077CDD0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B7F30E362271C85B0077CDD0 /* README.md */; };
+		B7F30E3D2271CB320077CDD0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F30E3C2271CB320077CDD0 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		B7F30E342271C85B0077CDD0 /* SwiftyGifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGifManager.swift; sourceTree = "<group>"; };
 		B7F30E352271C85B0077CDD0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B7F30E362271C85B0077CDD0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B7F30E3C2271CB320077CDD0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				B7F30E112271A45A0077CDD0 /* AppDelegate.swift */,
 				B7F30E252271C11B0077CDD0 /* date.swift */,
+				B7F30E3C2271CB320077CDD0 /* WebViewController.swift */,
 				B7F30E132271A45A0077CDD0 /* ViewController.swift */,
 				B7F30E272271C1620077CDD0 /* ArticleTableViewCell.swift */,
 				B7F30E2B2271C1A70077CDD0 /* ArticleTableViewCell.xib */,
@@ -198,6 +201,7 @@
 				B7F30E282271C1620077CDD0 /* ArticleTableViewCell.swift in Sources */,
 				B7F30E142271A45A0077CDD0 /* ViewController.swift in Sources */,
 				B7F30E382271C85B0077CDD0 /* UIImage+SwiftyGif.swift in Sources */,
+				B7F30E3D2271CB320077CDD0 /* WebViewController.swift in Sources */,
 				B7F30E392271C85B0077CDD0 /* SwiftyGifManager.swift in Sources */,
 				B7F30E262271C11B0077CDD0 /* date.swift in Sources */,
 				B7F30E2A2271C17E0077CDD0 /* UIView+Extension.swift in Sources */,

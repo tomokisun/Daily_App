@@ -19,3 +19,16 @@ class ArticleTableViewCell: UITableViewCell {
         gifImageView.setGifFromURL(URL(string: model.gifURL))
     }
 }
+
+@IBDesignable
+class BaseView: UIView {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        self.backgroundColor = .white
+        self.layer.cornerRadius = 16
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.1
+    }
+}
