@@ -92,6 +92,8 @@
 - Day86: [席替えアプリ](https://github.com/tomoki69386/Daily_App/blob/master/86/README.md)
 - Day87: [逆計算ゲーム](https://github.com/tomoki69386/Daily_App/blob/master/87/README.md)
 - Day88: [10秒でなん文字入力できるかな？](https://github.com/tomoki69386/Daily_App/blob/master/88/README.md)
+- Day89: [元号変換アプリ](https://github.com/tomoki69386/Daily_App/blob/master/89/README.md)
+- Day90: [DailyApp検索図鑑](https://github.com/tomoki69386/Daily_App/blob/master/90/README.md)
 
 # 経緯
 
