@@ -16,5 +16,6 @@ class ArticleTableViewCell: UITableViewCell {
     func update(with model: ArticleModel) {
         dayLabel.text = model.day
         nameLabel.text = model.name
+        gifImageView.setGifFromURL(URL(string: model.gifURL))
     }
 }

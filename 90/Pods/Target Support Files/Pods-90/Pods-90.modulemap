@@ -1,6 +1,0 @@
-framework module Pods_90 {
-  umbrella header "Pods-90-umbrella.h"
-
-  export *
-  module * { export * }
-}
