@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3e9-eK-db7" customClass="ArticleTableViewCell" customModule="_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3e9-eK-db7" id="LV1-3Z-MtS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPY-0f-ryn">
+                        <rect key="frame" x="8" y="15" width="359" height="99"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C0P-T1-Syn">
+                                <rect key="frame" x="12" y="12" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="M4F-xL-3LL"/>
+                                    <constraint firstAttribute="height" constant="75" id="aKJ-Wn-EN5"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ehH-eE-JOV">
+                                <rect key="frame" x="99" y="22.5" width="248" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aj-z0-YaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="18"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBZ-uX-tbh">
+                                        <rect key="frame" x="0.0" y="26" width="248" height="18"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ehH-eE-JOV" firstAttribute="leading" secondItem="C0P-T1-Syn" secondAttribute="trailing" constant="12" id="13Y-No-kPw"/>
+                            <constraint firstItem="C0P-T1-Syn" firstAttribute="top" secondItem="BPY-0f-ryn" secondAttribute="top" constant="12" id="CTa-0p-2KS"/>
+                            <constraint firstItem="C0P-T1-Syn" firstAttribute="leading" secondItem="BPY-0f-ryn" secondAttribute="leading" constant="12" id="ErH-DV-rr9"/>
+                            <constraint firstAttribute="trailing" secondItem="ehH-eE-JOV" secondAttribute="trailing" constant="12" id="H9b-Sr-v0C"/>
+                            <constraint firstAttribute="bottom" secondItem="C0P-T1-Syn" secondAttribute="bottom" constant="12" id="Qbr-FF-t2U"/>
+                            <constraint firstItem="ehH-eE-JOV" firstAttribute="centerY" secondItem="BPY-0f-ryn" secondAttribute="centerY" constant="-5" id="ig6-YJ-LWU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BPY-0f-ryn" firstAttribute="leading" secondItem="LV1-3Z-MtS" secondAttribute="leading" constant="8" id="IAA-eM-U34"/>
+                    <constraint firstItem="BPY-0f-ryn" firstAttribute="top" secondItem="LV1-3Z-MtS" secondAttribute="topMargin" constant="4" id="pNJ-fj-Sm8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BPY-0f-ryn" secondAttribute="bottom" constant="4" id="ufy-8K-MxP"/>
+                    <constraint firstAttribute="trailing" secondItem="BPY-0f-ryn" secondAttribute="trailing" constant="8" id="xQU-OO-K1r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dayLabel" destination="6aj-z0-YaV" id="Mlf-Rj-i9h"/>
+                <outlet property="gifImageView" destination="C0P-T1-Syn" id="Z8j-tQ-4IS"/>
+                <outlet property="nameLabel" destination="dBZ-uX-tbh" id="Lng-Rg-U8W"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="-88"/>
+        </tableViewCell>
+    </objects>
+</document>
