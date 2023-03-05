@@ -32,10 +32,10 @@ Starting January 26, 2019, I will make one fucking app a day, every day.
 - Day28: [Strong Zero Now App](https://github.com/tomoki69386/Daily_App/blob/master/28/README.md)
 - Day29: [Ant killer](https://github.com/tomoki69386/Daily_App/blob/master/29/README.md)
 - Day30: [Qiita client app](https://github.com/tomoki69386/Daily_App/blob/master/30/README.md)
-- Day31: [What's behind the Earth?] (https://github.com/tomoki69386/Daily_App/blob/master/31/README.md)
+- Day31: [What's behind the Earth?](https://github.com/tomoki69386/Daily_App/blob/master/31/README.md)
 - Day32: [location sharing app](https://github.com/tomoki69386/Daily_App/blob/master/32/README.md)
-- Day33: [Heisei era will end soon...] (https://github.com/tomoki69386/Daily_App/blob/master/33/README.md)
-- Day34: [Eat this today!] (https://github.com/tomoki69386/Daily_App/blob/master/34/README.md)
+- Day33: [Heisei era will end soon...](https://github.com/tomoki69386/Daily_App/blob/master/33/README.md)
+- Day34: [Eat this today!](https://github.com/tomoki69386/Daily_App/blob/master/34/README.md)
 - Day35: [I understand programming completely](https://github.com/tomoki69386/Daily_App/blob/master/35/README.md)
 - Day36: [Damn app generator](https://github.com/tomoki69386/Daily_App/blob/master/36/README.md)
 - Day37: [Wake up Take Castle](https://github.com/tomoki69386/Daily_App/blob/master/37/README.md)
@@ -45,10 +45,10 @@ Starting January 26, 2019, I will make one fucking app a day, every day.
 - Day41: [Whack-a-mole](https://github.com/tomoki69386/Daily_App/blob/master/41/README.md)
 - Day42: [shit app bot appification](https://github.com/tomoki69386/Daily_App/blob/master/42/README.md)
 - Day43: [Infinite Alerts](https://github.com/tomoki69386/Daily_App/blob/master/43/README.md)
-- Day44: [what time do you wake up?] (https://github.com/tomoki69386/Daily_App/blob/master/44/README.md)
-- Day45: [I want $500 trillion!!!] (https://github.com/tomoki69386/Daily_App/blob/master/45/README.md)
+- Day44: [what time do you wake up?](https://github.com/tomoki69386/Daily_App/blob/master/44/README.md)
+- Day45: [I want $500 trillion!!!](https://github.com/tomoki69386/Daily_App/blob/master/45/README.md)
 - Day46: [Image Generator](https://github.com/tomoki69386/Daily_App/blob/master/46/README.md)
-- Day47: [Until payday: ....] (https://github.com/tomoki69386/Daily_App/blob/master/47/README.md)
+- Day47: [Until payday: ....](https://github.com/tomoki69386/Daily_App/blob/master/47/README.md)
 - Day48: [Color Slider](https://github.com/tomoki69386/Daily_App/blob/master/48/README.md)
 - Day49: [AR app](https://github.com/tomoki69386/Daily_App/blob/master/49/README.md)
 - Day50: [Comment on Nico-dou](https://github.com/tomoki69386/Daily_App/blob/master/50/README.md)
@@ -80,7 +80,7 @@ Starting January 26, 2019, I will make one fucking app a day, every day.
 - Day76: [Color Picker](https://github.com/tomoki69386/Daily_App/blob/master/76/README.md)
 - Day77: [Let's save money](https://github.com/tomoki69386/Daily_App/blob/master/77/README.md)
 - Day78: [Whack-a-mole v2](https://github.com/tomoki69386/Daily_App/blob/master/78/README.md)
-- Day79: [how many days left?] (https://github.com/tomoki69386/Daily_App/blob/master/79/README.md)
+- Day79: [how many days left?](https://github.com/tomoki69386/Daily_App/blob/master/79/README.md)
 - Day80: [chat app](https://github.com/tomoki69386/Daily_App/blob/master/80/README.md)
 - Day81: [stopwatch](https://github.com/tomoki69386/Daily_App/blob/master/81/README.md)
 - Day82: [Late excuse maker](https://github.com/tomoki69386/Daily_App/blob/master/82/README.md)
@@ -89,7 +89,7 @@ Starting January 26, 2019, I will make one fucking app a day, every day.
 - Day85: [Sign Up Screen](https://github.com/tomoki69386/Daily_App/blob/master/85/README.md)
 - Day86: [Seat Changer App](https://github.com/tomoki69386/Daily_App/blob/master/86/README.md)
 - Day87: [Reverse Calculation Game](https://github.com/tomoki69386/Daily_App/blob/master/87/README.md)
-- Day88: [How many letters can you type in 10 seconds?] (https://github.com/tomoki69386/Daily_App/blob/master/88/README.md)
+- Day88: [How many letters can you type in 10 seconds?](https://github.com/tomoki69386/Daily_App/blob/master/88/README.md)
 - Day89: [Gen Gen conversion app](https://github.com/tomoki69386/Daily_App/blob/master/89/README.md)
 - Day90: [DailyApp search encyclopedia](https://github.com/tomoki69386/Daily_App/blob/master/90/README.md)
 
@@ -97,7 +97,7 @@ Starting January 26, 2019, I will make one fucking app a day, every day.
 
 I tweeted in the groove and this is how it all started.
 
-<img width="619" alt="image" src="https://user-images.githubusercontent.com/28350464/51778740-be8f4b00-2146-11e9-9649-459dc25ea5c4. png">
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/28350464/51778740-be8f4b00-2146-11e9-9649-459dc25ea5c4.png">
 
 I thought I would get 10-20 likes at most, but I got more than I expected😇.
 
@@ -107,7 +107,7 @@ I'm going to make an app for the number of likes in an hour from a tweet, so I'l
 
 
 
-<img width="630" alt="image" src="https://user-images.githubusercontent.com/28350464/51778816-1c239780-2147-11e9-9ee8-5b0f6363c2e6. png">
+<img width="630" alt="image" src="https://user-images.githubusercontent.com/28350464/51778816-1c239780-2147-11e9-9ee8-5b0f6363c2e6.png">
 
 
 
